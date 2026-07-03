@@ -31,9 +31,21 @@ still leaves important uncertainty.
 - Bias checks against anchoring, premature closure, and guessed causes.
 - Fix recommendations only when the root cause is backed by evidence.
 
-### More skills!
+### Smart Shot
 
-Stay tuned.
+Zero-shot enhancement for people in a hurry, from text improvement to micro
+software delivery.
+
+Use Smart Shot when a prompt is short, when the user may be speaking in a
+solution rather than the underlying intent, or when the task needs fast intent
+recovery before planning and execution.
+
+Path: [skills/smart-shot](skills/smart-shot/)
+
+#### Outcomes
+
+- Hidden intents, consequential objectives, requirements, and success criteria recovered before planning.
+- Expert subagents for inferred domains, roles, and LLM judge responsibilities.
 
 ## Recommendation
 
