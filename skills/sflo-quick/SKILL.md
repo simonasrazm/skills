@@ -28,6 +28,16 @@ flowchart LR
 1. **Inner loop (Dev↔QA):** Dev builds, QA tests. If QA grade < A, back to Dev. Max 10 rounds.
 2. **Outer loop (PM):** Once QA passes (A), PM verifies against spec. If PM doesn't grade A - back to the Dev↔QA loop with PM's deviation list.
 
+## Run Directory
+
+Before Discover, create `<project>/.sflo-quick/<feature-or-scope-slug>/` and treat it as `RUN_DIR`.
+
+- Derive the filesystem-safe slug from the feature or scope being built, for example `click-counter`.
+- If that directory exists, append the next numeric suffix, for example `click-counter-2`.
+- Store every gate artifact and gate-only probe, log, or screenshot in `RUN_DIR`.
+- Keep product deliverables at the project paths declared in `SCOPE.md`.
+- Give every gate agent the exact `RUN_DIR`; artifact names below mean files inside it.
+
 ## Gate Rules
 
 1. **Gate 2 CANNOT start** without Gate 1's SCOPE.md existing and having verified data endpoints
@@ -56,10 +66,10 @@ Gate references:
 The orchestrating agent MUST:
 
 1. **Never skip gates** - even if "it looks fine"
-2. **Verify artifact files exist** before proceeding
+2. **Verify artifact files exist in `RUN_DIR`** before proceeding
 3. **Track iteration count** - post status after each gate
-4. **Keep all evidence** in the project directory
-5. **Reference predecessor artifacts** - don't summarize, point to files
+4. **Keep all gate evidence** in `RUN_DIR`
+5. **Reference predecessor artifacts** - don't summarize, give their exact paths
 6. **Each agent reads its gate doc** - no relying on the orchestrator's summary
 7. **Artifacts are the truth** - if it's not in a file, it didn't happen
 8. **Fresh agents for QA** - don't let the builder test their own work
@@ -70,6 +80,7 @@ After each gate, post:
 
 ```
 Pipeline: [Project Name]
+Run: .sflo-quick/[slug]/
 
 Gate 1 (Discover): DONE - SCOPE.md verified
 Gate 2 (Build):    DONE - build passes
