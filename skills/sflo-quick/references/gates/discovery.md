@@ -9,7 +9,6 @@
 2. **Verify endpoints work** - actual curl/fetch, not assumptions
 3. **Define scope** - what can we build with available data?
 4. **Set acceptance criteria** - specific, testable conditions
-5. **Set appetite** - time budget for the build
 
 ## SCOPE.md Template
 
@@ -29,9 +28,6 @@
 - [ ] AC1: [specific, testable]
 - [ ] AC2: [specific, testable]
 - [ ] AC3: [specific, testable]
-
-## Appetite
-[Time budget: 1hr / 4hr / 1 day]
 ```
 
 ## Gate Check (Orchestrator verifies)
@@ -39,6 +35,5 @@
 - [ ] SCOPE.md exists
 - [ ] At least 1 data endpoint verified with real curl output
 - [ ] Acceptance criteria are specific and testable
-- [ ] Appetite is defined
 
 **If anything missing → BLOCKED. Do not proceed to Gate 2.**
