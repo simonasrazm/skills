@@ -5,6 +5,12 @@ dark factory, and investigating complex systems by hand.
 
 ## Skills
 
+| Skill | Purpose |
+|---|---|
+| [STR: Simon Troubleshoot](#str-simon-troubleshoot) | Evidence-first troubleshooting |
+| [Smart Shot](#smart-shot) | Intent-based prompt enhancement when multiple domain experts are needed |
+| [SFLO Quick](#sflo-quick) | Light version of dark factory. Good for demos and small projects |
+
 ### STR: Simon Troubleshoot
 
 #### Motivation
@@ -16,13 +22,13 @@ Evidence-first troubleshooting for problems where a quick fix is risky.
 
 STR separates investigation from challenge. The Troubleshooter collects facts, builds hypotheses, and traces possible causes. The Interrogator attacks weak evidence, bias, premature closure, and unsupported fixes.
 
-Use STR when you need to hunt down nasty issues in complex systems, especially when the cost of guessing is high.
+Use STR when you need to hunt down nasty issues in complex systems, especially when the cost of guessing is high. Use available tools to collect evidence and take authorized corrective actions when needed.
 
 Path: [skills/str](skills/str/)
 
-Default run budget: up to 3 Troubleshooter/Interrogator rounds. Ask for more
-rounds when the issue is high-stakes, evidence is sparse, or the first pass
-still leaves important uncertainty.
+Default run budget: 3 Troubleshooter/Interrogator rounds. Specify a higher
+round count when three rounds are insufficient, the issue is high-stakes,
+evidence is sparse, or important uncertainty remains.
 
 #### Outcomes
 
@@ -46,6 +52,18 @@ Path: [skills/smart-shot](skills/smart-shot/)
 
 - Hidden intents, consequential objectives, requirements, and success criteria recovered before planning.
 - Expert subagents for inferred domains, roles, and LLM judge responsibilities.
+
+### SFLO Quick
+
+Five-gate Markdown workflow for quick software development.
+
+Invoke it explicitly:
+
+> SFLO-QUICK: build a small personal expense tracker
+
+You can also directly ask to run `sflo-quick`.
+
+Path: [skills/sflo-quick](skills/sflo-quick/)
 
 ## Recommendation
 
