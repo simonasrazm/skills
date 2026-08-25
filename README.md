@@ -65,6 +65,8 @@ You can also directly ask to run `sflo-quick`.
 
 Path: [skills/sflo-quick](skills/sflo-quick/)
 
+Run evidence stays under `.sflo-quick/<feature-or-scope-slug>/`; product files stay at scoped project paths.
+
 ## Recommendation
 
 Use [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) to gain speed in any agent. Terse communication reduces turn latency, especially in long loops.
