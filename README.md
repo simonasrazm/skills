@@ -7,35 +7,35 @@ dark factory, and investigating complex systems by hand.
 
 | Skill | Purpose |
 |---|---|
-| [STR: Simon Troubleshoot](#str-simon-troubleshoot) | Evidence-first troubleshooting |
+| [Dig Deeper](#dig-deeper) | Evidence-first troubleshooting with gentle and active modes |
 | [Smart Shot](#smart-shot) | Intent-based prompt enhancement when multiple domain experts are needed |
 | [SFLO Quick](#sflo-quick) | Light version of dark factory. Good for demos and small projects |
 
-### STR: Simon Troubleshoot
+### Dig Deeper
 
 #### Motivation
 
-I have run into this pattern too many times: an LLM confidently claims it found the real problem, but it was just an assumption.
-STR exists to make that failure mode harder. Claims need evidence; weak hypotheses get challenged.
+I have run into this pattern too many times: an LLM confidently claims it found the real problem, but it was just an assumption. Dig Deeper exists to make that failure mode harder. Claims need evidence; weak hypotheses get challenged.
 
-Evidence-first troubleshooting for problems where a quick fix is risky.
+It has two entry points:
 
-STR separates investigation from challenge. The Troubleshooter collects facts, builds hypotheses, and traces possible causes. The Interrogator attacks weak evidence, bias, premature closure, and unsupported fixes.
+- [`dig-deeper`](skills/dig-deeper/) for non-mutating investigation.
+- [`dig-deeper-probe`](skills/dig-deeper-probe/) for active evidence collection using tools, installations, reproductions, and controlled experiments while avoiding damage.
 
-Use STR when you need to hunt down nasty issues in complex systems, especially when the cost of guessing is high. Use available tools to collect evidence and take authorized corrective actions when needed.
+Dig Deeper separates investigation from challenge. The Troubleshooter collects facts, builds hypotheses, and traces possible causes. The Interrogator attacks weak evidence, bias, premature closure, and unsupported fixes.
 
-Path: [skills/str](skills/str/)
+Use Dig Deeper when you need to hunt down nasty issues in complex systems, especially when the cost of guessing is high. Use available tools to collect evidence and take authorized corrective actions when needed.
 
-Default run budget: 3 Troubleshooter/Interrogator rounds. Specify a higher
-round count when three rounds are insufficient, the issue is high-stakes,
-evidence is sparse, or important uncertainty remains.
+Default run budget: up to five Troubleshooter/Interrogator rounds. The loop stops immediately on PASS.
+
+The original [`str`](skills/deprecated/str/) implementation is preserved under `deprecated` with a migration notice.
 
 #### Outcomes
 
-- Slower, safer diagnosis before changing production systems.
+- Deep diagnosis with an explicit evidence-collection boundary.
 - Clear evidence tables instead of persuasive narratives.
 - Bias checks against anchoring, premature closure, and guessed causes.
-- Fix recommendations only when the root cause is backed by evidence.
+- Fix recommendations only when the root cause is evidence-backed.
 
 ### Smart Shot
 
