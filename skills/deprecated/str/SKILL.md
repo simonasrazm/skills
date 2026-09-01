@@ -5,6 +5,13 @@ description: Evidence-first STR (Simon Troubleshoot) diagnostic workflow for hum
 
 # STR
 
+> **Deprecated:** STR remains available here without behavioral changes. For
+> new installs, use
+> [`dig-deeper`](https://github.com/simonasrazm/skills/tree/main/skills/dig-deeper)
+> for non-mutating investigation or
+> [`dig-deeper-probe`](https://github.com/simonasrazm/skills/tree/main/skills/dig-deeper-probe)
+> for active evidence collection.
+
 ## Contract
 
 STR is a three-role troubleshooting loop:
