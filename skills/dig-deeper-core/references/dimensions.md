@@ -40,11 +40,11 @@ Blast radius is understood.
 
 ## Resolution (0.15)
 
-Fix guidance is specific and targets the evidence-backed root cause.
+Fix guidance states the evidence-backed change required at the root cause and how to verify it.
 
-- 0.0-0.3: No fix or vague fix.
-- 0.4-0.6: Targets symptom, or reasonable but not evidence-backed.
-- 0.7-0.8: Targets root cause with specific steps.
-- 0.9-1.0: Root-cause fix with risks, rollback, and verification method.
+- 0.0-0.3: Missing or vague fix.
+- 0.4-0.6: Targets a symptom, or is not evidence-backed.
+- 0.7-0.8: States the required root-cause change and verification.
+- 0.9-1.0: Also identifies material constraints and unresolved implementation choices.
 
 If evidence is insufficient for an evidence-backed fix, score Resolution conservatively and require an unresolved finding with next probes.
