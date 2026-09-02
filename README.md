@@ -10,6 +10,7 @@ dark factory, and investigating complex systems by hand.
 | [Dig Deeper](#dig-deeper) | Evidence-first troubleshooting with gentle and active modes |
 | [Smart Shot](#smart-shot) | Intent-based prompt enhancement when multiple domain experts are needed |
 | [SFLO Quick](#sflo-quick) | Light version of dark factory. Good for demos and small projects |
+| [SFLO No Code](#sflo-no-code) | Markdown-only SFLO with durable evidence gates |
 
 ### Dig Deeper
 
@@ -66,6 +67,33 @@ You can also directly ask to run `sflo-quick`.
 Path: [skills/sflo-quick](skills/sflo-quick/)
 
 Run evidence stays under `.sflo-quick/<feature-or-scope-slug>/`; product files stay at scoped project paths.
+
+### SFLO No Code
+
+Markdown-only SFLO for building software through five evidence gates:
+Discover, Build, Test, Verify, and Ship. Each gate writes a durable artifact,
+fresh QA and PM reviewers must both award grade A, and repeated failures loop
+back to Build or escalate to the human.
+
+Invoke it explicitly:
+
+> SFLO-NO-CODE: build a small personal expense tracker
+
+You can also directly ask to run or use `sflo-no-code`. Ordinary software
+requests do not activate it, and `SFLO:` remains reserved for Python-backed
+SFLO. Its personal, non-commercial, speed-first positioning is descriptive;
+explicit commercial use remains allowed.
+
+Path: [skills/sflo-no-code](skills/sflo-no-code/)
+
+Derived from [SFLO v1 at commit `7c53dba`](https://github.com/simonasrazm/simon-factory-lights-out/commit/7c53dba87045d3ae80b4b01bb23d4cbf09941b84).
+
+#### Outcomes
+
+- Exact scope, deliverables, and acceptance criteria before building.
+- Runnable product evidence instead of compilation-only completion claims.
+- Fresh QA and independent PM verification with grade-A thresholds.
+- Durable Markdown handoffs, bounded retries, and terminal SHIP/HOLD/KILL evidence.
 
 ## Recommendation
 
