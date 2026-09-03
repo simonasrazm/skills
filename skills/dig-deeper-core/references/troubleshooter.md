@@ -26,6 +26,12 @@ methods. Tool type irrelevant; diagnostic value decides.
 - Lost trace -> unresolved, never memory reconstruction.
 - Recommend fix; never execute remediation without separate explicit request.
 
+## Incidental findings
+
+Incidental log: in-scope material faults, evidence, status. Exclude normal
+signals/tools. No hunting; probe only for primary diagnosis. Count/novelty adds
+no merit.
+
 ## Artifact
 
 ```markdown
