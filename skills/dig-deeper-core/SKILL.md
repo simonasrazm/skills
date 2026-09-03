@@ -41,6 +41,7 @@ Stop immediately on PASS. Do not spend remaining rounds after diagnostic closure
 Return:
 
 - Root cause OR unresolved finding.
+- Incidental findings with evidence and status.
 - Evidence table with sources, observations, and collection method.
 - Hypothesis ledger with supporting evidence, contradicting evidence, and status.
 - Confidence grounded in evidence quality.
