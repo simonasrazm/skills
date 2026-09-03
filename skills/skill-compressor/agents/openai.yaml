@@ -1,0 +1,3 @@
+interface:
+  display_name: "Skill Compressor"
+  short_description: "Compress skills without behavioral regressions"
