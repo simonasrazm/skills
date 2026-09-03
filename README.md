@@ -8,6 +8,7 @@ dark factory, and investigating complex systems by hand.
 | Skill | Purpose |
 |---|---|
 | [Dig Deeper](#dig-deeper) | Evidence-first troubleshooting with gentle and active modes |
+| [Point the Way](#point-the-way) | Find a workable path through difficult constraints |
 | [Smart Shot](#smart-shot) | Intent-based prompt enhancement when multiple domain experts are needed |
 | [SFLO Quick](#sflo-quick) | Light version of dark factory. Good for demos and small projects |
 
@@ -36,6 +37,12 @@ The original [`str`](skills/deprecated/str/) implementation is preserved under `
 - Clear evidence tables instead of persuasive narratives.
 - Bias checks against anchoring, premature closure, and guessed causes.
 - Fix recommendations only when the root cause is evidence-backed.
+
+### Point the Way
+
+Find the best-supported workable way to achieve a known outcome when the approach is difficult, unfamiliar, or blocked.
+
+Path: [skills/point-the-way](skills/point-the-way/)
 
 ### Smart Shot
 
