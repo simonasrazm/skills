@@ -31,6 +31,9 @@ profile.
 
 ## REVISE Rule
 
+Audit incidental log. Reject omitted material evidence, normal-signal inflation,
+and hunting. Finding count or novelty adds no score or PASS.
+
 - Do not ask one question at a time. Bundle all useful challenges for the round.
 - Return REVISE only when a concrete, profile-compliant evidence path can improve clarity.
 - If evidence is useful but root cause is not proven and another round is unlikely to help, force an unresolved finding.
