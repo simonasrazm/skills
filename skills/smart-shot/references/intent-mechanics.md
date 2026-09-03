@@ -1,94 +1,63 @@
 # Intent mechanics
 
-## Resolve clauses into an intent graph
+## Compile the intent graph
 
-Classify each consequential clause as one of:
+Classify each consequential clause as `end intent`, `instrumental intent`,
+`validation intent`, `requirement/constraint`, `deliverable component`, or
+`context/uncertainty`. Only the first three receive execution loops; attach the rest
+to their owner instead of creating experts or workstreams.
 
-- **end intent:** a user-valued state change;
-- **instrumental intent:** an outcome required to reach an end intent;
-- **validation intent:** independent evidence or approval about another result;
-- **requirement or constraint:** a condition on an intent;
-- **deliverable component:** part of an output, not a separate outcome;
-- **context or uncertainty:** supplied state or a gap needing resolution.
+For every intent record beneficiary, desired state, consequential decision and owner,
+output contract, acceptance checks, evidence regime, deadline/reversibility, failure
+envelope, and escalation. Keep a global ledger of verbatim constraints, facts,
+assumptions, sources, and unresolved gaps. Use causal questions only while they
+change this graph; do not invent motives. Only this compiler sets intent cardinality;
+domain discovery may propose concerns or work packages but must re-enter compilation
+to create an intent.
 
-Only end, instrumental, and validation intents receive execution loops. Attach
-requirements and deliverable components to their owning intent instead of
-inflating them into experts or workstreams.
+## Choose coupling
 
-For each intent record: beneficiary, desired state, consequential decision,
-decision owner, output contract, acceptance checks, evidence regime, deadline or
-reversibility, failure envelope, and escalation condition. Preserve a global
-ledger of verbatim constraints, facts, assumptions, sources, and unresolved gaps.
+Isolate an intent commitment and validation run when creator/validator independence;
+conflicting success criteria, objectives, or legitimate alternatives; different
+authority, duty holder, evidence permission, epistemic regime, confidentiality, or
+safety/security boundary; separate irreversible decision, rollback, output, or
+independent failure; or one-way dependency applies. One-way dependency means
+sequence, not grouping; pass only the validated artifact, stable IDs, declared
+uncertainty, and allowed interface.
 
-Use causal questioning only while it changes this graph. Do not mechanically run
-five whys after the objective is already evidenced; do not invent hidden motives.
+Otherwise share discovery only when it removes material duplicate investigation and
+the intents inform one consequential decision, require each other for acceptance, or
+have a genuine bidirectional dependency. Shared discovery must preserve each intent's
+authority, evidence, acceptance, and failure boundary.
 
-## Choose the coupling mode
+Choose the least-coupled safe mode:
 
-An intent gets an isolated commitment and validation run when any applies:
+1. **Isolated:** separate discovery and execution for access, safety,
+   confidentiality, adversarial independence, or epistemic differences.
+2. **Hybrid:** shared discovery/source register, then separate commitments,
+   artifacts, validators, and repair states; default for related consequential intents.
+3. **Fully grouped:** shared execution only with one decision owner, inseparable
+   artifact, evidence/authority regime, and verdict; all intents pass or fail together.
 
-- it creates while another audits, approves, challenges, or evaluates;
-- success criteria, objectives, or legitimate alternatives conflict;
-- authority, duty holder, evidence permission, or epistemic regime differs;
-- confidentiality, safety, security, or protected-context boundaries differ;
-- it owns a separate irreversible decision, rollback, or explicitly independent output;
-- it can fail independently and does not share an inseparable decision or artifact;
-- it depends one-way on another intent.
+Split immediately if later evidence exposes an isolation condition.
 
-One-way dependency means sequence, not grouping. Pass only the validated upstream
-artifact, stable identifiers, declared uncertainty, and allowed interface.
+## Execute and converge
 
-If no isolation rule fires, share discovery only when it materially reduces
-duplicate investigation and at least one coupling fact holds:
+For each dependency-ready intent, compile its contract and Domain Brief, obtain the
+owned professional artifact, run its acceptance ledger, preserve passed commitments
+through one repair, and mark `PASS`, `PARTIAL`, or `BLOCKED` with evidence. Run
+independent ready intents concurrently within the agent cap. Integrate only after
+prerequisites pass or expose uncertainty, while maintaining a contradiction ledger.
 
-- the intents inform the same consequential decision;
-- one artifact cannot pass acceptance unless both intents pass;
-- the intents have a genuinely bidirectional dependency.
+Resolve factual conflicts by evidence hierarchy, objective conflicts by decision
+owner, interface conflicts by reopening contracts, and authority conflicts by
+escalation. Integration cannot invent commitments or turn uncertainty into agreement.
 
-The shared pass must preserve each intent's authority, permitted evidence,
-acceptance, and failure boundary. If it cannot, isolate.
+For each irreversible or dependency-releasing gate record stable ID, owned decision,
+accountable owner, evidence and upstream artifact versions, latest safe point, pass
+condition, failure and restart actions, and downstream consumers. Consumers cite the
+IDs they import.
 
-Choose the least-coupled safe runtime mode:
-
-1. **Isolated:** separate discovery and execution when evidence access, safety,
-   confidentiality, adversarial independence, or epistemic regime differs.
-2. **Hybrid:** share a discovery pass and source register, then run separate intent
-   commitments, artifacts, validators, and repair states. This is the default for
-   related consequential intents.
-3. **Fully grouped:** share execution only when there is one decision owner, one
-   inseparable artifact, one evidence/authority regime, and one acceptance verdict;
-   all intents must fail or pass together. If any of those tests fails, use hybrid.
-
-The intent compiler alone sets intent cardinality. Domain discovery may propose
-concerns, competencies, or work packages, but cannot promote them into new user
-intents without re-running this classification. Split a group immediately if later
-evidence reveals an isolation condition.
-
-## Execute and converge per intent
-
-For each dependency-ready intent:
-
-1. compile its contract and relevant Domain Brief;
-2. obtain the owned professional artifact from the responsible specialist(s);
-3. run its acceptance ledger independently;
-4. preserve passed commitments and repair failed criteria once;
-5. mark `PASS`, `PARTIAL`, or `BLOCKED`, with evidence.
-
-Run independent, dependency-ready intents concurrently within the active-agent
-limit. Maintain a contradiction ledger across intent artifacts. Integrate only
-after prerequisite intents pass or explicitly expose their uncertainty.
-
-Resolve factual conflicts by the applicable evidence hierarchy; objective
-conflicts by the named decision owner; interface conflicts by reopening affected
-contracts; authority conflicts by escalation. Integration cannot invent a domain
-commitment or convert uncertainty into agreement.
-
-For every irreversible or dependency-releasing gate record: stable ID, owned
-decision, accountable owner, required evidence and upstream artifact versions,
-latest safe point, pass condition, failure action, restart condition, and downstream
-consumers. A downstream artifact must reference the stable IDs it actually imports.
-
-When an accepted fact, permission, assumption, scope, or artifact changes, run an
-impact-propagation check across dependent artifacts, decisions, cost, schedule,
-risk, and acceptance evidence. Version affected outputs and re-run their gates;
-never treat file replacement alone as completed propagation.
+When a fact, permission, assumption, scope, or artifact changes, impact-check all
+dependent artifacts, decisions, cost, schedule, risk, and acceptance evidence.
+Version affected outputs and rerun gates; file replacement alone is not propagation.
