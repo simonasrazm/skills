@@ -43,6 +43,14 @@ user's wording, constraints, requested outputs, and comparison set for superlati
    deliver, explicitly narrow scope, or escalate the exact blocker. Compiler and
    boundary invariant failures fail closed rather than consuming this repair budget.
 
+Repeat from the earliest affected stage after a failed check or material change:
+intent or constraint → Resolve; grouping or dependency → Partition; missing domain
+concern → Discover; ownership or contract → Charter; artifact defect → Execute;
+conflict, stale import, or interface defect → Integrate; verdict defect → Verify.
+Increment changed node versions, invalidate their causal descendants, preserve
+unaffected passed nodes, and resume forward. Exit only when every accepted intent
+has a terminal verdict and no required node is unresolved or stale.
+
 Load references progressively:
 
 - [intent mechanics](references/intent-mechanics.md) for resolution, topology, and integration;
@@ -54,20 +62,21 @@ Load references progressively:
 
 ## Resource and stopping rules
 
-- Respect the runtime's concurrency cap and never exceed five active subagents.
-  Spend calls on distinct competence, evaluation, or dependency-ready work.
-- Before dispatch, declare a total call/time/output budget and reserve capacity in
-  reverse from the acceptance gate: independent verdict, creator-owned targeted
-  repair, and renewed verdict after repair. Release unused reserve only after a
-  pass; if the runtime cannot fund a renewed verdict, label a repaired result
-  `PARTIAL` rather than treating repair as acceptance.
+- Respect the runtime's concurrency cap. Spend calls on distinct competence,
+  evaluation, or dependency-ready work.
+- Before dispatch, cap successful inference calls and reserve named call slots
+  backward from acceptance: independent verdict, one creator repair when needed,
+  and a renewed verdict after repair. Failed dispatches do not consume successful-call
+  slots. Release unused slots only after their triggering state becomes impossible.
+  If no renewed-verdict slot remains after repair, report `PARTIAL`.
 - Set a per-artifact output ceiling from the user's use case before dispatch. Keep
   one canonical ledger and reference stable IDs instead of repeating full records.
   Exceed the ceiling only when a named acceptance check requires the added content;
   report the overage and its criterion-level justification.
-- Distinguish successful inference calls, failed dispatches, and simultaneously
-  active agents. Timebox each call from task stakes and runtime limits; checkpoint
-  its contract and usable evidence before interruption or reassignment.
+- Give each call a contract, artifact ceiling, and observable stop event. When the
+  executor supports deadlines, let it enforce them; do not estimate elapsed wall
+  time. On completion or external timeout, persist usable evidence before retrying
+  or reassigning.
 - Never call `wait` without at least one successfully spawned unfinished agent.
 - Ask the user only when the answer can materially change an outcome, decision,
   criterion, dependency, risk, or artifact and no safe default is defensible.
