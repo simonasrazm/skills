@@ -11,27 +11,26 @@ changes as hypotheses until execution evidence supports them.
 
 ## Compression loop
 
-1. **Freeze:** preserve the exact baseline, test bank, graders, model settings, and
-   decision thresholds before editing. Include real failures when available.
+1. **Freeze:** preserve the exact baseline, promotion bank, graders, settings,
+   thresholds, staged evidence budget, and stop rules. Include real failures.
 2. **Measure:** inventory description, always-loaded body, each routed reference,
    full surface, and expected loaded tokens. Use `scripts/measure_skill.py`; provide
    observed route frequencies when available.
 3. **Map:** create a behavioral ledger: stable rule ID, decision changed, activation
    condition, owning file, dependent rules, positive case, and failure if lost.
    Separate catalog routing from post-load execution behavior.
-4. **Hypothesize:** generate at least three candidates per seam: unchanged control,
-   removal, and the shortest replacement that preserves the decision. Prefer one
-   independent variable per comparison.
-5. **Test:** run identical randomized trials on control and candidates. Use
-   deterministic graders for exact invariants and independent blinded judgment only
-   for semantic quality. Measure task-cell pass rate, catastrophes, routing, tokens,
-   output size, calls, and executor-measured latency.
-6. **Localize:** if a candidate fails, restore the changed seam or split it into
-   smaller chunks and repeat from Hypothesize. If variants tie on every quality gate,
-   retain the lower expected-load variant.
-7. **Transfer:** run fresh held-out and compounded cases. Promote only after every
-   required cell passes and no material NFR regresses. Otherwise keep the baseline
-   and report the smallest failing seam.
+4. **Hypothesize:** consider unchanged control, removal, and the shortest replacement
+   per seam. Prefer one independent variable. Reject noncompetitive variants by
+   inspection; generating hypotheses does not require executing them.
+5. **Screen:** run deterministic checks, then one observation per live variant on the
+   most discriminating known failure. Reuse a condition-identical control observation.
+   One hard regression may reject; one clean screen cannot promote.
+6. **Falsify:** before replication, challenge survivors on a different failure
+   mechanism, archetype, or grader. Run another trial only when its result can change
+   the decision. Localize failures by restoring or splitting the changed seam.
+7. **Transfer:** replicate survivors on the frozen required cells, including fresh
+   held-out and compounded cases. Promote only when every cell passes and no material
+   NFR regresses. Otherwise keep the baseline and report the smallest failing seam.
 8. **Apply:** update the source, validate it, and prove it is byte-identical to the
    accepted candidate. Rerun the bank only if application transformed the bytes;
    report baseline, candidate, and installed hashes plus measured deltas.
