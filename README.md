@@ -12,6 +12,21 @@ dark factory, and investigating complex systems by hand.
 | [Smart Shot](#smart-shot) | Intent-based prompt enhancement when multiple domain experts are needed |
 | [SFLO Quick](#sflo-quick) | Light version of dark factory. Good for demos and small projects |
 
+## Install
+
+Claude Code:
+
+```bash
+claude plugin marketplace add simonasrazm/skills
+claude plugin install simon-skills@simonasrazm
+```
+
+Codex and other agents:
+
+```bash
+npx skills@latest add simonasrazm/skills
+```
+
 ### Dig Deeper
 
 #### Motivation

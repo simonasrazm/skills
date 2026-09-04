@@ -1,0 +1,20 @@
+{
+  "name": "simon-skills",
+  "version": "0.1.0",
+  "description": "Evidence-first troubleshooting, pathfinding, intent recovery, and lightweight software delivery.",
+  "author": {
+    "name": "Simonas Razminas",
+    "url": "https://github.com/simonasrazm"
+  },
+  "repository": "https://github.com/simonasrazm/skills",
+  "license": "MIT",
+  "keywords": ["skills", "troubleshooting", "problem-solving", "software-development"],
+  "skills": [
+    "./skills/dig-deeper",
+    "./skills/dig-deeper-probe",
+    "./skills/dig-deeper-core",
+    "./skills/point-the-way",
+    "./skills/smart-shot",
+    "./skills/sflo-quick"
+  ]
+}
