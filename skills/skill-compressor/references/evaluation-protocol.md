@@ -14,6 +14,9 @@ replace failures; rerun infrastructure failures only under a symmetric rule.
 Before generation, verify hashes, isolation, fixtures, oracles, graders, and telemetry
 against a reference case and deliberate mutant. Harness failures are invalid; fix
 symmetrically and rerun preflight.
+Inspect effective instructions and traces; invalidate runs loading another variant.
+Record the compressor model and target executor separately. Planning tests cannot
+establish execution savings or target-skill non-regression.
 
 ## Evidence ladder
 
@@ -64,6 +67,11 @@ Report catalog, always-loaded, expected-route, and full-surface tokens separatel
 Inventory routed Markdown outside `references/` too; legacy skills often name files
 beside `SKILL.md`. The measurement script discovers existing linked or backticked
 local Markdown paths as well as the conventional directory.
+The script reports unknown expected cost without route data. Declare mandatory loads
+with repeatable `--required` paths. `--routes` lists complete, mutually exclusive load
+scenarios, including nested files; probabilities must sum to one. Use the same
+validated `--encoding` for both variants; `--require-tokenizer` forbids fallback
+estimates. Character estimates support screening, not small token-win claims.
 For executions report input/output tokens, successful and failed calls, median and
 p95 executor latency, artifact bytes/words, and route frequencies. Cache effects and
 post-hoc grading cost stay separate from workflow cost.
