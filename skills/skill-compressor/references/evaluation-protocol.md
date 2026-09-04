@@ -4,10 +4,26 @@ Use this reference when creating a compression benchmark.
 
 ## Freeze before generation
 
-Record baseline and candidate hashes; model and reasoning settings; prompt corpus;
-replicates; graders; thresholds; randomization; executor timeout; and rerun policy.
-Never replace a failed run selectively. Infrastructure failures may be rerun only
-under a recorded, condition-symmetric rule.
+Record hashes, model/settings, corpus, promotion replicates, graders, thresholds,
+randomization, timeout, and rerun policy. Freeze separate screening and promotion
+samples, an evidence ceiling, and decision-changing escalation. Never selectively
+replace failures; rerun infrastructure failures only under a symmetric rule.
+
+## Preflight
+
+Before generation, verify hashes, isolation, fixtures, oracles, graders, and telemetry
+against a reference case and deliberate mutant. Harness failures are invalid; fix
+symmetrically and rerun preflight.
+
+## Evidence ladder
+
+1. Check exact invariants and token eligibility deterministically.
+2. Screen each variant once on the strongest historical failure; reuse a
+   condition-identical control. Hard regression rejects; clean advances only.
+3. Falsify survivors through a different failure mechanism, archetype, or grader.
+4. Run more trials only when their outcome can change the decision.
+5. Promotion requires the full bank: every distinct required failure mode plus fresh
+   held-out and compounded cases. One clean observation never promotes.
 
 ## Corpus layers
 
@@ -18,9 +34,10 @@ under a recorded, condition-symmetric rule.
 - **Compounded:** several decisions accumulate across turns, intents, or dependencies.
 - **Held-out:** fresh domains and wording unavailable during candidate design.
 
-Use at least two task archetypes for a local seam and three for a promotion claim.
-Replicate non-deterministic cells. Add known historical failures without revealing
-their expected solution to the executor.
+Screen with the most discriminating case. Promotion covers each distinct failure mode
+and at least three task archetypes, including unseen wording or archetype. Replicate
+non-deterministic cells. Hide historical failure solutions from the executor.
+Correlated checks are not independent trials.
 
 ## Grading
 
@@ -33,6 +50,13 @@ possible. A creator cannot provide final acceptance.
 Predeclare per-cell pass thresholds and catastrophe conditions. Promotion requires
 every candidate cell to pass, zero catastrophes, and control-relative non-regression.
 Report effect sizes and raw denominators; statistical uncertainty remains explicit.
+
+## Stop and account
+
+Stop on hard regression, futility, sub-threshold savings, exhausted budget, or repeated
+same-mechanism failure. Change mechanisms, not synonyms. Report actual and avoided
+trials, calls, tokens, latency, invalid runs, missing telemetry, and escalation causes.
+Budget exhaustion with missing required evidence is inconclusive; retain the baseline.
 
 ## NFR accounting
 
