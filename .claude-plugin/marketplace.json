@@ -1,0 +1,19 @@
+{
+  "name": "simonasrazm",
+  "owner": {
+    "name": "Simonas Razminas",
+    "url": "https://github.com/simonasrazm"
+  },
+  "metadata": {
+    "description": "Simonas Razminas's agent skills for Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "simon-skills",
+      "source": "./",
+      "description": "Evidence-first troubleshooting, pathfinding, intent recovery, and lightweight software delivery.",
+      "category": "development",
+      "keywords": ["skills", "troubleshooting", "problem-solving", "software-development"]
+    }
+  ]
+}

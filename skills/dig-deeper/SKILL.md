@@ -1,6 +1,7 @@
 ---
 name: dig-deeper
 description: Evidence-first, gentle troubleshooting for difficult problems. Use when the user asks for a deep diagnosis, root-cause investigation, or challenge to assumptions without harmful or durable effects.
+disable-model-invocation: true
 ---
 
 # Dig Deeper

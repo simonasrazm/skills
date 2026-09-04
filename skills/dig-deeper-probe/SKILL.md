@@ -1,6 +1,7 @@
 ---
 name: dig-deeper-probe
 description: High-trust active evidence-first troubleshooting for difficult problems. Use when the agent should employ whatever evidence-gathering methods the objective requires, including using or installing tools and interacting with targets, while avoiding damage. Diagnosis only, never remediation.
+disable-model-invocation: true
 ---
 
 # Dig Deeper Probe
