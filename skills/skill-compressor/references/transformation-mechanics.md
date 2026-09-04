@@ -28,7 +28,8 @@ Use this reference while classifying and rewriting one skill seam.
 ## Seam-wise delta debugging
 
 Partition the candidate text by behavior-changing seam, not arbitrary line count.
-For each seam, test unchanged, removed, and minimal replacement. If removal fails,
+For each seam, consider unchanged, removed, and minimal replacement; execute viable
+variants through the evaluation protocol. If removal fails,
 split the seam by activation condition or owned decision and test again. Restore the
 smallest failing atom. Re-run cross-seam and compounded cases after each accepted
 batch because individually safe removals can interact.
