@@ -23,7 +23,7 @@ Create or resume `<project>/.sflo-quick/<scope-slug>/`. Keep five Markdown artif
 
 1. **FRAME** — Freeze the outcome, boundaries, criteria, planned proofs, and work-product paths in `FRAME.md`. Read [FRAME](references/gates/frame.md).
 2. **MAKE** — Build candidate `M1` and record candidate identity, artifact deltas, repair history, current candidate, and last proven candidate in `MAKE.md`. Read [MAKE](references/gates/make.md).
-3. **CHECK** — Verify the candidate from a fresh non-builder context; record provenance, observations, results, and targeted falsification in `CHECK.md`. Read [CHECK](references/gates/check.md).
+3. **CHECK** — Run objective proofs in clean processes and give judgment-dependent criteria a fresh non-builder evaluator; record provenance, results, and targeted falsification in `CHECK.md`. Read [CHECK](references/gates/check.md).
 4. **ALIGN** — Compare that candidate with `FRAME.md` using CHECK evidence; record deviations, provenance, and verdict in `ALIGN.md`. Read [ALIGN](references/gates/align.md).
 5. **DELIVER** — Select a candidate with passing CHECK evidence and an aligned ALIGN record; record the decision, recovery reference, usage, evidence references, limitations, and blockers in `DELIVER.md`. Read [DELIVER](references/gates/deliver.md).
 
@@ -34,7 +34,7 @@ When CHECK or ALIGN finds a material failure:
 1. Keep the last proven candidate available.
 2. Fix the smallest coherent cause.
 3. Record the next candidate in `MAKE.md` and increment its ID.
-4. Re-run the affected proof plus the launch or core-use probe in `CHECK.md`.
+4. After a product change, re-run the affected proof plus the launch or core-use probe. After a probe-only correction, re-run the corrected proof.
 
 Use at most three focused repair cycles by default. Finish earlier when all material criteria pass, a repair leaves the failing proof unchanged, or only disclosed non-material limitations remain. At the limit, select the best proven local result and make its limitations explicit.
 
