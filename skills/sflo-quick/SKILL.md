@@ -1,116 +1,45 @@
 ---
 name: sflo-quick
-description: Run a five-gate Markdown workflow for quick software development on small personal projects and simple problems where speed matters most. Use when the user says `SFLO-QUICK:` or directly asks to run `sflo-quick`.
+description: Autonomously turn a small request into a verified, runnable result through a lightweight five-gate delivery loop. Use for trusted personal software, multi-iteration demos, scripts, SQL, data work, and other bounded builds when speed and useful quality matter. Triggered by `SFLO-QUICK:` or a direct request to run `sflo-quick`.
 ---
 
-# Core Pipeline
+# SFLO Quick
 
-**Trigger:** User says `SFLO-QUICK:` or directly asks to run `sflo-quick`.
+Deliver the result. Keep the factory dark: expose concise outcomes, not routine process narration.
 
-## Pipeline Overview
+## Operating policy
 
-```mermaid
-flowchart LR
-    G1["Gate 1\nDISCOVER\n\nPM Agent\nSCOPE.md"] --> DEV_QA
+- Resolve routine ambiguity with the smallest reasonable reversible assumption, record consequential assumptions in `FRAME.md`, and continue.
+- Treat consequential, irreversible, or external actions as requiring explicit authority; preserve the best safe local result and name the exact blocker when authority is absent.
+- Match rigor to the stated environment, reversibility, and consequence.
+- Build the smallest usable end-to-end slice first and preserve the last proven slice before each repair.
+- Choose for each criterion the cheapest direct proof capable of falsifying it.
 
-    subgraph DEV_QA ["Inner Loop - max 10 rounds"]
-        G2["Gate 2\nBUILD\n\nDev Agent\nBUILD-STATUS.md"] --> G3["Gate 3\nTEST\n\nQA Agent\nQA-REPORT.md"]
-        G3 -- "grade < A" --> G2
-    end
+## Run workspace
 
-    DEV_QA -- "grade A" --> G4["Gate 4\nVERIFY\n\nPM Agent\nPM-VERIFY.md"]
-    G4 -- "not A" --> DEV_QA
-    G4 -- "A" --> G5["Gate 5\nSHIP\n\nOrchestrator\nSHIP-DECISION.md"]
-```
+Create or resume `<project>/.sflo-quick/<scope-slug>/`. Keep five Markdown artifacts there. Each fact has one authoritative home; later artifacts point backward instead of copying detail.
 
-**Two loops, not one:**
+## Five gates
 
-1. **Inner loop (Dev↔QA):** Dev builds, QA tests. If QA grade < A, back to Dev. Max 10 rounds.
-2. **Outer loop (PM):** Once QA passes (A), PM verifies against spec. If PM doesn't grade A - back to the Dev↔QA loop with PM's deviation list.
+1. **FRAME** — Freeze the outcome, boundaries, criteria, planned proofs, and work-product paths in `FRAME.md`. Read [FRAME](references/gates/frame.md).
+2. **MAKE** — Build candidate `M1` and record candidate identity, artifact deltas, repair history, current candidate, and last proven candidate in `MAKE.md`. Read [MAKE](references/gates/make.md).
+3. **CHECK** — Verify the candidate from a fresh non-builder context; record provenance, observations, results, and targeted falsification in `CHECK.md`. Read [CHECK](references/gates/check.md).
+4. **ALIGN** — Compare that candidate with `FRAME.md` using CHECK evidence; record deviations, provenance, and verdict in `ALIGN.md`. Read [ALIGN](references/gates/align.md).
+5. **DELIVER** — Select a candidate with passing CHECK evidence and an aligned ALIGN record; record the decision, recovery reference, usage, evidence references, limitations, and blockers in `DELIVER.md`. Read [DELIVER](references/gates/deliver.md).
 
-## Run Directory
+## Repair loop
 
-Before Discover, create `<project>/.sflo-quick/<feature-or-scope-slug>/` and treat it as `RUN_DIR`.
+When CHECK or ALIGN finds a material failure:
 
-- Derive the filesystem-safe slug from the feature or scope being built, for example `click-counter`.
-- If that directory exists, append the next numeric suffix, for example `click-counter-2`.
-- Store every gate artifact and gate-only probe, log, or screenshot in `RUN_DIR`.
-- Keep product deliverables at the project paths declared in `SCOPE.md`.
-- Give every gate agent the exact `RUN_DIR`; artifact names below mean files inside it.
+1. Keep the last proven candidate available.
+2. Fix the smallest coherent cause.
+3. Record the next candidate in `MAKE.md` and increment its ID.
+4. Re-run the affected proof plus the launch or core-use probe in `CHECK.md`.
 
-## Gate Rules
+Use at most three focused repair cycles by default. Finish earlier when all material criteria pass, a repair leaves the failing proof unchanged, or only disclosed non-material limitations remain. At the limit, select the best proven local result and make its limitations explicit.
 
-1. **Gate 2 CANNOT start** without Gate 1's SCOPE.md existing and having verified data endpoints
-2. **Gate 3 CANNOT start** without a successful build (zero errors)
-3. **Gate 4 CANNOT start** without QA grade of A
-4. **Gate 5 CANNOT start** without PM Verification verdict: APPROVED
-5. **Each gate produces a file** - no file = gate not passed
+## Completion contract
 
-Gate references:
+All five same-named Markdown artifacts agree on the selected candidate. Every FRAME criterion has independent CHECK evidence; ALIGN evaluates that candidate without unresolved material blockers; DELIVER names the decision and shortest usage path. Keep factory artifacts under `.sflo-quick`, work products at declared project paths, and lead the final response with the result and usage.
 
-- [Discover](references/gates/discovery.md)
-- [Build](references/gates/build.md)
-- [Test](references/gates/test.md)
-- [Verify](references/gates/verify.md)
-- [Ship](references/gates/ship.md)
-- [Roles](references/roles.md)
-
-## Fail Loops
-
-- **QA fails (grade < A):** Loop back to Dev. Max 10 Dev↔QA cycles.
-- **PM rejects (not A):** Loop back to Dev↔QA with PM's deviation list. The inner loop counter resets.
-- **After 10 failed inner cycles:** Escalate to human. Something is fundamentally wrong.
-
-## Orchestrator Responsibilities
-
-The orchestrating agent MUST:
-
-1. **Never skip gates** - even if "it looks fine"
-2. **Verify artifact files exist in `RUN_DIR`** before proceeding
-3. **Track iteration count** - post status after each gate
-4. **Keep all gate evidence** in `RUN_DIR`
-5. **Reference predecessor artifacts** - don't summarize, give their exact paths
-6. **Each agent reads its gate doc** - no relying on the orchestrator's summary
-7. **Artifacts are the truth** - if it's not in a file, it didn't happen
-8. **Fresh agents for QA** - don't let the builder test their own work
-
-## Status Format
-
-After each gate, post:
-
-```
-Pipeline: [Project Name]
-Run: .sflo-quick/[slug]/
-
-Gate 1 (Discover): DONE - SCOPE.md verified
-Gate 2 (Build):    DONE - build passes
-Gate 3 (Test):     IN PROGRESS - Round 2/10 (grade C, fixing issues)
-Gate 4 (Verify):   WAITING
-Gate 5 (Ship):     WAITING
-
-Current: QA found 3 issues, Dev fixing
-```
-
-## Emergency Override
-
-Only the human owner can override this pipeline. If they say "ship it anyway" - ship it. But log the override in SHIP-DECISION.md with reason.
-
-No agent can self-override. No "it's good enough" shortcuts.
-
-## Retrospective
-
-After every project completes (ship or kill), write:
-
-```markdown
-## Retrospective: [Project]
-
-Iterations: PM [N] → Dev [N] → QA [N] → Verify [N]
-Total time: [X hours]
-Final grade: [A]
-
-What worked:
-- [specific]
-
-What broke:
-- [specific] → [prevention]
-```
+Read [Perspectives](references/roles.md) only when assigning or separating build and verification perspectives.
