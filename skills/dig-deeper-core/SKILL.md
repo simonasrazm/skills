@@ -1,6 +1,7 @@
 ---
 name: dig-deeper-core
 description: Internal evidence-first troubleshooting engine used by dig-deeper wrappers. Requires a wrapper-supplied authority profile and independent Troubleshooter and Interrogator contexts.
+user-invocable: false
 ---
 
 # Dig Deeper Core
