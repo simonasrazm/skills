@@ -70,7 +70,6 @@ Load references progressively:
 - Give every call a contract, ceiling, and observable stop event. Let executor
   deadlines govern elapsed time; never estimate wall time. On completion or external
   timeout, persist usable evidence before retry or reassignment.
-- Never call `wait` without a successfully spawned unfinished agent.
 - Ask only when an answer can change an outcome, decision, criterion, dependency,
   risk, or artifact and no safe default exists.
 - Checkpoint contracts, evidence, decisions, and passed criteria before replacing an
