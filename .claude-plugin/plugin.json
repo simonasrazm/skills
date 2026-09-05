@@ -1,6 +1,6 @@
 {
   "name": "simon-skills",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Evidence-first troubleshooting, pathfinding, intent recovery, and lightweight software delivery.",
   "author": {
     "name": "Simonas Razminas",
@@ -15,6 +15,7 @@
     "./skills/dig-deeper-core",
     "./skills/point-the-way",
     "./skills/smart-shot",
+    "./skills/fast-shot",
     "./skills/sflo-quick"
   ]
 }

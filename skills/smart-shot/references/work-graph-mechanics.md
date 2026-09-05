@@ -7,8 +7,9 @@ ceremony or unnecessary specialists.
 ## Typed runtime graph
 
 Maintain stable, versioned `INTENT`, `CONCERN`, `DECISION`, `SPECIALIST`, `ARTIFACT`,
-`EVIDENCE`, `GATE`, `VERDICT`, and `EXCEPTION` nodes with `OWNS`, `REQUIRES`,
-`PRODUCES`, `IMPORTS`, `VALIDATES`, `CONFLICTS`, and `INVALIDATES` edges. Every active
+`ACTION`, `OPERATION`, `EVIDENCE`, `GATE`, `VERDICT`, and `EXCEPTION` nodes with `OWNS`,
+`REQUIRES`, `RUNS`, `CHANGES`, `PRODUCES`, `MEASURES`, `IMPORTS`, `VALIDATES`, `CONFLICTS`, and
+`INVALIDATES` edges. Every active
 node has an owner, state, required inputs, output or terminal disposition, and local
 exit condition. Keep one canonical ledger; expose bookkeeping only when operationally
 or auditably useful.
@@ -16,6 +17,24 @@ or auditably useful.
 Within an epoch, `REQUIRES` and `IMPORTS` form an acyclic artifact DAG; consultation
 and conflict are not scheduling edges. Feedback creates a new epoch: increment the
 affected version and reopen only causal descendants.
+
+## Runtime type extension
+
+Experts may introduce domain-native objects needed to model or execute their work.
+First decompose the candidate across the kernel lifecycle and use a named subtype or
+composition when this preserves meaning. For example, “test” commonly decomposes
+into a specification or test code (`ARTIFACT`), execution (`OPERATION`), result
+(`EVIDENCE`), acceptance condition (`GATE`), decision (`VERDICT`), and corrective
+change (`ACTION`); one undifferentiated `TEST` node would hide those boundaries.
+
+Admit a new primitive type only when it has irreducible identity and lifecycle;
+distinct owner or authority; inputs, outputs, and dependency edges; failure,
+rollback, acceptance, or invalidation behavior; and composition from existing types
+would lose a decision-changing invariant. Define those semantics and affected
+interfaces before use. The expert proposes the extension; orchestration compiles it
+against the shared graph and resolves collisions before dispatch or integration.
+Otherwise instantiate a domain-labeled kernel subtype rather than expanding the
+schema. Type creation never grants competence, authority, evidence, or acceptance.
 
 ## Admission, split, and merge
 
@@ -74,7 +93,9 @@ record a blocker; unchanged state cannot repeat. Exhaustion yields `PARTIAL` or
 Route a failure to its earliest false or unevidenced ancestor: outcome/constraint →
 intent; mechanism/state/actor/failure → domain; grouping/authority/dependency →
 topology; competence/owner/boundary/contract → charter; artifact content/scope →
-specialist; import/conflict/staleness → integration; criterion/method/independence/
+specialist; missing observation/protocol/operator/control → operation;
+missing target-state transition/precondition/authority/read-back → action;
+import/conflict/staleness → integration; criterion/method/independence/
 verdict → verification; absent external fact/approval → acquisition or explicit block.
 Return stable exception IDs, failed criteria, gaps, allowed repair surface, and
 affected descendants. Never polish final prose to mask an upstream defect.
