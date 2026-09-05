@@ -11,9 +11,9 @@ authority, and audit boundary; direct admissible evidence; domain competence;
 deterministic recomputation or explicit sampling; stable exception IDs mapped to
 claim, decision, owner, and repair; and a scoped verdict with invalidating evidence.
 
-Classify every criterion `DESIGN`, `IMPLEMENTATION`, or `OUTCOME`, then return `PASS`,
+Classify every criterion `DESIGN`, `IMPLEMENTATION`, `OPERATION`, or `OUTCOME`, then return `PASS`,
 `FAIL`, or `NOT_TESTABLE` with evidence. A promised procedure can pass design only;
-unexecuted implementation/outcome work and missing evidence are `NOT_TESTABLE`.
+unexecuted implementation, operation, or outcome work and missing evidence are `NOT_TESTABLE`.
 Separate deterministic exceptions, judgment disagreement, and evidence gaps.
 
 Deterministically reject verdicts missing version, criterion status, inspectable
@@ -26,7 +26,7 @@ readiness separately from intent acceptance.
    tool/test results, limits, and explicit constraints.
 2. **Domain:** facts, mechanisms, standards, edges/failures, executability, usability.
 3. **Integration:** contradiction, interfaces, authority, shared assumptions, and
-   preservation of every accepted intent.
+   semantic conservation of every accepted intent and consequential qualifier.
 4. **NFR:** child calls, tokens, executor latency, output size, redundant questions,
    unnecessary specialists, failed tools, and unresolved state.
 

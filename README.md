@@ -9,23 +9,9 @@ dark factory, and investigating complex systems by hand.
 |---|---|
 | [Dig Deeper](#dig-deeper) | Evidence-first troubleshooting with gentle and active modes |
 | [Point the Way](#point-the-way) | Find a workable path through difficult constraints |
-| [Smart Shot](#smart-shot) | Intent-based prompt enhancement when multiple domain experts are needed |
+| [Smart Shot](#smart-shot) | Deep intent discovery, runtime specialists, action, and independent acceptance |
+| [Fast Shot](#fast-shot) | A compressed Smart Shot variant |
 | [SFLO Quick](#sflo-quick) | Light version of dark factory. Good for demos and small projects |
-
-## Install
-
-Claude Code:
-
-```bash
-claude plugin marketplace add simonasrazm/skills
-claude plugin install simon-skills@simonasrazm
-```
-
-Codex and other agents:
-
-```bash
-npx skills@latest add simonasrazm/skills
-```
 
 ### Dig Deeper
 
@@ -61,19 +47,28 @@ Path: [skills/point-the-way](skills/point-the-way/)
 
 ### Smart Shot
 
-Zero-shot enhancement for people in a hurry, from text improvement to micro
-software delivery.
+Resolve ambiguous or consequential requests through runtime-discovered specialists,
+authorized action, empirical evidence, synthesis, and independent acceptance.
 
-Use Smart Shot when a prompt is short, when the user may be speaking in a
-solution rather than the underlying intent, or when the task needs fast intent
-recovery before planning and execution.
+Use Smart Shot when uncertainty about intent, specialist coverage, dependencies,
+authority, evidence, or irreversible risk could change the outcome. It invests more
+time and tokens than Fast Shot.
 
 Path: [skills/smart-shot](skills/smart-shot/)
 
 #### Outcomes
 
-- Hidden intents, consequential objectives, requirements, and success criteria recovered before planning.
-- Expert subagents for inferred domains, roles, and LLM judge responsibilities.
+- Consequential intents and comparison terms become testable runtime contracts.
+- Domain-specific experts are derived recursively instead of selected from a fixed roster.
+- Experts can create artifacts, gather evidence, and perform authorized state-changing actions.
+- Independent checks preserve specialist boundaries and block unsupported completion claims.
+
+### Fast Shot
+
+A compressed Smart Shot variant for bounded local decisions, empirical checks, and
+authorized action without agent delegation or independent expert review.
+
+Path: [skills/fast-shot](skills/fast-shot/)
 
 ### SFLO Quick
 
@@ -92,3 +87,18 @@ Run evidence stays under `.sflo-quick/<feature-or-scope-slug>/`; product files s
 ## Recommendation
 
 Use [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) to gain speed in any agent. Terse communication reduces turn latency, especially in long loops.
+
+## Install
+
+Claude Code:
+
+```bash
+claude plugin marketplace add simonasrazm/skills
+claude plugin install simon-skills@simonasrazm
+```
+
+Codex and other agents:
+
+```bash
+npx skills@latest add simonasrazm/skills
+```

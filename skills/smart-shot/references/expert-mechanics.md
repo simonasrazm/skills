@@ -25,12 +25,28 @@ operational:
 - boundaries over recommendation, approval, blocking, delegation, escalation,
   adjacent specialists, interfaces, and conflicts;
 - adaptive, dependency-ordered inquiry that updates the design tree;
+- domain-native runtime objects, typed as kernel subtypes or proposed through the
+  extension test when existing composition would lose a material invariant;
 - observable domain-native probes, negative/boundary checks, rollback/stop conditions,
   recommendation rationale, consequences, change triggers, gaps, and handoff.
 
+Before drafting a consequential charter, compile a compact practice benchmark from
+the Domain Brief and, when freshness matters, current authoritative evidence. Record
+the leaf's signature mechanisms and measures; evidence precedence and refresh event;
+live professional disagreement or materially different alternative; ordinary and
+damaging failure; native artifact convention; decision effect; probes/change
+triggers; and the adjacent-generalist substitution that would look plausible but
+fail. Use it to test substantive fit, not field presence. A charter missing a
+decision-changing benchmark element must be repaired before dispatch; prose length,
+role prestige, and citation count cannot compensate. Keep evaluator-only benchmark
+details from the creator when an independent comparison requires blinding.
+
 ## Charter compiler
 
-Compile the narrowest charter that owns the work. Always include:
+Compile charters only after leaf coverage and topology review. The optimization unit
+is the smallest practitioner topology that preserves every competence and keeps
+independent failures inspectable—not one agent per leaf and not the fewest agents at
+any cost. Compile the narrowest coherent charter that owns the work. Always include:
 
 1. **Identity:** profession, subspecialty, setting, jurisdiction/market when relevant,
    lifecycle, and stakes.
@@ -45,6 +61,12 @@ Compile the narrowest charter that owns the work. Always include:
 6. **Verification boundary:** criteria, evidence, and pass, repair, safe-stop, and
    escalation conditions.
 
+For consequential multi-domain work, have an independent context-qualified reviewer
+compare the complete charter set with its practice benchmarks before dispatch. It
+returns every criterion-level omission in one repair packet; repair once, preserve
+passed clauses, and require a renewed verdict. Field presence and self-review do not
+accept the charters. Unrepaired material omissions block the affected dispatch.
+
 Add a module only when triggered:
 
 | Trigger | Module |
@@ -58,6 +80,8 @@ Add a module only when triggered:
 
 Omit fields that change no decision, test, dependency, or artifact. One person may
 cover specialties, but materially different competence and approvals remain visible.
+If a charter spans multiple leaves, attach the merge proof and preserve leaf-specific
+questions, methods, evidence, failures, and output sections in its contract.
 
 ## Practitioner loop
 
@@ -72,13 +96,16 @@ cover specialties, but materially different competence and approvals remain visi
    burden, and failure behavior.
 5. **Recommend:** answer each material question with preferred answer, rationale,
    uncertainty, and change evidence/trigger.
-6. **Craft:** produce the actionable domain-native artifact.
-7. **Self-check:** define observable probes, negative and boundary checks, stop or
+6. **Craft:** produce the required domain-native artifact.
+7. **Act:** when the owned intent requires more than an artifact or conclusion,
+   execute the authorized target-state change and preserve observable read-back; use
+   an empirical operation instead when the missing dependency is evidence.
+8. **Self-check:** define observable probes, negative and boundary checks, stop or
    rollback conditions, and evidence for independent acceptance; confidence is not
    a verdict.
-8. **Repair:** challenge dependencies, conflicts, feasibility, and failed criteria;
+9. **Repair:** challenge dependencies, conflicts, feasibility, and failed criteria;
    preserve passing commitments and repair demonstrated gaps only.
-9. **Exit:** return artifact plus evidence, or the exact unresolved decision, missing
+10. **Exit:** return artifact plus evidence, or the exact unresolved decision, missing
    evidence, safe interim action, and escalation owner.
 
 Use the highest defensible real-work standard that fits context; highest does not mean
@@ -109,10 +136,12 @@ dependencies, interfaces, handoffs; native probes and evidence; applicable safe-
 rollback, escalation, and completion conditions. Headings are optional.
 
 Deterministic checks cover structure, references, dependency consistency, counts, and
-termination; independent qualified evaluation covers domain correctness and semantic
-satisfaction. The creator cannot judge final acceptance. On failure, return the
-original charter, artifact, and failed criteria for one bounded repair that preserves
-passing commitments; then escalate remaining material failures.
+termination. Use independent qualified evaluation for domain correctness or semantic
+satisfaction when consequential judgment, authority, conflict, or risk makes
+self-acceptance unreliable. A low-risk single-practice artifact may close locally
+when every criterion is deterministically observable. On failure, return the original
+charter, artifact, and failed criteria for one bounded repair that preserves passing
+commitments; then escalate remaining material failures.
 
 ## Compiler prompt blocks
 
