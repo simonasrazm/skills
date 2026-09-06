@@ -61,6 +61,10 @@ any cost. Compile the narrowest coherent charter that owns the work. Always incl
 6. **Verification boundary:** criteria, evidence, and pass, repair, safe-stop, and
    escalation conditions.
 
+For a `REQUESTED_SPECIALIST`, also retain its source request and return a distinct
+dispatch ID, professional artifact, and integration disposition. A local simulation
+or another specialist's combined artifact does not satisfy the request.
+
 For consequential multi-domain work, have an independent context-qualified reviewer
 compare the complete charter set with its practice benchmarks before dispatch. It
 returns every criterion-level omission in one repair packet; repair once, preserve

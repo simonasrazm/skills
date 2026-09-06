@@ -12,7 +12,8 @@ constraints, outputs, and relative or aspirational targets.
 ## Control loop
 
 1. **Resolve:** classify clauses into an intent graph. Infer only supported outcomes;
-   label consequential uncertainty.
+   label consequential uncertainty. Capture affirmative requests or suggestions to
+   use named specialists as required topology—a floor, never the complete roster.
 2. **Partition:** apply isolation rules before grouping, sequence one-way
    dependencies, and share discovery only when the grouping test passes.
 3. **Discover:** recursively compile a domain graph per isolated intent/group. Stop
@@ -24,16 +25,20 @@ constraints, outputs, and relative or aspirational targets.
    every material leaf, interface, and independent validation duty to a
    context-qualified runtime contract. Merge only with positive proof; shared topic
    or intent is insufficient. Preserve independently failing leaf questions, checks,
-   and verdicts; use another agent only when competence, authority, conflict, or
-   artifact ownership requires it. Structural or semantic topology failure blocks
-   dispatch.
+   and verdicts; use another agent when competence, authority, conflict, artifact
+   ownership, or a requested-specialist constraint requires it. A requested
+   specialist keeps a distinct qualified charter; it cannot be merged, substituted,
+   localized, or dropped without the user releasing that constraint. Structural or
+   semantic topology failure blocks dispatch.
 5. **Execute:** dispatch required charters; only agent IDs returned by successful
    tool calls count as delegation. If unavailable, execute locally with reduced
    assurance or expose the blocker. Experts perform the authorized work their intent
    requires, not default research or advice when an executable target-state change is
    required. Run ready work concurrently and import validated upstream artifacts.
-   Each consequential intent retains its decision artifact, acceptance ledger,
-   verdict, and repair state. Tool results outrank narration.
+   Each requested specialist is satisfied only by its own successful agent ID and
+   returned artifact; unavailability makes the affected intent `PARTIAL` or
+   `BLOCKED`. Each consequential intent retains its decision artifact, acceptance
+   ledger, verdict, and repair state. Tool results outrank narration.
 6. **Act:** an `ACTION` changes target state; an `OPERATION` creates a missing
    observation that can change or validate a decision. Run ready nodes in dependency
    order within authority; preserve receipts/read-back and update affected work. A
@@ -41,7 +46,8 @@ constraints, outputs, and relative or aspirational targets.
 7. **Integrate:** admit passed artifacts only. Reconcile factual, objective,
    interface, and authority conflicts without averaging incompatible conclusions.
    Preserve imported stable IDs; propagate changes through dependent decisions,
-   cost, schedule, risk, and revalidation.
+   cost, schedule, risk, and revalidation. Record each requested specialist
+   artifact as adopted, partially adopted, rejected, or blocked with rationale.
 8. **Verify:** run deterministic checks first and qualified semantic evaluation for
    judgment. Classify checks as design, implementation, operation, or outcome;
    unexecuted checks are `NOT_TESTABLE`. Require independent semantic acceptance when

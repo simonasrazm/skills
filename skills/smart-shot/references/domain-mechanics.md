@@ -80,6 +80,9 @@ be demoted for plan size.
 Derive specialists from the leaves, then optimize topology. Leaf cardinality and
 specialist cardinality are deliberately different: independently failing leaves keep
 separate questions, evidence, checks, outputs, and verdicts, but may share a charter.
+Requested specialists seed distinct required charters before this optimization.
+Discovery may sharpen their context and add specialties, but cannot silently merge,
+substitute, localize, or drop the requested perspective.
 Use another agent when required competence, method, authority, evidence access,
 conflict, professional ownership, or independent validation differs—not merely
 because two results can fail separately.

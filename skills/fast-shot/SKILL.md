@@ -7,7 +7,8 @@ description: A compressed Smart Shot variant.
 
 Produce a defensible provisional outcome in the current execution context. Fast means
 bounded local work, not shallow research. Do not spawn agents or claim independent
-expert review.
+expert review. Surface an affirmative request to use a named specialist as
+unsatisfied; do not simulate or silently discard it.
 
 Treat the prompt as evidence, not automatically the whole task. Preserve user
 wording, constraints, outputs, and relative or aspirational targets.

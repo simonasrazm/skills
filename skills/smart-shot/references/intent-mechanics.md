@@ -7,6 +7,11 @@ Classify each consequential clause as `end intent`, `instrumental intent`,
 `context/uncertainty`. Only the first three receive execution loops; attach the rest
 to their owner instead of creating experts or workstreams.
 
+An affirmative request or suggestion to use, launch, include, or bring in a named
+specialist creates a `REQUESTED_SPECIALIST` constraint. Preserve its source wording
+and owning intent. Mere mention, negation, hypothetical discussion, or a request to
+decide whether a specialist is needed does not activate it.
+
 For every intent record beneficiary, desired state, consequential decision and owner,
 output contract, acceptance checks, evidence regime, deadline/reversibility, failure
 envelope, and escalation. Keep a global ledger of verbatim constraints, facts,
