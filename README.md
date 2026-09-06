@@ -30,7 +30,7 @@ Use Dig Deeper when you need to hunt down nasty issues in complex systems, espec
 
 Default run budget: up to five Troubleshooter/Interrogator rounds. The loop stops immediately on PASS.
 
-The original [`str`](skills/deprecated/str/) implementation is preserved under `deprecated` with a migration notice.
+Dig Deeper superseded the historical [`str` skill](https://github.com/simonasrazm/skills/commit/e0063b8).
 
 #### Outcomes
 
