@@ -40,6 +40,7 @@ My approach is holistic. I combine experience in software development, product, 
 | [Point the Way](skills/point-the-way/) | When you want AI to consider more options and probe which one is unblocked. When you just need a problem to go away rather than a perfect solution |
 
 [Skill Compressor](skills/skill-compressor/) is my own utility for optimizing my skills. It saves tokens and improves speed without breaking it. You can find many other variants of the same problem on the wild internet.
+
 [Dig Deeper core](skills/dig-deeper-core/) is an internal engine used by the two Dig Deeper wrappers. It is not a user entry point.
 
 ## Try them
