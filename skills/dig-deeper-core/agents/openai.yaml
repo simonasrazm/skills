@@ -1,2 +1,4 @@
+interface:
+  display_name: "Dig Deeper Core"
 policy:
   allow_implicit_invocation: false
