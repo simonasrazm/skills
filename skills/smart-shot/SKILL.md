@@ -1,6 +1,6 @@
 ---
 name: smart-shot
-description: Resolve ambiguous or consequential requests through runtime specialists, authorized action, and independent acceptance. Use when invoked or uncertainty could change outcomes, authority, dependencies, or irreversible risk; costs more than Fast Shot.
+description: Discover what an ambiguous or consequential request really requires, including hidden intents, affected domains and unknown unknowns, then assemble ad hoc expert agents, use the right tools, act within authority and independently test the result. Use when the prompt may underspecify the real job or a wrong interpretation could materially change the outcome; deeper and more expensive than Fast Shot.
 ---
 
 # Smart Shot

@@ -1,6 +1,6 @@
 ---
 name: point-the-way
-description: Finds the best-supported workable way to achieve a desired outcome within the user's constraints. Use when the goal is known but the approach is difficult, unfamiliar, blocked, or needs a creative workaround or implementation direction.
+description: Find a workable route to a known goal. Use when permissions, policies, unfamiliar systems or technical constraints block the obvious path. Compare real options, test the important uncertainty and hand implementation a supported direction.
 ---
 
 # Point the Way

@@ -1,11 +1,14 @@
 ---
 name: sflo-quick
-description: Autonomously turn a small request into a verified, runnable result through a lightweight five-gate delivery loop. Use for trusted personal software, multi-iteration demos, scripts, SQL, data work, and other bounded builds when speed and useful quality matter. Triggered by `SFLO-QUICK:` or a direct request to run `sflo-quick`.
+description: Execute any bounded task through a lightweight plan-do-check-act cycle that removes basic mistakes before delivery. Use for presentations, research, data work, demos, small projects and other work where speed matters, good-enough quality is enough, and a full specialist factory would be excessive. Triggered by `SFLO-QUICK:` or a direct request to run `sflo-quick`.
 ---
 
 # SFLO Quick
 
-Deliver the result. Keep the factory dark: expose concise outcomes, not routine process narration.
+Run any bounded task through a lightweight plan-do-check-act cycle. FRAME plans,
+MAKE does, CHECK and ALIGN check, and repair plus DELIVER act on what they found.
+Deliver the usable result. Keep the factory dark: expose concise outcomes, not
+routine process narration.
 
 ## Operating policy
 
@@ -34,7 +37,7 @@ When CHECK or ALIGN finds a material failure:
 1. Keep the last proven candidate available.
 2. Fix the smallest coherent cause.
 3. Record the next candidate in `MAKE.md` and increment its ID.
-4. After a product change, re-run the affected proof plus the launch or core-use probe. After a probe-only correction, re-run the corrected proof.
+4. After changing the work product, re-run the affected proof plus its core-use probe. After a probe-only correction, re-run the corrected proof.
 
 Use at most three focused repair cycles by default. Finish earlier when all material criteria pass, a repair leaves the failing proof unchanged, or only disclosed non-material limitations remain. At the limit, select the best proven local result and make its limitations explicit.
 

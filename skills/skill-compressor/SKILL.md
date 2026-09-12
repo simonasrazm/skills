@@ -1,6 +1,6 @@
 ---
 name: skill-compressor
-description: Reduce a skill's expected token load without losing routing or runtime behavior. Use for measured skill compression, debloating, progressive disclosure, or prompt-cost optimization; not for untested shortening.
+description: Make an agent skill cheaper to load without breaking when it activates or how it behaves. Use when a skill has accumulated too much text and the smaller version must earn promotion through routing and runtime tests.
 ---
 
 # Skill Compressor

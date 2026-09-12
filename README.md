@@ -1,104 +1,85 @@
-# Agent Skills
+# Skills
 
-Agent skills I use in day-to-day work: building SFLO, working on my private
-dark factory, and investigating complex systems by hand.
+[![skills.sh](https://skills.sh/b/simonasrazm/skills)](https://skills.sh/simonasrazm/skills)
+[![Validate skills](https://github.com/simonasrazm/skills/actions/workflows/validate.yml/badge.svg)](https://github.com/simonasrazm/skills/actions/workflows/validate.yml)
 
-## Skills
-
-| Skill | Purpose |
-|---|---|
-| [Dig Deeper](#dig-deeper) | Evidence-first troubleshooting with gentle and active modes |
-| [Point the Way](#point-the-way) | Find a workable path through difficult constraints |
-| [Smart Shot](#smart-shot) | Deep intent discovery, runtime specialists, action, and independent acceptance |
-| [Fast Shot](#fast-shot) | A compressed Smart Shot variant |
-| [SFLO Quick](#sflo-quick) | Light version of dark factory. Good for demos and small projects |
-
-### Dig Deeper
-
-#### Motivation
-
-I have run into this pattern too many times: an LLM confidently claims it found the real problem, but it was just an assumption. Dig Deeper exists to make that failure mode harder. Claims need evidence; weak hypotheses get challenged.
-
-It has two entry points:
-
-- [`dig-deeper`](skills/dig-deeper/) for non-mutating investigation.
-- [`dig-deeper-probe`](skills/dig-deeper-probe/) for active evidence collection using tools, installations, reproductions, and controlled experiments while avoiding damage.
-
-Dig Deeper separates investigation from challenge. The Troubleshooter collects facts, builds hypotheses, and traces possible causes. The Interrogator attacks weak evidence, bias, premature closure, and unsupported fixes.
-
-Use Dig Deeper when you need to hunt down nasty issues in complex systems, especially when the cost of guessing is high. Use available tools to collect evidence and take authorized corrective actions when needed.
-
-Default run budget: up to five Troubleshooter/Interrogator rounds. The loop stops immediately on PASS.
-
-Dig Deeper superseded the historical [`str` skill](https://github.com/simonasrazm/skills/commit/e0063b8).
-
-#### Outcomes
-
-- Deep diagnosis with an explicit evidence-collection boundary.
-- Clear evidence tables instead of persuasive narratives.
-- Bias checks against anchoring, premature closure, and guessed causes.
-- Fix recommendations only when the root cause is evidence-backed.
-
-### Point the Way
-
-Find the best-supported workable way to achieve a known outcome when the approach is difficult, unfamiliar, or blocked.
-
-Path: [skills/point-the-way](skills/point-the-way/)
-
-### Smart Shot
-
-Resolve ambiguous or consequential requests through runtime-discovered specialists,
-authorized action, empirical evidence, synthesis, and independent acceptance.
-
-Use Smart Shot when uncertainty about intent, specialist coverage, dependencies,
-authority, evidence, or irreversible risk could change the outcome. It invests more
-time and tokens than Fast Shot.
-
-Path: [skills/smart-shot](skills/smart-shot/)
-
-#### Outcomes
-
-- Consequential intents and comparison terms become testable runtime contracts.
-- Domain-specific experts are derived recursively instead of selected from a fixed roster.
-- Experts can create artifacts, gather evidence, and perform authorized state-changing actions.
-- Independent checks preserve specialist boundaries and block unsupported completion claims.
-
-### Fast Shot
-
-A compressed Smart Shot variant for bounded local decisions, empirical checks, and
-authorized action without agent delegation or independent expert review.
-
-Path: [skills/fast-shot](skills/fast-shot/)
-
-### SFLO Quick
-
-Five-gate Markdown workflow for quick software development.
-
-Invoke it explicitly:
-
-> SFLO-QUICK: build a small personal expense tracker
-
-You can also directly ask to run `sflo-quick`.
-
-Path: [skills/sflo-quick](skills/sflo-quick/)
-
-Run evidence stays under `.sflo-quick/<feature-or-scope-slug>/`; product files stay at scoped project paths.
-
-## Recommendation
-
-Use [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman) to gain speed in any agent. Terse communication reduces turn latency, especially in long loops.
+Professional skills for nasty bugs, hard decisions and work that needs to be right. Built for Codex, Claude Code and other compatible agents.
 
 ## Install
 
+Codex and other compatible agents:
+
+```shell
+npx skills@latest add simonasrazm/skills
+```
+
 Claude Code:
 
-```bash
+```shell
 claude plugin marketplace add simonasrazm/skills
 claude plugin install simon-skills@simonasrazm
 ```
 
-Codex and other agents:
+## Why I build these
 
-```bash
-npx skills@latest add simonasrazm/skills
+Most public skills give up too early, do little legwork, and use overly large, too specific (narrow) instructions that limit frontier models' capabilities and waste tokens. My skills are polished and battle-tested in personal and professional work.
+
+Dark (Software) Factories - delegate as much as it makes sense. Delegating legwork doesn't mean cognitive surrender. Use AI to sharpen your mind. Agents can do so much more based on known best practices, collecting routine evidence, or catching their own mistakes that they make constantly. I question pre-AI software development habits. I keep the principles, but dive back to the purpose and rebuild the workflow around how AI does the work.
+
+My approach is holistic. I combine experience in software development, product, privacy, security and work organization/management.
+
+## Skills
+
+| Skill | Use it for |
+|---|---|
+| [Dig Deeper](skills/dig-deeper/) | Diagnose nasty, deep bugs using logs, system state and other read-only evidence. Do not allow AI to present assumptions as facts or conclusions |
+| [Dig Deeper Probe](skills/dig-deeper-probe/) | Reproduce failures and run controlled experiments when observation is not enough. Install tools if that would help |
+| [Smart Shot](skills/smart-shot/) | Read between the lines: discover hidden intents. Identify domains touched and discover unknown unknowns. Assemble ad hoc expert agents  |
+| [Fast Shot](skills/fast-shot/) | Get a moderately better result from a weak prompt through a lighter, much faster Smart Shot |
+| [SFLO Quick](skills/sflo-quick/) | Execute any bounded task through a lightweight plan-do-check-act cycle that removes basic mistakes. Use it when you are tired of repeating basic mistakes by agents |
+| [Point the Way](skills/point-the-way/) | When you want AI to consider more options and probe which one is unblocked. When you just need a problem to go away rather than a perfect solution |
+
+[Skill Compressor](skills/skill-compressor/) is my own utility for optimizing my skills. It saves tokens and improves speed without breaking it. You can find many other variants of the same problem on the wild internet.
+[Dig Deeper core](skills/dig-deeper-core/) is an internal engine used by the two Dig Deeper wrappers. It is not a user entry point.
+
+## Try them
+
+```text
+Use dig-deeper with up to 10 rounds: why is my computer slow today?
 ```
+
+```text
+Use dig-deeper-probe: why does the payment workflow fail end-to-end?
+```
+
+```text
+Use dig-deeper-probe: why does my computer restart often?
+```
+
+Smart Shot can start from two words:
+
+```text
+Analyze incident.io
+```
+
+```text
+What are the best options for preserving useful website analytics?
+```
+
+```text
+Use fast-shot: what does GitLeaks do?
+```
+
+```text
+SFLO-QUICK: prepare the presentation for tomorrow's product review.
+```
+
+```text
+SFLO-QUICK: make the presentation about European AI security companies/.  Use smart-shot to shortlist the best ones.
+```
+
+## Project
+
+The collection is MIT licensed. [Issues](https://github.com/simonasrazm/skills/issues) are open for reproducible defects and improvements. See [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change.
+
+The [public catalogue](https://finallydone.ai/skills/) provides the HTML variant of skills' descriptions.

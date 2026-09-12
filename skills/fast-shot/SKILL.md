@@ -1,6 +1,6 @@
 ---
 name: fast-shot
-description: A compressed Smart Shot variant.
+description: Get a moderately better result from a short or underspecified prompt through a lighter, much faster Smart Shot. Use when the task is bounded and reversible, a few direct checks can resolve the important uncertainty, and specialist agents or independent review would cost more than the task deserves.
 ---
 
 # Fast Shot

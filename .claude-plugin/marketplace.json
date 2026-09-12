@@ -5,15 +5,15 @@
     "url": "https://github.com/simonasrazm"
   },
   "metadata": {
-    "description": "Simonas Razminas's agent skills for Claude Code."
+    "description": "Professional skills for deep diagnosis, hard decisions, and reliable execution."
   },
   "plugins": [
     {
       "name": "simon-skills",
       "source": "./",
-      "description": "Evidence-first troubleshooting, pathfinding, intent recovery, and lightweight software delivery.",
+      "description": "Professional skills for deep diagnosis, hard decisions, and reliable execution.",
       "category": "development",
-      "keywords": ["skills", "troubleshooting", "problem-solving", "software-development"]
+      "keywords": ["skills", "debugging", "root-cause-analysis", "decision-making", "task-execution"]
     }
   ]
 }
