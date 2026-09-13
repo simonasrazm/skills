@@ -1,6 +1,6 @@
 # Skills
 
-[![Skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimonasrazm%2Fskills%2Fmain%2Fskills.catalog.json&query=%24.skills.length&label=skills&color=blue)](skills.catalog.json) · [skills.sh](https://skills.sh/simonasrazm/skills) · [![Validate skills](https://github.com/simonasrazm/skills/actions/workflows/validate.yml/badge.svg)](https://github.com/simonasrazm/skills/actions/workflows/validate.yml)
+[![Skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimonasrazm%2Fskills%2Fmain%2Fskills.catalog.json&query=%24.skills.length&label=skills&color=blue)](skills.catalog.json) [![Validate skills](https://github.com/simonasrazm/skills/actions/workflows/validate.yml/badge.svg)](https://github.com/simonasrazm/skills/actions/workflows/validate.yml)
 
 Skills for deep diagnosis, hard decisions and verified outcomes. Built for Codex, Claude Code and other compatible agents.
 
@@ -8,7 +8,7 @@ Skills for deep diagnosis, hard decisions and verified outcomes. Built for Codex
 
 | Skill | Use it for | Version |
 |---|---|---|
-| [SFLO Waydriver](skills/sflo-waydriver/) | Carry a problem through discovery, action, independent checks and repair to the intended outcome. | `0.4.0-rc.2` |
+| [SFLO Waydriver](skills/sflo-waydriver/) | Best of SFLO and Wayfinder (from Matt Pocock). Throw at any problem, not just software development or quick fixes | `0.4.0-rc.2` |
 | [Smart Shot](skills/smart-shot/) | Discover hidden intent and unknowns; assemble specialists to resolve them. | `2.0.0` |
 | [Dig Deeper](skills/dig-deeper/) | Diagnose difficult failures through read-only evidence. | `2.0.0` |
 | [Dig Deeper Probe](skills/dig-deeper-probe/) | Reproduce failures and run controlled experiments when observation is insufficient. | `2.0.0` |
