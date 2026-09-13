@@ -1,6 +1,6 @@
 # Skill lifecycle
 
-Every skill has a permanent source path at `skills/<name>/`. Maturity is recorded in `skills.catalog.json` as `arena`, `stable`, or `deprecated`. Promotion changes metadata and installation catalog membership, never paths or names. Maturity and version are separate: an established skill can retain stable discovery while its new version contract starts below 1.0.
+Every skill has a permanent source path at `skills/<name>/`. Maturity is recorded in `skills.catalog.json` as `arena`, `stable`, or `deprecated`. Promotion changes metadata and installation catalog membership, never paths or names. Maturity describes evidence of usefulness; versioning describes compatibility. Neither elapsed time nor the number of commits determines a version.
 
 ## Versions and releases
 
@@ -36,3 +36,11 @@ The plugin's explicit skill list controls its stable selection. Other installers
 Before publishing, update changed unit versions and matching skill entries, advance the collection/plugin version, update release notes, and run the checks in `utilities/validation/`. Tag the verified commit with the new collection tag and only the component tags whose versions are new. Preserve existing component tags for unchanged units.
 
 Promote a skill after real-project evidence supports its acceptance behavior and cost. Record limitations, change maturity, and include it in the stable plugin list if appropriate. Promotion is a separate decision from version numbering.
+
+## Release decision record
+
+For each changed release unit, put a concise decision in its changelog entry: previous version → proposed version; the supported behavior that changes; whether an existing caller must change invocation, inputs, dependencies, permissions or interpretation of outputs; verification and remaining limitations. Name the concrete incompatibility for a major increment and give migration guidance. If none exists, choose minor for added capability or patch for a compatible correction. Documentation-only clarification needs no new component version or tag.
+
+A first supported baseline may be 1.0.0 even after a long unversioned history. Confirm that invocation, scope, outputs, dependencies and authority are described in the skill and that representative real use supports the promises being made. Do not manufacture older releases. Keep 0.x where the supported contract is still intentionally unsettled, and explain which part. A 1.0 label promises compatibility, not perfect outcomes.
+
+The catalog validator checks catalog consistency, membership and links; it cannot determine semantic compatibility or market quality. The release decision remains a reviewed judgment. Published numbering mistakes are clarified in notes without moving tags or issuing another artificial major version.
