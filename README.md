@@ -1,6 +1,6 @@
 # Skills
 
-[skills.sh directory](https://skills.sh/simonasrazm/skills) · [![Validate skills](https://github.com/simonasrazm/skills/actions/workflows/validate.yml/badge.svg)](https://github.com/simonasrazm/skills/actions/workflows/validate.yml)
+[![Skills](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fsimonasrazm%2Fskills%2Fmain%2Fskills.catalog.json&query=%24.skills.length&label=skills&color=blue)](skills.catalog.json) · [skills.sh](https://skills.sh/simonasrazm/skills) · [![Validate skills](https://github.com/simonasrazm/skills/actions/workflows/validate.yml/badge.svg)](https://github.com/simonasrazm/skills/actions/workflows/validate.yml)
 
 Skills for deep diagnosis, hard decisions and verified outcomes. Built for Codex, Claude Code and other compatible agents.
 
@@ -19,7 +19,7 @@ Skills for deep diagnosis, hard decisions and verified outcomes. Built for Codex
 | [Security Check](skills/security-check/) | Independently assess realistic security and privacy risks. | `0.4.0-rc.2` |
 | [Skill Compressor](skills/skill-compressor/) | Reduce skill token cost while testing that routing and behavior survive. | `0.1.0` |
 
-Versions come from the [catalog](skills.catalog.json). `0.x` denotes initial development; `rc` denotes a release candidate. See [release notes](CHANGELOG.md) for changes and verification limits.
+See [release notes](CHANGELOG.md).
 
 ### Waydriver components
 
