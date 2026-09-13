@@ -17,7 +17,8 @@ Skills for Software (or any work) Factory, deep diagnosis, hard decisions and ve
 | [Point the Way](skills/point-the-way/) | When you want AI to consider more options and probe which one is unblocked. When you just need a problem to go away rather than a perfect solution | `0.1.0` |
 | [Slop Sweep](skills/slop-sweep/) | Remove unjustified filler and complexity from prose, plans, interfaces or code; repair presentation when authorized. | `0.4.0-rc.2` |
 | [Security Check](skills/security-check/) | First line for the security risks. Use linters, scanners and other means for any professional delivery. | `0.4.0-rc.2` |
-| [Skill Compressor](skills/skill-compressor/) | Reduce skill token cost while testing that routing and behavior survive. | `0.1.0` |
+
+[Skill Compressor](skills/skill-compressor/) is my own utility for optimizing my skills. It saves tokens and improves speed without breaking it. You can find many other variants of the same problem on the wild internet.
 
 See [release notes](CHANGELOG.md).
 
