@@ -1,6 +1,6 @@
 {
   "name": "simon-skills",
-  "version": "0.2.0",
+  "version": "0.3.0-rc.1",
   "description": "Professional skills for deep diagnosis, hard decisions, and reliable execution.",
   "author": {
     "name": "Simonas Razminas",
@@ -8,12 +8,17 @@
   },
   "repository": "https://github.com/simonasrazm/skills",
   "license": "MIT",
-  "keywords": ["skills", "debugging", "root-cause-analysis", "decision-making", "task-execution"],
+  "keywords": [
+    "skills",
+    "debugging",
+    "root-cause-analysis",
+    "decision-making",
+    "task-execution"
+  ],
   "skills": [
     "./skills/dig-deeper",
     "./skills/dig-deeper-probe",
     "./skills/dig-deeper-core",
-    "./skills/point-the-way",
     "./skills/smart-shot",
     "./skills/fast-shot",
     "./skills/sflo-quick",

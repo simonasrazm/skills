@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "version": "0.3.0-rc.1",
+  "releaseUnit": "repository",
+  "skills": [
+    {
+      "name": "dig-deeper",
+      "path": "skills/dig-deeper",
+      "maturity": "stable"
+    },
+    {
+      "name": "dig-deeper-core",
+      "path": "skills/dig-deeper-core",
+      "maturity": "stable"
+    },
+    {
+      "name": "dig-deeper-probe",
+      "path": "skills/dig-deeper-probe",
+      "maturity": "stable"
+    },
+    {
+      "name": "fast-shot",
+      "path": "skills/fast-shot",
+      "maturity": "stable"
+    },
+    {
+      "name": "point-the-way",
+      "path": "skills/point-the-way",
+      "maturity": "arena"
+    },
+    {
+      "name": "s-dev",
+      "path": "skills/s-dev",
+      "maturity": "arena",
+      "family": "sflo-waydriver"
+    },
+    {
+      "name": "s-qa",
+      "path": "skills/s-qa",
+      "maturity": "arena",
+      "family": "sflo-waydriver"
+    },
+    {
+      "name": "s-ui-check",
+      "path": "skills/s-ui-check",
+      "maturity": "arena",
+      "family": "sflo-waydriver"
+    },
+    {
+      "name": "s-waydriver",
+      "path": "skills/s-waydriver",
+      "maturity": "arena",
+      "family": "sflo-waydriver"
+    },
+    {
+      "name": "security-check",
+      "path": "skills/security-check",
+      "maturity": "arena",
+      "family": "sflo-waydriver"
+    },
+    {
+      "name": "sflo-quick",
+      "path": "skills/sflo-quick",
+      "maturity": "stable"
+    },
+    {
+      "name": "sflo-waydriver",
+      "path": "skills/sflo-waydriver",
+      "maturity": "arena",
+      "family": "sflo-waydriver"
+    },
+    {
+      "name": "skill-compressor",
+      "path": "skills/skill-compressor",
+      "maturity": "stable"
+    },
+    {
+      "name": "slop-sweep",
+      "path": "skills/slop-sweep",
+      "maturity": "arena",
+      "family": "sflo-waydriver"
+    },
+    {
+      "name": "smart-shot",
+      "path": "skills/smart-shot",
+      "maturity": "stable"
+    }
+  ]
+}

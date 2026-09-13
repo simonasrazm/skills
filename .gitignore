@@ -1,2 +1,6 @@
 __pycache__/
 *.py[cod]
+
+.scratch/
+
+skills/legacy.db

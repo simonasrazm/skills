@@ -84,3 +84,13 @@ SFLO-QUICK: make the presentation about European AI security companies/.  Use sm
 The collection is MIT licensed. [Issues](https://github.com/simonasrazm/skills/issues) are open for reproducible defects and improvements. See [CONTRIBUTING.md](CONTRIBUTING.md) before proposing a change.
 
 The [public catalogue](https://finallydone.ai/skills/) provides the HTML variant of skills' descriptions.
+
+## SFLO Waydriver preview
+
+[SFLO Waydriver](skills/sflo-waydriver/) is a Markdown software factory for implementation, independent checks, repair, and acceptance. Its seven capabilities can be used together or independently.
+
+The family and Point the Way have `arena` maturity in [skills.catalog.json](skills.catalog.json); all source paths remain under `skills/`. Arena skills require explicit installation and are excluded from the stable plugin list. Other installers may still discover them.
+
+Invoke: `Use sflo-waydriver in surgical mode to fix …`
+
+See [release notes](CHANGELOG.md) and [versions, installation and rollback](SKILL-LIFECYCLE.md). The first preview is `v0.3.0-rc.1`.
