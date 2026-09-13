@@ -13,7 +13,30 @@
       "source": "./",
       "description": "Professional skills for deep diagnosis, hard decisions, and reliable execution.",
       "category": "development",
-      "keywords": ["skills", "debugging", "root-cause-analysis", "decision-making", "task-execution"]
+      "keywords": [
+        "skills",
+        "debugging",
+        "root-cause-analysis",
+        "decision-making",
+        "task-execution"
+      ],
+      "version": "0.4.0-rc.2",
+      "author": {
+        "name": "Simonas Razminas",
+        "url": "https://github.com/simonasrazm"
+      },
+      "repository": "https://github.com/simonasrazm/skills",
+      "license": "MIT",
+      "skills": [
+        "./skills/dig-deeper",
+        "./skills/dig-deeper-probe",
+        "./skills/dig-deeper-core",
+        "./skills/smart-shot",
+        "./skills/fast-shot",
+        "./skills/sflo-quick",
+        "./skills/skill-compressor"
+      ],
+      "strict": false
     }
   ]
 }

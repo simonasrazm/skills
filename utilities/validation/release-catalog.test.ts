@@ -10,11 +10,11 @@ async function fixture(change: (catalog: any, plugin: any) => void = () => {}) {
   const catalog = { schemaVersion: 2, version: '1.2.0', releaseUnit: 'collection',
     skills: [{ name: 'example', path: 'skills/example', maturity: 'stable', releaseUnit: 'example', version: '1.0.0' }],
     releaseUnits: { example: { version: '1.0.0', members: ['example'] } } };
-  const plugin = { version: '1.2.0', skills: ['./skills/example'] }; change(catalog, plugin);
+  const plugin = { name: 'example-bundle', source: './', strict: false, version: '1.2.0', skills: ['./skills/example'] }; change(catalog, plugin);
   await mkdir(join(root, '.claude-plugin'), { recursive: true });
   await mkdir(join(root, 'skills/example'), { recursive: true });
   await writeFile(join(root, 'skills.catalog.json'), JSON.stringify(catalog));
-  await writeFile(join(root, '.claude-plugin/plugin.json'), JSON.stringify(plugin));
+  await writeFile(join(root, '.claude-plugin/marketplace.json'), JSON.stringify({ name: 'example-market', plugins: [plugin] }));
   await writeFile(join(root, 'skills/example/SKILL.md'), '---\nname: example\n---\n');
   return root;
 }
@@ -48,4 +48,13 @@ test('rejects a skill omitted from catalog', async () => {
 });
 test('rejects arena skills accidentally included in stable plugin selection', async () => {
   await expect(validateRelease(await fixture(c => c.skills[0].maturity = 'arena'))).rejects.toThrow('Stable plugin');
+});
+
+test('rejects a standalone manifest that namespaces linked skills', async () => {
+  const root = await fixture();
+  await writeFile(join(root, '.claude-plugin/plugin.json'), JSON.stringify({ name: 'example-bundle' }));
+  await expect(validateRelease(root)).rejects.toThrow('namespace linked');
+});
+test('requires marketplace-owned definitions', async () => {
+  await expect(validateRelease(await fixture((c, p) => p.strict = true))).rejects.toThrow('marketplace-owned');
 });

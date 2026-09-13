@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.4.0-rc.2
+
+- Keep live linked skill names unprefixed in Codex by defining the Claude plugin in its marketplace entry with strict:false. Preserve the simon-skills package identity and existing marketplace skill selection. Standalone --plugin-dir loading of this repository no longer has a plugin.json definition; use marketplace installation for Claude Code.
+- Resolve discovery depth from consequential unknowns, preserve the requested destination through intermediate deliverables, and obtain a human decision before committing to material outcome reductions.
+- Ground quality criteria in demonstrated leading practice and remove the remaining routine maintainability signal from QA.
+
+Compatibility: preview contract corrections; collection and coupled Waydriver unit advance to 0.4.0-rc.2. Other component versions remain unchanged. Verification: fresh Codex discovery finds all 15 public skills without package prefixes; Claude marketplace validation and 10 release-validator tests pass. Discovery and completion changes have bounded behavioral evidence; professional video and strategy outcome quality remain under evaluation. Creative Leap and private experiments are excluded.
+
 ## 0.4.0-rc.1
 
 - Extend Waydriver discovery and acceptance to non-software outcomes, retaining software implementation capabilities. Resolve consequential intent before choosing surgical execution.

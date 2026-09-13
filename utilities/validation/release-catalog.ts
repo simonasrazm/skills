@@ -6,7 +6,13 @@ const validName = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 export async function validateRelease(root: string) {
   const catalog = await Bun.file(resolve(root, 'skills.catalog.json')).json();
-  const plugin = await Bun.file(resolve(root, '.claude-plugin/plugin.json')).json();
+  const marketplace = await Bun.file(resolve(root, '.claude-plugin/marketplace.json')).json();
+  const plugin = marketplace.plugins?.[0];
+  if (marketplace.plugins?.length !== 1 || !plugin || !validName.test(plugin.name) ||
+      plugin.source !== './' || plugin.strict !== false)
+    throw Error('Invalid marketplace-owned plugin definition');
+  if (await Bun.file(resolve(root, '.claude-plugin/plugin.json')).exists())
+    throw Error('Standalone plugin manifest would namespace linked user skills');
   if (catalog.schemaVersion !== 2 || catalog.releaseUnit !== 'collection' ||
       !semver.test(catalog.version) || catalog.version !== plugin.version)
     throw Error('Invalid or mismatched collection version');

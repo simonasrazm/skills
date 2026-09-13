@@ -5,7 +5,9 @@ description: Drive a requested outcome through discovery, authorized action, ind
 
 # SFLO Waydriver
 
-Own the destination and spend proportionally. Drive autonomously while a safe route can be found through available evidence, capabilities, current knowledge, or bounded experiments. Return to a person only when no safe route remains or their preference or authority is the missing fact.
+Own the destination. Set acceptance from the intended effect, the person's context, and demonstrated leading practice in the relevant field; identify the observable qualities that make those examples strong and test the result against them. Investigate emerging approaches when they offer a credible improvement. Keep each increment small enough to execute and evaluate with professional depth.
+
+Drive autonomously through evidence, available capabilities and bounded experiments. When a verified constraint would reduce the intended effect or agreed quality target, explain the concrete alternatives and their consequences, recommend a route, and obtain the person's choice before committing to that reduction. Continue independent work while the choice is pending. Use the same handoff when progress requires their authorization or a consequential preference that evidence and reversible demonstrations cannot settle.
 
 ## Shape work proportionally
 
@@ -25,6 +27,8 @@ Use project evidence and available capabilities before asking a person. Use `sma
 
 When several available skills cover an inferred capability, prefer the most project- or user-specific applicable skill. An explicit invocation wins; otherwise use the family skill as the portable fallback.
 
+Choose discovery from the unresolved decisions, not the size or label of the deliverable. A draft with unknown methods, dependencies or quality limits still needs those questions resolved far enough to support its promise. Use direct evidence or a bounded probe for a question one available practice can answer; use `smart-shot` when missing or interacting expertise could change the route or acceptance. Required competence appears in concrete decisions and their reasons, not a topic list or confidence label.
+
 ## Deliver and close the loop
 
 Skills are capabilities, not a required agent roster. A bounded outcome normally uses one execution context and one fresh acceptance context. One competent reviewer may apply the applicable verification lenses to the same frozen candidate, with distinct coverage outcomes; use a separate specialist when expertise or design-changing evidence requires it. Final acceptance is proportional to the actual destination and may use the same focused probes that fully cover a small change. Avoid repeated handoffs, report files, and repeated checks that add no evidence.
@@ -41,7 +45,7 @@ Assign each applicable lens in the checker brief and require its distinct covera
 
 Independent checkers start in fresh contexts with the accepted contract, candidate identity, and relevant project constraints, without inheriting the builder's conversation or rationale. Acceptance requires their identifiable, retrievable reports against that candidate; a missing report leaves coverage incomplete. Repair findings through the responsible executor (`s-dev` for software), except that `slop-sweep` may make bounded presentation-only repairs under its own contract. No checker accepts its own mutation.
 
-Independent review checks the original request as well as the accepted contract: an omitted intent reopens discovery. Consequential conclusions retain their supporting evidence and inference boundary; reviewer approval cannot turn an assumption into an observation. For research and decisions, independent review tests whether the evidence supports the consequential conclusion and whether plausible alternatives or missing facts would change it. Existing valid independent review from a contributing skill can satisfy this requirement; do not commission a duplicate review. Unsupported conclusions remain hypotheses with their unresolved evidence identified. A rejected hypothesis reopens discovery rather than ending with a restated recommendation.
+Independent review checks the original request as well as the accepted contract: an omitted intent reopens discovery. A research plan, cautious hypothesis or easy-to-build option cannot replace a requested substantive recommendation. If the essential advantage or professional decisions remain unsupported, keep the destination open and pursue the missing evidence or a better alternative; accepting a limited draft does not close the broader destination. Consequential conclusions retain their supporting evidence and inference boundary; reviewer approval cannot turn an assumption into an observation. For research and decisions, independent review tests whether the evidence supports the consequential conclusion and whether plausible alternatives or missing facts would change it. Existing valid independent review from a contributing skill can satisfy this requirement; do not commission a duplicate review. Unsupported conclusions remain hypotheses with their unresolved evidence identified. A rejected hypothesis reopens discovery rather than ending with a restated recommendation.
 
 An executable command is not proof that its assertion is correct. A probe whose exit status contradicts its expected outcome, or also rejects its contract-conforming control, needs checker correction before it can justify acceptance or product repair.
 
@@ -52,6 +56,8 @@ Include the acceptance-record contract in checker handoffs: candidate identity, 
 Read [authority and blockers](references/authority-and-blockers.md) before a consequential authenticated or external action. Continue independent frontier work when one route is blocked. Persist and communicate the smallest actionable blocker promptly, without duplicate notifications, and recheck it at a useful boundary.
 
 ## Finish honestly
+
+An intermediate artifact can pass while the destination remains open. For each remaining material gap, either take the next useful discovery/action step, request the specific human input that now controls progress, or explain the evidenced blocker. A confidence label or a proposed future test alone is not a completion state.
 
 Finish only when every material acceptance condition has current evidence in the right modality, required specialist outcomes and coverage are visible, and the original request remains aligned. Report the result, use path, evidence, boundaries, and any exact human action still required.
 
