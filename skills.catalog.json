@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "0.3.0-rc.2",
+  "version": "0.3.0-rc.3",
   "releaseUnit": "collection",
   "skills": [
     {
@@ -8,21 +8,21 @@
       "path": "skills/dig-deeper",
       "maturity": "stable",
       "releaseUnit": "dig-deeper",
-      "version": "0.1.0"
+      "version": "2.0.0"
     },
     {
       "name": "dig-deeper-core",
       "path": "skills/dig-deeper-core",
       "maturity": "stable",
       "releaseUnit": "dig-deeper",
-      "version": "0.1.0"
+      "version": "2.0.0"
     },
     {
       "name": "dig-deeper-probe",
       "path": "skills/dig-deeper-probe",
       "maturity": "stable",
       "releaseUnit": "dig-deeper",
-      "version": "0.1.0"
+      "version": "2.0.0"
     },
     {
       "name": "fast-shot",
@@ -106,18 +106,18 @@
       "path": "skills/smart-shot",
       "maturity": "stable",
       "releaseUnit": "smart-shot",
-      "version": "1.0.0"
+      "version": "2.0.0"
     }
   ],
   "releaseUnits": {
     "smart-shot": {
-      "version": "1.0.0",
+      "version": "2.0.0",
       "members": [
         "smart-shot"
       ]
     },
     "dig-deeper": {
-      "version": "0.1.0",
+      "version": "2.0.0",
       "members": [
         "dig-deeper",
         "dig-deeper-core",
