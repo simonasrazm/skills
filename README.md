@@ -9,12 +9,12 @@ Skills for deep diagnosis, hard decisions and verified outcomes. Built for Codex
 | Skill | Use it for | Version |
 |---|---|---|
 | [SFLO Waydriver](skills/sflo-waydriver/) | Best of SFLO and Wayfinder (from Matt Pocock). Throw at any problem, not just software development or quick fixes | `0.4.0-rc.2` |
-| [Smart Shot](skills/smart-shot/) | Discover hidden intent and unknowns; assemble specialists to resolve them. | `2.0.0` |
-| [Dig Deeper](skills/dig-deeper/) | Diagnose difficult failures through read-only evidence. | `2.0.0` |
-| [Dig Deeper Probe](skills/dig-deeper-probe/) | Reproduce failures and run controlled experiments when observation is insufficient. | `2.0.0` |
-| [Fast Shot](skills/fast-shot/) | Improve a bounded request with a few focused checks. | `0.1.0` |
-| [SFLO Quick](skills/sflo-quick/) | Execute a small task through a lightweight plan, act, check and repair loop. | `0.1.0` |
-| [Point the Way](skills/point-the-way/) | Find and test a workable route around constraints. | `0.1.0` |
+| [Smart Shot](skills/smart-shot/) | Read between the lines: discover hidden intents. Identify domains touched and discover unknown unknowns. Assemble ad hoc expert agents | `2.0.0` |
+| [Dig Deeper](skills/dig-deeper/) | Diagnose nasty, deep bugs using logs, system state and other read-only evidence. Do not allow AI to present assumptions as facts or conclusions | `2.0.0` |
+| [Dig Deeper Probe](skills/dig-deeper-probe/) | Reproduce failures and run controlled experiments when observation is not enough. Install tools if that would help | `2.0.0` |
+| [Fast Shot](skills/fast-shot/) | Get a moderately better result from a weak prompt through a lighter, much faster Smart Shot | `0.1.0` |
+| [SFLO Quick](skills/sflo-quick/) | Execute any bounded task through a lightweight plan-do-check-act cycle that removes basic mistakes. Use it when you are tired of repeating basic mistakes by agents | `0.1.0` |
+| [Point the Way](skills/point-the-way/) | When you want AI to consider more options and probe which one is unblocked. When you just need a problem to go away rather than a perfect solution | `0.1.0` |
 | [Slop Sweep](skills/slop-sweep/) | Remove unjustified filler and complexity from prose, plans, interfaces or code; repair presentation when authorized. | `0.4.0-rc.2` |
 | [Security Check](skills/security-check/) | Independently assess realistic security and privacy risks. | `0.4.0-rc.2` |
 | [Skill Compressor](skills/skill-compressor/) | Reduce skill token cost while testing that routing and behavior survive. | `0.1.0` |
