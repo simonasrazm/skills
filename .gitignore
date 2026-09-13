@@ -4,3 +4,5 @@ __pycache__/
 .scratch/
 
 skills/legacy.db
+
+.DS_Store
