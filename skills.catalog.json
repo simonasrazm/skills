@@ -1,89 +1,164 @@
 {
-  "schemaVersion": 1,
-  "version": "0.3.0-rc.1",
-  "releaseUnit": "repository",
+  "schemaVersion": 2,
+  "version": "0.3.0-rc.2",
+  "releaseUnit": "collection",
   "skills": [
     {
       "name": "dig-deeper",
       "path": "skills/dig-deeper",
-      "maturity": "stable"
+      "maturity": "stable",
+      "releaseUnit": "dig-deeper",
+      "version": "0.1.0"
     },
     {
       "name": "dig-deeper-core",
       "path": "skills/dig-deeper-core",
-      "maturity": "stable"
+      "maturity": "stable",
+      "releaseUnit": "dig-deeper",
+      "version": "0.1.0"
     },
     {
       "name": "dig-deeper-probe",
       "path": "skills/dig-deeper-probe",
-      "maturity": "stable"
+      "maturity": "stable",
+      "releaseUnit": "dig-deeper",
+      "version": "0.1.0"
     },
     {
       "name": "fast-shot",
       "path": "skills/fast-shot",
-      "maturity": "stable"
+      "maturity": "stable",
+      "releaseUnit": "fast-shot",
+      "version": "0.1.0"
     },
     {
       "name": "point-the-way",
       "path": "skills/point-the-way",
-      "maturity": "arena"
+      "maturity": "arena",
+      "releaseUnit": "point-the-way",
+      "version": "0.1.0"
     },
     {
       "name": "s-dev",
       "path": "skills/s-dev",
       "maturity": "arena",
-      "family": "sflo-waydriver"
+      "releaseUnit": "sflo-waydriver",
+      "version": "0.3.0-rc.1"
     },
     {
       "name": "s-qa",
       "path": "skills/s-qa",
       "maturity": "arena",
-      "family": "sflo-waydriver"
+      "releaseUnit": "sflo-waydriver",
+      "version": "0.3.0-rc.1"
     },
     {
       "name": "s-ui-check",
       "path": "skills/s-ui-check",
       "maturity": "arena",
-      "family": "sflo-waydriver"
+      "releaseUnit": "sflo-waydriver",
+      "version": "0.3.0-rc.1"
     },
     {
       "name": "s-waydriver",
       "path": "skills/s-waydriver",
       "maturity": "arena",
-      "family": "sflo-waydriver"
+      "releaseUnit": "sflo-waydriver",
+      "version": "0.3.0-rc.1"
     },
     {
       "name": "security-check",
       "path": "skills/security-check",
       "maturity": "arena",
-      "family": "sflo-waydriver"
+      "releaseUnit": "sflo-waydriver",
+      "version": "0.3.0-rc.1"
     },
     {
       "name": "sflo-quick",
       "path": "skills/sflo-quick",
-      "maturity": "stable"
+      "maturity": "stable",
+      "releaseUnit": "sflo-quick",
+      "version": "0.1.0"
     },
     {
       "name": "sflo-waydriver",
       "path": "skills/sflo-waydriver",
       "maturity": "arena",
-      "family": "sflo-waydriver"
+      "releaseUnit": "sflo-waydriver",
+      "version": "0.3.0-rc.1"
     },
     {
       "name": "skill-compressor",
       "path": "skills/skill-compressor",
-      "maturity": "stable"
+      "maturity": "stable",
+      "releaseUnit": "skill-compressor",
+      "version": "0.1.0"
     },
     {
       "name": "slop-sweep",
       "path": "skills/slop-sweep",
       "maturity": "arena",
-      "family": "sflo-waydriver"
+      "releaseUnit": "sflo-waydriver",
+      "version": "0.3.0-rc.1"
     },
     {
       "name": "smart-shot",
       "path": "skills/smart-shot",
-      "maturity": "stable"
+      "maturity": "stable",
+      "releaseUnit": "smart-shot",
+      "version": "1.0.0"
     }
-  ]
+  ],
+  "releaseUnits": {
+    "smart-shot": {
+      "version": "1.0.0",
+      "members": [
+        "smart-shot"
+      ]
+    },
+    "dig-deeper": {
+      "version": "0.1.0",
+      "members": [
+        "dig-deeper",
+        "dig-deeper-core",
+        "dig-deeper-probe"
+      ]
+    },
+    "fast-shot": {
+      "version": "0.1.0",
+      "members": [
+        "fast-shot"
+      ]
+    },
+    "sflo-quick": {
+      "version": "0.1.0",
+      "members": [
+        "sflo-quick"
+      ]
+    },
+    "skill-compressor": {
+      "version": "0.1.0",
+      "members": [
+        "skill-compressor"
+      ]
+    },
+    "point-the-way": {
+      "version": "0.1.0",
+      "members": [
+        "point-the-way"
+      ]
+    },
+    "sflo-waydriver": {
+      "version": "0.3.0-rc.1",
+      "members": [
+        "s-dev",
+        "s-qa",
+        "s-ui-check",
+        "s-waydriver",
+        "security-check",
+        "sflo-waydriver",
+        "slop-sweep"
+      ]
+    }
+  }
 }

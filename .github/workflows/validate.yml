@@ -16,5 +16,6 @@ jobs:
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: 1.3.11
-      - run: bun scripts/validate-skills.ts
-      - run: bun scripts/validate-release.ts
+      - run: bun utilities/validation/skill-definitions.ts
+      - run: bun utilities/validation/release-catalog.ts
+      - run: bun test ./utilities/validation/release-catalog.test.ts

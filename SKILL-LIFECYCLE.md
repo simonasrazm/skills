@@ -1,29 +1,38 @@
 # Skill lifecycle
 
-Every skill has a permanent source path at `skills/<name>/`. Maturity is recorded in `skills.catalog.json` as `arena`, `stable`, or `deprecated`. Promotion changes metadata and installation catalog membership, never paths or names.
+Every skill has a permanent source path at `skills/<name>/`. Maturity is recorded in `skills.catalog.json` as `arena`, `stable`, or `deprecated`. Promotion changes metadata and installation catalog membership, never paths or names. Maturity and version are separate: an established skill can retain stable discovery while its new version contract starts below 1.0.
 
 ## Versions and releases
 
-All skills share one repository SemVer version. The catalog and plugin manifest carry the same version. Waydriver's seven components are released and installed together; they have no independent version counters.
+The catalog is the version source of truth. Each skill identifies a release unit and its version; related skills with coupled references share one unit. Other skills advance independently. The collection version matches the plugin manifest and identifies the complete installation catalog. Updating one skill does not advance unrelated skill versions.
 
-Use patch releases for compatible corrections, minor releases for added capabilities, and major releases for incompatible names, contracts, or installation changes. Before 1.0, incompatible changes increment the minor version and are called out explicitly. Preview releases append `-rc.N`, starting with `v0.3.0-rc.1`. Preview status does not demote existing stable skills, and a stable repository release does not automatically promote arena skills.
+Use patch releases for compatible corrections, minor releases for added capabilities, and major releases for incompatible names, contracts, or installation changes. Before 1.0, incompatible changes increment the minor version and are called out explicitly. Preview releases append `-rc.N`. A collection release does not automatically promote arena skills.
 
-Tags identify immutable commits: never move a published tag. CHANGELOG.md records changed skills, compatibility, and verification. A release's GitHub source archive is the versioned artifact. Maturity metadata is descriptive; the plugin's explicit skill list controls its stable selection. Other installers may discover every skill, so select arena skills explicitly.
+Tags identify immutable repository commits:
 
-## Install a fixed Waydriver family
+- `v<version>` identifies a collection snapshot.
+- `<release-unit>/v<version>` identifies a component release, for example `smart-shot/v1.0.0`.
 
-Clone a release into a retained, version-specific directory:
+A component tag still points to a complete Git commit. Its promise covers only the catalog members of that release unit. Never move a published tag. If any member's contract changes, increment the unit version and publish a new tag. A catalog-only collection release can reference unchanged component versions. `CHANGELOG.md` records changes and verification; [VERSIONING.md](VERSIONING.md) records the initial history-based version decisions.
+
+GitHub Releases are optional notes attached to tags. No uploaded archives are required; GitHub generates source zip/tar downloads automatically. No release resolver or automatic updater is installed.
+
+## Live development and pinned use
+
+For immediate testing, symlink each selected skill directory from a development checkout into the harness skill directory. For Codex that directory is `$CODEX_HOME/skills`, defaulting to `~/.codex/skills`. Back up existing copies before replacing them. Editing the source updates what the symlink resolves to immediately; a task that already loaded instructions may need to reload them or start fresh. A dirty development checkout is ahead of its catalog version: record its commit and diff when comparing experiments.
+
+For reproducible use, clone a tag into a retained directory and link the selected release unit's members from there:
 
 ```sh
-git clone --branch v0.3.0-rc.1 --depth 1 https://github.com/simonasrazm/skills.git skills-v0.3.0-rc.1
+git clone --branch smart-shot/v1.0.0 --depth 1 https://github.com/simonasrazm/skills.git skills-smart-shot-v1.0.0
 ```
 
-Install these sibling directories from that checkout into your harness skill directory: `sflo-waydriver`, `s-waydriver`, `s-dev`, `s-qa`, `security-check`, `slop-sweep`, and `s-ui-check`. Preserve all references and the bundled license. For Codex the destination is `$CODEX_HOME/skills`, defaulting to `~/.codex/skills`. Back up existing copies before replacing them. Record the tag and commit SHA with the installation.
+Select members from `releaseUnits` in that checkout's catalog. For a coupled unit, update or roll back every member together, preserving references and bundled licenses. Record the tag and commit SHA. Retain the old checkout; rollback repoints the links to it. Do not update a pinned checkout in place.
 
-Updates are explicit: install the complete family from another tagged checkout. Retain earlier copies and their revision receipts; rollback restores the whole previous family. Do not mix component revisions or link an installation to a mutable development checkout. Existing pinned installations remain unchanged when source files move or new releases appear.
+The plugin's explicit skill list controls its stable selection. Other installers may discover every skill, so select arena skills explicitly.
 
-## Promotion
+## Publishing and promotion
 
-Promote a skill after real-project evidence supports its acceptance behavior and cost. Record relevant limitations, change its maturity, include it in the stable plugin list if appropriate, and publish a new release with matching catalog and plugin versions. A correction after publication always receives a new version.
+Before publishing, update changed unit versions and matching skill entries, advance the collection/plugin version, update release notes, and run the checks in `utilities/validation/`. Tag the verified commit with the new collection tag and only the component tags whose versions are new. Preserve existing component tags for unchanged units.
 
-There is no automatic updater. Releases and retained snapshots provide explicit installation, comparison, and rollback.
+Promote a skill after real-project evidence supports its acceptance behavior and cost. Record limitations, change maturity, and include it in the stable plugin list if appropriate. Promotion is a separate decision from version numbering.

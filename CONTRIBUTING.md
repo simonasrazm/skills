@@ -8,6 +8,6 @@ Before opening a pull request:
 - Show the current behaviour and the proposed change.
 - Preserve explicit authority, safety and verification boundaries.
 - Include evidence that the new wording improves routing or runtime behaviour when behaviour changes.
-- Run `bun scripts/validate-skills.ts`.
+- Run the checks listed in [utilities/validation/](utilities/validation/).
 
 Keep pull requests small enough to review. A shorter prompt, a stronger claim or a model's approval is not evidence by itself.

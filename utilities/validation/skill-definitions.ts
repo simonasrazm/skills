@@ -1,4 +1,4 @@
-const root = new URL('../', import.meta.url);
+const root = new URL('../../', import.meta.url);
 const files = [...new Bun.Glob('skills/*/SKILL.md').scanSync({ cwd: root.pathname, absolute: true })];
 if (!files.length) throw new Error('No public skills found.');
 
