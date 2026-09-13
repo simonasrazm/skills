@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.3.0-rc.2
+
+- Introduce independent component versions and immutable component tag names in the schema-v2 catalog. Coupled skills share a release unit; collection and plugin versions still match.
+- Establish initial component versions. No skill instructions change in this release.
+- Move repository checks to utilities/validation/ and validate every cataloged skill without a fixed family name or member count.
+- Document both live symlink testing and pinned installation/rollback.
+
+Catalog consumers: schema 2 uses `releaseUnit` and `releaseUnits` instead of `family`.
+
 ## 0.3.0-rc.1
 
 First versioned preview of the Markdown SFLO Waydriver family.
