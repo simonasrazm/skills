@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.0-rc.3
+
+- Recognize Smart Shot’s second-generation orchestration and Dig Deeper’s STR lineage with component version 2.0.0. Earlier tags remain unchanged; this corrects version baselines without changing skill instructions.
+- Reserve GitHub Releases for major changes and selected milestones. Routine updates use tags and changelog entries.
+
 ## 0.3.0-rc.2
 
 - Introduce independent component versions and immutable component tag names in the schema-v2 catalog. Coupled skills share a release unit; collection and plugin versions still match.

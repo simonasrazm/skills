@@ -11,11 +11,11 @@ Use patch releases for compatible corrections, minor releases for added capabili
 Tags identify immutable repository commits:
 
 - `v<version>` identifies a collection snapshot.
-- `<release-unit>/v<version>` identifies a component release, for example `smart-shot/v1.0.0`.
+- `<release-unit>/v<version>` identifies a component release, for example `smart-shot/v2.0.0`.
 
 A component tag still points to a complete Git commit. Its promise covers only the catalog members of that release unit. Never move a published tag. If any member's contract changes, increment the unit version and publish a new tag. A catalog-only collection release can reference unchanged component versions. `CHANGELOG.md` records changes and verification; [VERSIONING.md](VERSIONING.md) records the initial history-based version decisions.
 
-GitHub Releases are optional notes attached to tags. No uploaded archives are required; GitHub generates source zip/tar downloads automatically. No release resolver or automatic updater is installed.
+GitHub Releases are curated milestone notes attached to tags. Create them for major changes or another explicitly selected milestone; routine fixes and minor updates need only version tags and changelog entries. A major change can be worth a Release even when it is a SemVer minor increment. No uploaded archives are required; GitHub generates source zip/tar downloads automatically. No release resolver or automatic updater is installed.
 
 ## Live development and pinned use
 
@@ -24,7 +24,7 @@ For immediate testing, symlink each selected skill directory from a development 
 For reproducible use, clone a tag into a retained directory and link the selected release unit's members from there:
 
 ```sh
-git clone --branch smart-shot/v1.0.0 --depth 1 https://github.com/simonasrazm/skills.git skills-smart-shot-v1.0.0
+git clone --branch smart-shot/v2.0.0 --depth 1 https://github.com/simonasrazm/skills.git skills-smart-shot-v2.0.0
 ```
 
 Select members from `releaseUnits` in that checkout's catalog. For a coupled unit, update or roll back every member together, preserving references and bundled licenses. Record the tag and commit SHA. Retain the old checkout; rollback repoints the links to it. Do not update a pinned checkout in place.
