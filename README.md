@@ -93,4 +93,4 @@ The family and Point the Way have `arena` maturity in [skills.catalog.json](skil
 
 Invoke: `Use sflo-waydriver in surgical mode to fix …`
 
-See [release notes](CHANGELOG.md) and [versioning and installation](VERSIONING.md). The first preview is `v0.3.0-rc.1`.
+See [release notes](CHANGELOG.md).
