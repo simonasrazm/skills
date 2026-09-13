@@ -6,7 +6,7 @@ Every skill has a permanent source path at `skills/<name>/`. Maturity is recorde
 
 The catalog is the version source of truth. Each skill identifies a release unit and its version; related skills with coupled references share one unit. Other skills advance independently. The collection version matches the plugin manifest and identifies the complete installation catalog. Updating one skill does not advance unrelated skill versions.
 
-Use patch releases for compatible corrections, minor releases for added capabilities, and major releases for incompatible names, contracts, or installation changes. Before 1.0, incompatible changes increment the minor version and are called out explicitly. Preview releases append `-rc.N`. A collection release does not automatically promote arena skills.
+The supported contract comprises invocation, supported tasks/inputs, promised outputs, required dependencies, and authority/side effects. Use 0.x while that contract is explicitly experimental; 1.0 establishes the supported contract. Use patch releases for compatible corrections, minor releases for added capabilities, and major releases for incompatible names, contracts, or installation changes. A rewrite, greater maturity, or “second generation” alone does not justify a major increment. Before 1.0, incompatible changes increment the minor version and are called out explicitly. Preview releases append `-rc.N`. A collection release does not automatically promote arena skills.
 
 Tags identify immutable repository commits:
 
