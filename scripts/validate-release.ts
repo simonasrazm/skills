@@ -1,4 +1,4 @@
-import { readdir, readFile, stat } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 const root=resolve(import.meta.dir,'..');
 const catalog=await Bun.file(root+'/skills.catalog.json').json();
@@ -25,5 +25,6 @@ for(const entry of family)for(const file of new Bun.Glob('**/*.md').scanSync({cw
   await stat(resolve(dirname(file),m[1]));links++;
  }
 }
-for(const dir of await readdir(root+'/arena'))if(dir!=='README.md')throw Error('Skill still in arena');
+const arenaExists=await stat(root+'/arena').then(()=>true,error=>{if(error.code==='ENOENT')return false;throw error;});
+if(arenaExists)throw Error('Arena is metadata; remove the obsolete directory');
 console.log(`Release ${catalog.version}: ${names.size} catalog entries, 7 family members, ${links} links valid.`);
