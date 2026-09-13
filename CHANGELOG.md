@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0-rc.1
+
+- Extend Waydriver discovery and acceptance to non-software outcomes, retaining software implementation capabilities. Resolve consequential intent before choosing surgical execution.
+- Preserve outcome and comparative-quality requirements, distinguish evidence from hypotheses, and investigate delivery capabilities before accepting material concessions.
+- Bind tracker destinations and visibility; preserve source commitments, existing work and superseded decisions.
+- Add explicit display names for the Waydriver family. Plugin identity remains simon-skills; no installation namespace migration.
+
 ## 0.3.0-rc.3
 
 - Recognize Smart Shot’s second-generation orchestration and Dig Deeper’s STR lineage with component version 2.0.0. Earlier tags remain unchanged; this corrects version baselines without changing skill instructions.

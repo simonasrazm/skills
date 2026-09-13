@@ -1,6 +1,6 @@
 # SFLO Waydriver
 
-SFLO Waydriver is a full-Markdown dark software factory for frontier models, shaped by real work and experiments with Sol and Astra. Compared with earlier SFLO variants, its agent capabilities are reusable skills: invoke the full factory or only the capability you need, whenever you need it. The current arena package has been forward-tested on Sol without spending Astra on prompt optimization.
+SFLO Waydriver is a Markdown outcome driver for frontier models, shaped by real work and experiments with Sol and Astra. Compared with earlier SFLO variants, its agent capabilities are reusable skills: invoke the full factory or only the capability you need, whenever you need it. The experimental package has been tested with Sol and Astra; verification limits are recorded in the release notes.
 
 It aims to drive safely from intent to verified acceptance and return to a person only when evidence, collective knowledge, and bounded experiments cannot find a safe route.
 
@@ -8,7 +8,7 @@ It aims to drive safely from intent to verified acceptance and return to a perso
 
 | Skill | Purpose |
 | --- | --- |
-| `sflo-waydriver` | Default entry point: build, independent checks, repair, acceptance |
+| `sflo-waydriver` | Default entry point: discovery, action, independent checks, acceptance |
 | `s-waydriver` | Advanced control plane only: discovery, decisions, graph, frontier, resumption |
 | `s-dev` | Product implementation and repair |
 | `s-qa` | Fast, slice, and final functional QA |
@@ -22,11 +22,11 @@ Smart Shot and the Dig Deeper skills are optional competence providers. When abs
 
 ## Which driver to call
 
-Call `sflo-waydriver` when the requested outcome is changed, working software with independent acceptance. It chooses surgical mode or invokes `s-waydriver` when durable coordination becomes useful.
+Call `sflo-waydriver` when a problem needs discovery, authorized action, and independent acceptance. The destination can be a strategy, research result, practical project, or software change. It chooses a bounded composition or invokes `s-waydriver` when durable coordination becomes useful.
 
 The code-based `sflo` runner is a separate factory. An explicit `sflo-waydriver` invocation selects this Markdown family.
 
-For a surgical fix, it stays with the smallest verified composition: a clarity check, one mutation unit, `s-dev`, `s-qa`, and only applicable specialist checks. It creates no durable map and avoids loading unrelated capabilities.
+For a surgical software fix, it stays with the smallest verified composition: a clarity check, one mutation unit, `s-dev`, `s-qa`, and only applicable specialist checks. It creates no durable map and avoids loading unrelated capabilities.
 
 These are capabilities rather than a required agent roster. A small change normally uses one builder context and one fresh acceptance context; a competent reviewer can cover multiple applicable lenses while reporting their coverage separately. Extra specialists remain available when the risk or expertise requires them.
 
@@ -46,7 +46,7 @@ Invoke the conductor explicitly:
 
 > Use `sflo-waydriver` in surgical mode to fix the duplicate submission bug.
 
-Surgical mode is not another skill. It is the factory's smallest composition: a clarity assessment, `s-dev`, independent `s-qa`, applicable specialist checks, and the repair loop. You can also invoke `s-dev` and `s-qa` directly when you want to compose that route yourself.
+Surgical mode is not another skill. It is the smallest acceptance-bearing composition. For software, that means a clarity assessment, `s-dev`, independent `s-qa`, applicable specialist checks, and the repair loop. You can also invoke `s-dev` and `s-qa` directly when you want to compose that route yourself.
 
 ## Arena status
 
