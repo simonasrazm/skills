@@ -21,6 +21,8 @@ The project's testing pyramid and defined checks remain authoritative. These mod
 
 For every applicable acceptance condition, record the action or command, observed result, evidence location, and pass/fail/blocked verdict. Add a verifier-chosen probe against the riskiest plausible false pass.
 
+Before issuing a defect, locate the exact failing evidence and recheck that location with a focused observation or discriminating probe. Reconcile conflicting observations so the finding supports a repair rather than an inspection error.
+
 A probe's exit status must match its stated expectation: required rejection is a passing outcome, not a failed test. For a new defect probe, demonstrate that the same assertion passes a contract-conforming control and fails the suspected behavior, using isolated fixtures when necessary. If a control cannot be established, report that limitation and keep the probe's verdict provisional.
 
 Report supported observations as defects, observed boundaries or undecided policy, coverage gaps, user/operator friction, or actionable opportunities. Include UI/design issues when observed, but use a rendered-interface verifier for an interface verdict. Avoid quotas and tracker pollution; connect related symptoms to the smallest evidenced cause.

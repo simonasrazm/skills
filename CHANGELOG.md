@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0-rc.3
+
+- Deliver code behaviors in working vertical slices, preserving shared seams and proven behavior. Pair edits with their checks when the tool supports sequential execution.
+- Recheck the exact evidence behind a suspected QA defect before returning it for repair.
+
+Verification: fresh Sol comparisons and independent acceptance. Dev produced separate booking and cancellation red/green slices and passed 500 model-based transitions; a one-line repair preserved its neighboring cases. QA distinguished a clipped PDF from a conforming control in both original and label-swapped runs; baseline reports contained false missing-content findings. Existing Security Check passed an additional cross-boundary message-dispatch simulation without instruction changes.
+
+Limits: bounded fixtures, not broad superiority. Pairing edits and checks reduced the Dev trial from 15 to 10 model-response updates versus the first successful vertical-cycle draft, but output tokens and elapsed time increased. Collection and coupled Waydriver unit advance together; other versions and skill descriptions are unchanged.
+
 ## 0.4.0-rc.2
 
 - Keep live linked skill names unprefixed in Codex by defining the Claude plugin in its marketplace entry with strict:false. Preserve the simon-skills package identity and existing marketplace skill selection. Standalone --plugin-dir loading of this repository no longer has a plugin.json definition; use marketplace installation for Claude Code.
