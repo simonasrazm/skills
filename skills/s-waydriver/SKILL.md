@@ -48,7 +48,7 @@ A decision ticket is a precise question whose answer changes the safe route. It 
 
 Fog becomes a ticket when its question can be stated precisely. Resolving a ticket graduates newly visible questions and removes that patch from **Not yet specified**. Out-of-scope work is closed as a boundary, not carried as fog.
 
-Before selecting the next frontier, reconcile material user prompts, feedback and discovery results with recorded commitments. Preserve stated requirements and reasons with source pointers; attribute each choice to its human or agent author. Keep agent defaults and inferred rationale distinct from human approval. Apply explicit corrections with supersession links, update affected acceptance, and reopen unresolved conflicts. Preserve decision reasons rather than transcripts of deliberation.
+On continuation, reconcile material user prompts, feedback and discovery results with recorded commitments. Preserve stated requirements and reasons with source pointers; attribute each choice to its human or agent author. Keep agent defaults and inferred rationale distinct from human approval. Apply explicit corrections with supersession links, update affected acceptance, and reopen unresolved conflicts. Preserve decision reasons rather than transcripts of deliberation. Persist material changes in the map, affected units and lasting decisions before responding, including decision-only responses. These records must agree with the latest material input.
 
 Classify lasting records as **product** (behavior, feature, content, UX, business rule) or **architecture** (technical structure, platform, data, integration, security boundary, scalability, operations). Follow the project's decision-record location; otherwise place them under `docs/decisions/product/` or `docs/decisions/architecture/`. Both human and autonomous lasting decisions use these records. Include the choice, decision maker, rationale, supporting evidence, remaining assumptions and any superseded decision. Reconcile accepted discovery results into existing project documentation; the ticket and map link the authoritative record.
 
@@ -59,6 +59,8 @@ When enough decisions are clear to build, create or resume a linked delivery map
 Delivery units are coherent vertical changes with observable acceptance, real dependencies, candidate identity, and current evidence. The frontier is the open, unblocked, unclaimed set. Keep one maintained-product mutation unit active unless isolation and merge/revalidation are demonstrated. Non-mutating research and checks may overlap when their inputs are frozen and their outputs retrievable.
 
 A caller may supply implementation and verification capabilities. Waydriver records their units, candidate identities, evidence, and blockers without imposing a domain-specific delivery or verification policy. A repair creates a new candidate and reopens affected evidence.
+
+When starting or resuming a delivery unit, read [execution runs](references/execution-runs.md) and bind its execution record to the unit and accepted contract. Keep pending inputs, repairs and acceptance resumable through that binding.
 
 ## Continue safely
 
