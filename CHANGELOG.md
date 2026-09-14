@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0-rc.7
+
+- Keep Waydriver execution entirely in Markdown. Workers save candidate-specific evidence before returning; the conductor links receipts, carries repair findings across contexts, and closes them after independent rechecks. Remove the proposed native runner integration.
+- Clarify Dig Deeper Probe installation authority: use explicit consent or the established execution boundary. The Dig Deeper component advances to 2.0.1.
+
+Verification: fresh Sol trials exercised file-backed repair/recheck, incomplete-review recovery, final handoff generation and reuse of a matching independent receipt. Authorization trials covered unspecified consent, existing consent and denial using simulated installations. This establishes bounded file-state continuation, not power-loss durability. Dev, QA and Security bodies are unchanged; comparative experiments remain separate from these corrections.
+
 ## 0.4.0-rc.6
 
 - Bind numbered delivery units to project-local execution records with reciprocal references, immutable acceptance snapshots, and waiting/resumption history. Keep native runtime state with its executor.
