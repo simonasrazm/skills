@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0-rc.5
+
+- Reconcile material prompts, feedback and discovery results before selecting further work. Preserve lasting human and autonomous decisions with source pointers, rationale and supersession links; distinguish agent defaults from human approval.
+- Shorten the SFLO Waydriver README and remove its Arena section.
+
 ## 0.4.0-rc.4
 
 - Preserve previous runner state and gate artifacts as evidence during migration. Link their run identifiers and paths from current work records; an older runner resumes through its own execution path.
