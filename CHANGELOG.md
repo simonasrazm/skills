@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0-rc.3
+
+- Deliver code behaviors in working vertical slices, preserving shared seams and proven behavior. Pair edits with their checks when the tool supports sequential execution.
+- Recheck the evidence behind a suspected QA defect before requesting repair.
+
 ## 0.4.0-rc.2
 
 - Keep live linked skill names unprefixed in Codex by defining the Claude plugin in its marketplace entry with strict:false. Preserve the simon-skills package identity and existing marketplace skill selection. Standalone --plugin-dir loading of this repository no longer has a plugin.json definition; use marketplace installation for Claude Code.
