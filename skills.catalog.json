@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "0.4.0-rc.4",
+  "version": "0.4.0-rc.5",
   "releaseUnit": "collection",
   "skills": [
     {
@@ -43,35 +43,35 @@
       "path": "skills/s-dev",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.4"
+      "version": "0.4.0-rc.5"
     },
     {
       "name": "s-qa",
       "path": "skills/s-qa",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.4"
+      "version": "0.4.0-rc.5"
     },
     {
       "name": "s-ui-check",
       "path": "skills/s-ui-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.4"
+      "version": "0.4.0-rc.5"
     },
     {
       "name": "s-waydriver",
       "path": "skills/s-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.4"
+      "version": "0.4.0-rc.5"
     },
     {
       "name": "security-check",
       "path": "skills/security-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.4"
+      "version": "0.4.0-rc.5"
     },
     {
       "name": "sflo-quick",
@@ -85,7 +85,7 @@
       "path": "skills/sflo-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.4"
+      "version": "0.4.0-rc.5"
     },
     {
       "name": "skill-compressor",
@@ -99,7 +99,7 @@
       "path": "skills/slop-sweep",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.4"
+      "version": "0.4.0-rc.5"
     },
     {
       "name": "smart-shot",
@@ -149,7 +149,7 @@
       ]
     },
     "sflo-waydriver": {
-      "version": "0.4.0-rc.4",
+      "version": "0.4.0-rc.5",
       "members": [
         "s-dev",
         "s-qa",

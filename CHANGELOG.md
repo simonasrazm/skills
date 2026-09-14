@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0-rc.5
+
+- Reconcile material prompts, feedback and discovery results before selecting further work. Preserve lasting human and autonomous decisions with source pointers, rationale and supersession links; distinguish agent defaults from human approval.
+- Shorten the SFLO Waydriver README and remove its Arena section.
+
+Verification: bounded Sol replays of two real project records created durable decisions that the baseline left in tracker files. Revised wording separated owner approval from implementation defaults. Independent review caught stale authorization wording in a replay; repair was required. These trials do not establish reliable first-pass reconciliation or automatic capture during arbitrary ongoing work. Native per-unit runner integration remains separate and unimplemented.
+
 ## 0.4.0-rc.4
 
 - Preserve previous runner state and gate artifacts as evidence during migration. Link their run identifiers and paths from current work records; an older runner resumes through its own execution path.

@@ -48,7 +48,9 @@ A decision ticket is a precise question whose answer changes the safe route. It 
 
 Fog becomes a ticket when its question can be stated precisely. Resolving a ticket graduates newly visible questions and removes that patch from **Not yet specified**. Out-of-scope work is closed as a boundary, not carried as fog.
 
-Classify lasting records as **product** (behavior, feature, content, UX, business rule) or **architecture** (technical structure, platform, data, integration, security boundary, scalability, operations). Follow the project's decision-record location; otherwise place them under `docs/decisions/product/` or `docs/decisions/architecture/`. The ticket records evidence and links the record.
+Before selecting the next frontier, reconcile material user prompts, feedback and discovery results with recorded commitments. Preserve stated requirements and reasons with source pointers; attribute each choice to its human or agent author. Keep agent defaults and inferred rationale distinct from human approval. Apply explicit corrections with supersession links, update affected acceptance, and reopen unresolved conflicts. Preserve decision reasons rather than transcripts of deliberation.
+
+Classify lasting records as **product** (behavior, feature, content, UX, business rule) or **architecture** (technical structure, platform, data, integration, security boundary, scalability, operations). Follow the project's decision-record location; otherwise place them under `docs/decisions/product/` or `docs/decisions/architecture/`. Both human and autonomous lasting decisions use these records. Include the choice, decision maker, rationale, supporting evidence, remaining assumptions and any superseded decision. Reconcile accepted discovery results into existing project documentation; the ticket and map link the authoritative record.
 
 ## Drive delivery separately
 
