@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.4.0-rc.4
+
+- Preserve previous runner state and gate artifacts as evidence during migration. Link their run identifiers and paths from current work records; an older runner resumes through its own execution path.
+- Remove upstream synchronization instructions from S Waydriver. Runtime remains self-contained; retain the adapted material's MIT notice.
+
 ## 0.4.0-rc.3
 
 - Deliver code behaviors in working vertical slices, preserving shared seams and proven behavior. Pair edits with their checks when the tool supports sequential execution.

@@ -7,8 +7,6 @@ description: Reusable control plane for discovering, mapping, coordinating, and 
 
 A destination has arrived but the route is not fully visible. Chart only what can be seen, resolve the decisions that clear the fog, then drive acceptance-bearing work until the destination is reached or no safe route remains.
 
-Waydriver ports Wayfinder's map, decision-ticket, fog, frontier, tracker, and resumption semantics. It adds autonomous uncertainty resolution, a separate delivery graph, evidence invalidation, and safe continuation beyond planning. Read [the port notes](references/wayfinder-port.md) when maintaining or synchronizing it.
-
 ## Preserve the decision map
 
 The decision map is a canonical index, not a store. A decision lives in exactly one ticket or lasting decision record; the map gists and links it. Refer to maps and units by their human-readable names, with ids carried inside links.
