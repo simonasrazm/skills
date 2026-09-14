@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "0.4.0-rc.6",
+  "version": "0.4.0-rc.7",
   "releaseUnit": "collection",
   "skills": [
     {
@@ -8,21 +8,21 @@
       "path": "skills/dig-deeper",
       "maturity": "stable",
       "releaseUnit": "dig-deeper",
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "name": "dig-deeper-core",
       "path": "skills/dig-deeper-core",
       "maturity": "stable",
       "releaseUnit": "dig-deeper",
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "name": "dig-deeper-probe",
       "path": "skills/dig-deeper-probe",
       "maturity": "stable",
       "releaseUnit": "dig-deeper",
-      "version": "2.0.0"
+      "version": "2.0.1"
     },
     {
       "name": "fast-shot",
@@ -43,35 +43,35 @@
       "path": "skills/s-dev",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.6"
+      "version": "0.4.0-rc.7"
     },
     {
       "name": "s-qa",
       "path": "skills/s-qa",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.6"
+      "version": "0.4.0-rc.7"
     },
     {
       "name": "s-ui-check",
       "path": "skills/s-ui-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.6"
+      "version": "0.4.0-rc.7"
     },
     {
       "name": "s-waydriver",
       "path": "skills/s-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.6"
+      "version": "0.4.0-rc.7"
     },
     {
       "name": "security-check",
       "path": "skills/security-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.6"
+      "version": "0.4.0-rc.7"
     },
     {
       "name": "sflo-quick",
@@ -85,7 +85,7 @@
       "path": "skills/sflo-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.6"
+      "version": "0.4.0-rc.7"
     },
     {
       "name": "skill-compressor",
@@ -99,7 +99,7 @@
       "path": "skills/slop-sweep",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.6"
+      "version": "0.4.0-rc.7"
     },
     {
       "name": "smart-shot",
@@ -117,7 +117,7 @@
       ]
     },
     "dig-deeper": {
-      "version": "2.0.0",
+      "version": "2.0.1",
       "members": [
         "dig-deeper",
         "dig-deeper-core",
@@ -149,7 +149,7 @@
       ]
     },
     "sflo-waydriver": {
-      "version": "0.4.0-rc.6",
+      "version": "0.4.0-rc.7",
       "members": [
         "s-dev",
         "s-qa",
