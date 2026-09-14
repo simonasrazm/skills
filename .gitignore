@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 
 .scratch/
+.sflo/
 
 
 .DS_Store

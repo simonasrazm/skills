@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4.0-rc.6
+
+- Bind numbered delivery units to project-local execution records with reciprocal references, immutable acceptance snapshots, and waiting/resumption history. Keep native runtime state with its executor.
+- Persist material commitment changes before responding, including decision-only responses. Ignore local execution state in this repository.
+
+Verification: Sol real-project continuations and a fresh-context waiting/resumption trial, accepted after reviewer-directed snapshot repair. Reciprocal bindings and stable contract identity passed. Live continuation exposed omissions before the final wording/reference reload; this is bounded repair evidence, not broad first-pass reliability. Native runner reservation, attachment and bound resumption are not implemented by this Markdown release.
+
 ## 0.4.0-rc.5
 
 - Reconcile material prompts, feedback and discovery results before selecting further work. Preserve lasting human and autonomous decisions with source pointers, rationale and supersession links; distinguish agent defaults from human approval.
