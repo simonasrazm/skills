@@ -2,7 +2,7 @@
 
 Prefer the project's configured issue tracker and its native child, dependency, assignment, label, notification, and query primitives. The tracker should make the frontier visible without reconstructing it from prose.
 
-Bind tracker operations to the intended account/tenant, project or repository, and visibility using project configuration and existing work. A connected tracker or source repository is not itself the destination: a public skill repository need not host a person’s private execution tickets. If the binding remains ambiguous, keep work local until the destination is resolved; do not create external tickets to discover it. Verify native IDs and actual states rather than treating a local label mapping as a tracker mutation.
+Before creating tickets in a shared tracker, establish the intended tracking location from explicit configuration or relevant existing work and ownership. Record the evidence connecting this effort to that location. When investigation leaves plausible alternatives unresolved, ask the person where the effort belongs and keep proposed tickets locally until answered. Bind the established location to its intended account/tenant, project or repository, and visibility. Verify native IDs and actual states rather than treating a local label mapping as a tracker mutation.
 
 Maintain two linked carriers:
 

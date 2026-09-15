@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0-rc.3
+
+- Establish and record the intended shared-tracker location from configuration or relevant work and ownership. Ask when investigation leaves alternatives unresolved; keep proposed tickets locally while awaiting the answer. Load this rule before creating shared tickets.
+
 ## 0.5.0-rc.2
 
 - Keep a pending human question and its blocked commitment in the current work record while independent work continues.
