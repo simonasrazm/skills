@@ -71,7 +71,13 @@ The script reports unknown expected cost without route data. Declare mandatory l
 with repeatable `--required` paths. `--routes` lists complete, mutually exclusive load
 scenarios, including nested files; probabilities must sum to one. Use the same
 validated `--encoding` for both variants; `--require-tokenizer` forbids fallback
-estimates. Character estimates support screening, not small token-win claims.
+estimates. Character estimates locate large text surfaces; only tokenizer counts
+qualify token savings. Record the encoding and library version; an unknown model
+mapping makes the result encoding-specific, not an exact target-model count.
 For executions report input/output tokens, successful and failed calls, median and
 p95 executor latency, artifact bytes/words, and route frequencies. Cache effects and
-post-hoc grading cost stay separate from workflow cost.
+post-hoc grading cost stay separate from workflow cost. Normalize provider fields
+before calculating totals: cached input is part of normalized total input, and
+reasoning part of normalized total output. Preserve missing telemetry as unknown;
+report uncached input and cache-hit fraction from actual provider receipts. Static
+text savings do not establish lower runtime usage, latency or subscription quota use.

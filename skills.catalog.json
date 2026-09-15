@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "0.4.0-rc.7",
+  "version": "0.5.0-rc.1",
   "releaseUnit": "collection",
   "skills": [
     {
@@ -43,35 +43,35 @@
       "path": "skills/s-dev",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.7"
+      "version": "0.5.0-rc.1"
     },
     {
       "name": "s-qa",
       "path": "skills/s-qa",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.7"
+      "version": "0.5.0-rc.1"
     },
     {
       "name": "s-ui-check",
       "path": "skills/s-ui-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.7"
+      "version": "0.5.0-rc.1"
     },
     {
       "name": "s-waydriver",
       "path": "skills/s-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.7"
+      "version": "0.5.0-rc.1"
     },
     {
       "name": "security-check",
       "path": "skills/security-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.7"
+      "version": "0.5.0-rc.1"
     },
     {
       "name": "sflo-quick",
@@ -85,21 +85,21 @@
       "path": "skills/sflo-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.7"
+      "version": "0.5.0-rc.1"
     },
     {
       "name": "skill-compressor",
       "path": "skills/skill-compressor",
       "maturity": "stable",
       "releaseUnit": "skill-compressor",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "name": "slop-sweep",
       "path": "skills/slop-sweep",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.4.0-rc.7"
+      "version": "0.5.0-rc.1"
     },
     {
       "name": "smart-shot",
@@ -137,7 +137,7 @@
       ]
     },
     "skill-compressor": {
-      "version": "0.1.0",
+      "version": "0.1.1",
       "members": [
         "skill-compressor"
       ]
@@ -149,7 +149,7 @@
       ]
     },
     "sflo-waydriver": {
-      "version": "0.4.0-rc.7",
+      "version": "0.5.0-rc.1",
       "members": [
         "s-dev",
         "s-qa",
