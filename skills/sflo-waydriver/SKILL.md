@@ -53,6 +53,8 @@ Include the acceptance-record contract in checker handoffs: candidate identity, 
 
 ## Cross boundaries safely
 
+Before creating tickets in a shared tracker, read and apply [tracker location binding](../s-waydriver/references/tracker.md).
+
 Read [authority and blockers](references/authority-and-blockers.md) before a consequential authenticated or external action. Continue independent frontier work when one route is blocked. Persist and communicate the smallest actionable blocker promptly, without duplicate notifications, and recheck it at a useful boundary.
 
 ## Finish honestly
