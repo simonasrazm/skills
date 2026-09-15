@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0-rc.2
+
+- Keep a pending human question and its blocked commitment in the current work record while independent work continues.
+
 ## 0.5.0-rc.1
 
 - Mark the expanded Waydriver decision contract with a minor version: preserve lasting human and agent decisions in project documentation, with source, rationale, assumptions and supersession links. Continue from those records across units and repair cycles. This capability was introduced through the 0.4.0 release candidates; existing tags remain unchanged.
