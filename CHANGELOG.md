@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0-rc.2
+
+- Keep a pending human question and its blocked commitment in the current work record while independent work continues.
+
+Verification: a Sol ambiguity trial preserved the product but omitted durable waiting; the revised sentence recorded it. Further Sol checks delivered an already approved outcome without another question and resumed the saved issue after a simulated owner answer, preserving the unrelated policy. Eight bounded cells across baseline and candidate; no live human-dialogue or general reliability claim. Other family instructions are unchanged.
+
 ## 0.5.0-rc.1
 
 - Mark the expanded Waydriver decision contract with a minor version: preserve lasting human and agent decisions in project documentation, with source, rationale, assumptions and supersession links. Continue from those records across units and repair cycles. This capability was introduced through the 0.4.0 release candidates; existing tags remain unchanged.
