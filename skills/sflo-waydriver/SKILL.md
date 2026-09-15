@@ -1,6 +1,6 @@
 ---
 name: sflo-waydriver
-description: Drive a requested outcome through discovery, authorized action, independent verification, and repair with proportional coordination. Use when the user names SFLO Waydriver or wants a problem carried to an evidenced destination, including strategy, research, practical projects, and software; the code-based sflo runner is separate.
+description: Drive a requested outcome through disciplined flow. Can solve complex and compound problems as well as surgical fixes. Use when the user names SFLO Waydriver or wants a problem carried to an evidenced destination, including strategy, research, practical projects, software, and so on.
 ---
 
 # SFLO Waydriver

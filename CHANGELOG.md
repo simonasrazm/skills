@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.0-rc.1
+
+- Mark the expanded Waydriver decision contract with a minor version: preserve lasting human and agent decisions in project documentation, with source, rationale, assumptions and supersession links. Continue from those records across units and repair cycles. This capability was introduced through the 0.4.0 release candidates; existing tags remain unchanged.
+- Advance Skill Compressor to 0.1.1: compare semantic and telegraphic rewrites, require named-tokenizer measurements, and separate static size from provider-reported runtime usage and cache effects.
+
 ## 0.4.0-rc.7
 
 - Keep Waydriver execution entirely in Markdown. Workers save candidate-specific evidence before returning; the conductor links receipts, carries repair findings across contexts, and closes them after independent rechecks. Remove the proposed native runner integration.

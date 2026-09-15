@@ -14,13 +14,19 @@ changes as hypotheses until execution evidence supports them.
 1. **Freeze:** preserve the exact baseline, promotion bank, graders, settings,
    thresholds, staged evidence budget, and stop rules. Include real failures.
 2. **Measure:** inventory description, always-loaded body, each routed reference,
-   full surface, and expected loaded tokens. Use `scripts/measure_skill.py`; provide
-   observed route frequencies when available.
+   full surface, and expected loaded tokens. Run `scripts/measure_skill.py` with
+   `--require-tokenizer` or use an available tokenizer; record encoding and version.
+   Label an unverified target-model mapping. Use provider receipts for execution
+   input, cached input, output and reasoning; keep subsets separate. Character or
+   word counts cannot qualify a token-saving candidate. Provide observed route frequencies.
 3. **Map:** create a behavioral ledger: stable rule ID, decision changed, activation
    condition, owning file, dependent rules, positive case, and failure if lost.
    Separate catalog routing from post-load execution behavior.
 4. **Hypothesize:** consider unchanged control, removal, and the shortest replacement
-   per seam. Prefer one independent variable. Reject noncompetitive variants by
+   per seam: concise semantic wording, established pattern names with necessary
+   qualifiers, and telegraphic notation. Measure each against the unchanged text;
+   symbols and abbreviations are not inherently fewer tokens. Prefer one independent
+   variable. Reject noncompetitive variants by
    inspection; generating hypotheses does not require executing them.
 5. **Screen:** run deterministic checks, then one observation per live variant on the
    most discriminating known failure. Reuse a condition-identical control observation.

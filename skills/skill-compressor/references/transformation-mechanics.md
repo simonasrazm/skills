@@ -14,6 +14,13 @@ Use this reference while classifying and rewriting one skill seam.
 6. Remove restated model defaults only after a no-guidance control ties on positive,
    negative, and compounded cases.
 
+Compare concise prose, established pattern vocabulary and telegraphic notation
+within the same seam. A pattern name replaces its definition only when activation,
+exceptions and required evidence survive. Preserve negation, sequence, ownership
+and exact identifiers. Measure complete replacements with the same tokenizer;
+arrows, uncommon abbreviations and fewer words can cost more tokens. Retain the
+clearest wording among token-equivalent candidates.
+
 ## Risky transformations
 
 - Deleting thresholds, permissions, authority boundaries, stop conditions, or failure
