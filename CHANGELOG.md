@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.0-rc.6
+
+- Load DAMA guidance only for data-quality assessment or improvement. Current-state assessments cover all eleven knowledge areas with evidence-backed operating states and explicit unknowns.
+- Clean up task-created temporary resources and redundant recovery copies after verifying their content is recoverable from the relevant existing history.
+
 ## 0.5.0-rc.5
 
 - Create new Markdown execution runs under `.scratch/.sflo/`, resolving the path from the project root for every tracker carrier. Preserve existing run bindings on resumption.
