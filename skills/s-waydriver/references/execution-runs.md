@@ -1,6 +1,6 @@
 # Execution runs
 
-Each executing delivery unit links a project-local `.sflo/NN-<slug>/run.md`; the run links back to its authoritative unit. For a numbered unit, retain its NN- prefix in the new run name. Preserve existing unit IDs and run paths. Choose a project-wide unique slug, including an effort name when numbering repeats. Decision-only exploration stays in its decision ticket; a clear surgical change keeps its implicit unit unless durable coordination is already needed.
+Create new execution runs at project-local `.scratch/.sflo/NN-<slug>/run.md`. Each executing delivery unit links its run; the run links back to its authoritative unit. For a numbered unit, retain its NN- prefix in the new run name. Preserve existing unit IDs and run paths. Choose a project-wide unique slug, including an effort name when numbering repeats. Decision-only exploration stays in its decision ticket; a clear surgical change keeps its implicit unit unless durable coordination is already needed.
 
 The unit owns acceptance, dependencies and lasting-decision links. The run owns execution progress, candidate identity, check results and repair history. Link the accepted contract revision instead of copying its requirements. Identify the contract by an immutable revision or a hashed acceptance snapshot linked from the run. The snapshot contains the accepted requirements and boundaries; status, evidence and pending-input updates stay outside it, so progress does not change contract identity.
 
@@ -33,4 +33,4 @@ The conductor owns the run record. For each cross-context handoff, assign a cand
 
 Replace the run record through a temporary sibling file and rename after the write succeeds. Persist referenced evidence before linking it. On continuation, load the unit and run from disk, verify the actual candidate and evidence, and reconcile unfinished actions before repeating them. An interrupted or missing review remains incomplete. If a write fails, retain the previous record and report the persistence blocker before handing off dependent work.
 
-This is a Markdown execution loop; `.sflo/` is its artifact location. Preserve existing run paths and evidence. When historical runner state exists, link it as source evidence and create a separately bound Markdown run for new execution.
+This is a Markdown execution loop; `.scratch/.sflo/` is its artifact location. Preserve existing run paths and evidence. When historical runner state exists, link it as source evidence and create a separately bound Markdown run for new execution.

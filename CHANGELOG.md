@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0-rc.5
+
+- Create new Markdown execution runs under `.scratch/.sflo/`, resolving the path from the project root for every tracker carrier. Preserve existing run bindings on resumption.
+
 ## 0.5.0-rc.4
 
 - Show S Waydriver under its full name in skill discovery.

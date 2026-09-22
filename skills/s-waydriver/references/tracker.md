@@ -25,7 +25,7 @@ Without configured tracker operations, use:
 
 Decision files carry `Type`, `Status`, and `Blocked by`. Delivery files carry `Status`, `Blocked by`, acceptance, candidate, and evidence pointers. The frontier is the open, unblocked, unclaimed set in the relevant carrier.
 
-An executing delivery file also links its [execution run](execution-runs.md) at `.sflo/NN-<slug>/run.md`. These are project-root paths, independent of the local or external tracker carrier.
+An executing delivery file also links its [execution run](execution-runs.md) at `.scratch/.sflo/NN-<slug>/run.md`. Resolve this path from the project root, independently of the tracker carrier; new run artifacts live inside `.scratch/`.
 
 External trackers may express the two maps and their children differently; preserve the semantics rather than inventing provider commands. If native blocking is absent, record explicit dependencies in the unit and derive the frontier from them.
 
