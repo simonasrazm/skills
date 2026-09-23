@@ -1,13 +1,13 @@
 ---
 name: s-ui-check
-description: Independently verify a rendered web, mobile, or desktop interface against product intent, its design system, accessibility, themes, states, responsiveness, and localization resilience. Use for UI changes or explicit interface review.
+description: Independently verify visual presentation and interaction in the form people experience them. Use when creating, changing or reviewing human-facing visual output, including configured surfaces and static artifacts.
 ---
 
 # S UI Check
 
-Review the experience people use, including interfaces configured within a host product. Judge information hierarchy, labels, units, comparisons, filtering and decision usefulness alongside appearance and interaction. Apply the host product’s design system and available controls to configured surfaces.
+Review how the output communicates and supports its intended use. Judge hierarchy, legibility, labels, visual relationships and navigation or interaction where present. Apply the relevant design system, template or host-product conventions.
 
-Inspect the running interface in the modality where users experience it. Source alone cannot prove appearance, interaction, responsiveness, accessibility, or platform fit. Use the project's real browser, simulator, device, or native harness and retain rendered evidence.
+Inspect the output in its delivered medium and viewing conditions. Source alone cannot prove appearance, interaction, accessibility or medium fit. Use a renderer or viewer appropriate to that medium and retain rendered evidence; exercise interaction where the output supports it.
 
 Independent verification starts in a fresh context with the accepted contract, candidate identity, and relevant project constraints, without inherited builder conversation or rationale. A review performed in the builder's context remains self-verification.
 
@@ -22,8 +22,8 @@ Exercise the relevant combinations of:
 - long translated text, dynamic values, overflow, and RTL when localization is applicable or future support is an accepted design constraint;
 - platform navigation and interaction conventions, hierarchy, continuity, and recovery from errors.
 
-Derive relevant platforms, sizes, states, and standards from the product and changed surface, using native conventions rather than a fixed viewport grid. Use current market practice when project rules leave a consequential point open.
+Derive relevant sizes, pages, states and standards from the artifact, medium and intended use. For interfaces, include the relevant platform conventions and interaction states. Use current market practice when project rules leave a consequential point open.
 
-Bind findings and screenshots to the frozen candidate. Report defects, evidence boundaries, and coverage separately. Leave maintained product unchanged, return repairs to the implementation owner, and recheck affected states against the new candidate. When an issue is unjustified residue, coordinate with the applicable artifact-quality capability; report the concrete UI effect without making an aesthetic resemblance the verdict.
+Bind findings and screenshots to the frozen candidate. Report defects, evidence boundaries, and coverage separately. Leave maintained product unchanged, return repairs to the implementation owner, and recheck affected states against the new candidate. When an issue is unjustified residue, coordinate with the applicable artifact-quality capability; report the concrete presentation effect without making an aesthetic resemblance the verdict.
 
 Document-level fit does not prove component text is visible. Inspect pixels and local bounds for clipping or stale layouts. Return evidence in-channel; create no report or run-state artifact unless requested.

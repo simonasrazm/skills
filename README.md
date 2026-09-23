@@ -8,15 +8,15 @@ Skills for Software (or any work) Factory, deep diagnosis, hard decisions and ve
 
 | Skill | Use it for | Version |
 |---|---|---|
-| [SFLO Waydriver](skills/sflo-waydriver/) | Best of SFLO and Wayfinder (from Matt Pocock). Throw at any problem, not just software development or quick fixes | `0.5.0-rc.8` |
+| [SFLO Waydriver](skills/sflo-waydriver/) | Best of SFLO and Wayfinder (from Matt Pocock). Throw at any problem, not just software development or quick fixes | `0.5.0-rc.9` |
 | [Smart Shot](skills/smart-shot/) | Read between the lines: discover hidden intents. Identify domains touched and discover unknown unknowns. Assemble ad hoc expert agents | `2.0.0` |
 | [Dig Deeper](skills/dig-deeper/) | Diagnose nasty, deep bugs using logs, system state and other read-only evidence. Do not allow AI to present assumptions as facts or conclusions | `2.0.1` |
 | [Dig Deeper Probe](skills/dig-deeper-probe/) | Reproduce failures and run controlled experiments when observation is not enough. Install tools with consent or within your established execution boundary | `2.0.1` |
 | [Fast Shot](skills/fast-shot/) | Get a moderately better result from a weak prompt through a lighter, much faster Smart Shot | `0.1.0` |
 | [SFLO Quick](skills/sflo-quick/) | Execute any bounded task through a lightweight plan-do-check-act cycle that removes basic mistakes. Use it when you are tired of repeating basic mistakes by agents | `0.1.0` |
 | [Point the Way](skills/point-the-way/) | When you want AI to consider more options and probe which one is unblocked. When you just need a problem to go away rather than a perfect solution | `0.1.0` |
-| [Slop Sweep](skills/slop-sweep/) | Remove unjustified filler and complexity from prose, plans, interfaces or code; repair presentation when authorized. | `0.5.0-rc.8` |
-| [Security Check](skills/security-check/) | First line for the security risks. Use linters, scanners and other means for any professional delivery. | `0.5.0-rc.8` |
+| [Slop Sweep](skills/slop-sweep/) | Remove unjustified filler and complexity from prose, plans, interfaces or code; repair presentation when authorized. | `0.5.0-rc.9` |
+| [Security Check](skills/security-check/) | First line for the security risks. Use linters, scanners and other means for any professional delivery. | `0.5.0-rc.9` |
 
 [Skill Compressor](skills/skill-compressor/) is my own utility for optimizing my skills. It saves tokens and improves speed without breaking it. You can find many other variants of the same problem on the wild internet.
 
@@ -28,10 +28,11 @@ These also work independently, but are meant for the factory
 
 | Skill | Use independently for | Version |
 |---|---|---|
-| [S Waydriver](skills/s-waydriver/) | Map decisions, coordinate dependencies and resume work. Supply the project's execution and acceptance policy. | `0.5.0-rc.8` |
-| [S Dev](skills/s-dev/) | Implement or repair a scoped change and return builder checks. Independent acceptance follows through S QA. | `0.5.0-rc.8` |
-| [S QA](skills/s-qa/) | Verify an increment candidate against acceptance criteria with fast, slice or final coverage. | `0.5.0-rc.8` |
-| [S UI Check](skills/s-ui-check/) | Inspect a running interface for visual, interaction, accessibility and responsive defects. It is not invoked in non-UI efforts | `0.5.0-rc.8` |
+| [S Waydriver](skills/s-waydriver/) | Map decisions, coordinate dependencies and resume work. Supply the project's execution and acceptance policy. | `0.5.0-rc.9` |
+| [S Domain Modeling](skills/s-domain-modeling/) | Sharpen domain language and rules; reconcile glossaries, behavior and decisions. | `0.5.0-rc.9` |
+| [S Dev](skills/s-dev/) | Implement or repair a scoped change and return builder checks. Independent acceptance follows through S QA. | `0.5.0-rc.9` |
+| [S QA](skills/s-qa/) | Verify an increment candidate against acceptance criteria with fast, slice or final coverage. | `0.5.0-rc.9` |
+| [S UI Check](skills/s-ui-check/) | Verify visual presentation and interaction in the delivered medium. | `0.5.0-rc.9` |
 
 ### Dependencies
 

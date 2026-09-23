@@ -9,7 +9,7 @@ Own maintained-product mutation. Work from the accepted behavior, boundaries, cu
 
 Load [data-quality guidance](../sflo-waydriver/references/data-quality.md) when data quality is an objective or acceptance criterion. Carry the relevant quality rules and evidence into implementation and builder checks.
 
-When implementation changes domain concepts, language, relationships or rules, apply [domain modeling](../s-waydriver/references/domain-modeling.md) and carry resolved meanings into behavior checks.
+When implementation changes domain concepts, language, relationships or rules, apply [domain modeling](../s-domain-modeling/SKILL.md) and carry resolved meanings into behavior checks.
 
 Build in vertical slices. For code, repeat this cycle:
 

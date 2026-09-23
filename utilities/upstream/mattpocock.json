@@ -56,12 +56,13 @@
     },
     {
       "upstream": "skills/engineering/domain-modeling",
-      "local": "skills/s-waydriver/references/domain-modeling.md",
+      "local": "skills/s-domain-modeling",
       "adaptations": [
-        "Domain-neutral operational evidence alongside code",
-        "Project-first document convention with CONTEXT-MAP and docs/adr compatibility",
-        "Task-bound records and explicit requirement replacement",
-        "Evidence-first clarification rather than unconditional human questioning"
+        "Original skill sections, examples and CONTEXT format preserved",
+        "Evidence-first clarification for consequential unresolved meanings",
+        "Code or operational evidence for behavior reconciliation",
+        "Existing project record conventions take precedence over default paths",
+        "Task origin, decision ownership and requirement/ADR supersession"
       ]
     },
     {

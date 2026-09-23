@@ -39,7 +39,7 @@ Use the configured issue tracker. If none exists, use `.scratch/<effort>/map.md`
 
 ## Clear fog proportionally
 
-When work introduces or changes domain concepts, language, relationships or rules, read and apply [domain modeling](references/domain-modeling.md).
+When work introduces or changes domain concepts, language, relationships or rules, read and apply [domain modeling](../s-domain-modeling/SKILL.md).
 
 A decision ticket is a precise question whose answer changes the safe route. It is not an implementation slice. Preserve Wayfinder's four types:
 

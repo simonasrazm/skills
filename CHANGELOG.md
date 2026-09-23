@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0-rc.9
+
+- Route presentation checks by the accepted candidate and intended medium, covering human-facing visual artifacts beyond application interfaces. Keep UI and slop invocation explicitly conditional on the delivered output.
+- Replace the condensed domain-modeling reference with bundled S Domain Modeling. Preserve upstream skill structure, examples and format guides; retain evidence-first clarification, existing project conventions and task-linked decision supersession.
+- Include S Domain Modeling in repository and Claude marketplace installations.
+
 ## 0.5.0-rc.8
 
 - Apply UI and slop checks to configured interfaces as well as custom applications, with distinct coverage outcomes and rendered evidence required for interface acceptance.
