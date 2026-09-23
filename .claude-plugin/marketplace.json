@@ -20,7 +20,7 @@
         "decision-making",
         "task-execution"
       ],
-      "version": "0.5.0-rc.7",
+      "version": "0.5.0-rc.8",
       "author": {
         "name": "Simonas Razminas",
         "url": "https://github.com/simonasrazm"
@@ -29,12 +29,20 @@
       "license": "MIT",
       "skills": [
         "./skills/dig-deeper",
-        "./skills/dig-deeper-probe",
         "./skills/dig-deeper-core",
-        "./skills/smart-shot",
+        "./skills/dig-deeper-probe",
         "./skills/fast-shot",
+        "./skills/point-the-way",
+        "./skills/s-dev",
+        "./skills/s-qa",
+        "./skills/s-ui-check",
+        "./skills/s-waydriver",
+        "./skills/security-check",
         "./skills/sflo-quick",
-        "./skills/skill-compressor"
+        "./skills/sflo-waydriver",
+        "./skills/skill-compressor",
+        "./skills/slop-sweep",
+        "./skills/smart-shot"
       ],
       "strict": false
     }

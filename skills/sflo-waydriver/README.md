@@ -24,4 +24,4 @@ Components return results in-channel unless an artifact is requested. Independen
 
 ## Credits
 
-S Waydriver adapts Matt Pocock's [Wayfinder](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder). It preserves decision maps and adds a separate delivery map. The [upstream MIT notice](../s-waydriver/LICENSE.wayfinder) is retained.
+S Waydriver adapts Matt Pocock's [Wayfinder](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder) and [domain-modeling](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling). It preserves decision maps and adds a separate delivery map. The [upstream MIT notice](../s-waydriver/LICENSE.wayfinder) is retained.

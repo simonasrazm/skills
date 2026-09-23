@@ -12,10 +12,12 @@ async function fixture(change: (catalog: any, plugin: any) => void = () => {}) {
     releaseUnits: { example: { version: '1.0.0', members: ['example'] } } };
   const plugin = { name: 'example-bundle', source: './', strict: false, version: '1.2.0', skills: ['./skills/example'] }; change(catalog, plugin);
   await mkdir(join(root, '.claude-plugin'), { recursive: true });
-  await mkdir(join(root, 'skills/example'), { recursive: true });
   await writeFile(join(root, 'skills.catalog.json'), JSON.stringify(catalog));
   await writeFile(join(root, '.claude-plugin/marketplace.json'), JSON.stringify({ name: 'example-market', plugins: [plugin] }));
-  await writeFile(join(root, 'skills/example/SKILL.md'), '---\nname: example\n---\n');
+  for (const skill of catalog.skills) {
+    await mkdir(join(root, skill.path), { recursive: true });
+    await writeFile(join(root, skill.path, 'SKILL.md'), `---\nname: ${skill.name}\n---\n`);
+  }
   return root;
 }
 test('accepts a release unrelated to any particular skill family', async () => {
@@ -46,8 +48,18 @@ test('rejects a skill omitted from catalog', async () => {
   await writeFile(join(root, 'skills/extra/SKILL.md'), '---\nname: extra\n---\n');
   await expect(validateRelease(root)).rejects.toThrow('Uncataloged skill');
 });
-test('rejects arena skills accidentally included in stable plugin selection', async () => {
-  await expect(validateRelease(await fixture(c => c.skills[0].maturity = 'arena'))).rejects.toThrow('Stable plugin');
+test('accepts arena skills in the collection plugin selection', async () => {
+  expect(await validateRelease(await fixture(c => c.skills[0].maturity = 'arena'))).toMatchObject({ skills: 1 });
+});
+test('rejects a non-deprecated family member omitted from the collection plugin', async () => {
+  const root = await fixture((catalog) => {
+    catalog.skills.push({ name: 'companion', path: 'skills/companion', maturity: 'arena', releaseUnit: 'example', version: '1.0.0' });
+    catalog.releaseUnits.example.members.push('companion');
+  });
+  await expect(validateRelease(root)).rejects.toThrow('Plugin selection mismatch: companion');
+});
+test('rejects deprecated skills included in the collection plugin', async () => {
+  await expect(validateRelease(await fixture(c => c.skills[0].maturity = 'deprecated'))).rejects.toThrow('Plugin selection mismatch: example');
 });
 
 test('rejects a standalone manifest that namespaces linked skills', async () => {

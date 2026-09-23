@@ -39,6 +39,8 @@ Use the configured issue tracker. If none exists, use `.scratch/<effort>/map.md`
 
 ## Clear fog proportionally
 
+When work introduces or changes domain concepts, language, relationships or rules, read and apply [domain modeling](references/domain-modeling.md).
+
 A decision ticket is a precise question whose answer changes the safe route. It is not an implementation slice. Preserve Wayfinder's four types:
 
 - **Grilling:** preference, intent, or domain choices. Apply [autonomous discovery](references/discovery.md); involve the person only when the consequential answer remains theirs.
@@ -48,9 +50,9 @@ A decision ticket is a precise question whose answer changes the safe route. It 
 
 Fog becomes a ticket when its question can be stated precisely. Resolving a ticket graduates newly visible questions and removes that patch from **Not yet specified**. Out-of-scope work is closed as a boundary, not carried as fog.
 
-On continuation, reconcile material user prompts, feedback and discovery results with recorded commitments. Preserve stated requirements and reasons with source pointers; attribute each choice to its human or agent author. Keep agent defaults and inferred rationale distinct from human approval. Apply explicit corrections with supersession links, update affected acceptance, and reopen unresolved conflicts. Preserve decision reasons rather than transcripts of deliberation. Persist material changes in the map, affected units and lasting decisions before responding, including decision-only responses. These records must agree with the latest material input.
+On continuation, reconcile material user prompts, feedback and discovery results with recorded commitments. Preserve stated requirements and reasons with source pointers; attribute each choice to its human or agent author. Keep agent defaults and inferred rationale distinct from human approval. Apply explicit corrections with supersession links, update affected acceptance, and reopen unresolved conflicts. Update current requirements in place when an accepted correction replaces them. Preserve decision reasons rather than transcripts of deliberation. Persist material changes in the map, affected units and lasting decisions before responding, including decision-only responses. These records must agree with the latest material input.
 
-Classify lasting records as **product** (behavior, feature, content, UX, business rule) or **architecture** (technical structure, platform, data, integration, security boundary, scalability, operations). Follow the project's decision-record location; otherwise place them under `docs/decisions/product/` or `docs/decisions/architecture/`. Both human and autonomous lasting decisions use these records. Include the choice, decision maker, rationale, supporting evidence, remaining assumptions and any superseded decision. Reconcile accepted discovery results into existing project documentation; the ticket and map link the authoritative record.
+Classify lasting records as **product** (behavior, feature, content, UX, business rule) or **architecture** (technical structure, platform, data, integration, security boundary, scalability, operations). Follow the project's decision-record location; otherwise place them under `docs/decisions/product/` or `docs/decisions/architecture/`. Both human and autonomous lasting decisions use these records. Include the choice, decision maker, rationale, supporting evidence, remaining assumptions and the originating unit or surgical-task slug. Link changed documentation and decision records back from that unit. When a decision changes, mark the earlier accepted record superseded and link its replacement; keep current specifications, glossary and acceptance aligned with the replacement. An unresolved conflict stays open with its affected work identified. Reconcile accepted discovery results into existing project documentation; the ticket and map link the authoritative record.
 
 ## Drive delivery separately
 

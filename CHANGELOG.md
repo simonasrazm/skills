@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5.0-rc.8
+
+- Apply UI and slop checks to configured interfaces as well as custom applications, with distinct coverage outcomes and rendered evidence required for interface acceptance.
+- Recognize publication authority from the requested remote availability and project agreement. Publish each accepted coherent increment within that boundary; reconcile readiness against candidate-bound reports before pushing.
+- Restore active domain modeling: scoped glossaries, boundary scenarios, implementation reconciliation and current requirement replacement. Link superseding decisions to their originating task and preserve existing context and ADR conventions.
+- Include all non-deprecated skills in the Claude marketplace installation.
+
 ## 0.5.0-rc.7
 
 - Route shared data-quality guidance from SFLO Waydriver and standalone S Dev when data quality is an objective or acceptance criterion. Separate DAMA’s nine quality dimensions from its eleven management knowledge areas, with applicable precision checks and explicit evidence boundaries.

@@ -1,0 +1,90 @@
+{
+  "repository": "https://github.com/mattpocock/skills",
+  "commit": "c55ee46073ed923f86ce59a5eb3b6d895095d1b7",
+  "verifiedOn": "2026-09-23",
+  "files": [
+    {
+      "path": "skills/engineering/wayfinder/SKILL.md",
+      "sha256": "fee6e1d0c50f0e736b4ef8a599060c959afae904c9a97d82c97f049fcc3aa0f1",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/wayfinder/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/SKILL.md",
+      "sha256": "327a2b50620e2fd70abc6893cd6965e76b20f8d0adb0dc2c8d5eb3845efb643e",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/domain-modeling/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/ADR-FORMAT.md",
+      "sha256": "944c92aa790e8fbdc9199640b170979abb8a34ba8d0fe18c2a01a63bce140ca0",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/domain-modeling/ADR-FORMAT.md"
+    },
+    {
+      "path": "skills/engineering/domain-modeling/CONTEXT-FORMAT.md",
+      "sha256": "17ab16ce783e4d2801ee52fd9acdf550cbf44de65ae76797a93943bbedf22a13",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/domain-modeling/CONTEXT-FORMAT.md"
+    },
+    {
+      "path": "skills/engineering/research/SKILL.md",
+      "sha256": "985569f15739c713d6784887c3d186d4ef9ac85bec5ad9c068d25bf0739928e4",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/research/SKILL.md"
+    },
+    {
+      "path": "skills/engineering/prototype/SKILL.md",
+      "sha256": "714de632d116bb73f65cdb5a882db15b9369a6713b9a47c0fad827848f0bfbe3",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/engineering/prototype/SKILL.md"
+    },
+    {
+      "path": "skills/productivity/grilling/SKILL.md",
+      "sha256": "10ff989e7498b23b5acb49d5048f11dcd906757d2f79c5cdf8a00001381296f2",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/skills/productivity/grilling/SKILL.md"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/c55ee46073ed923f86ce59a5eb3b6d895095d1b7/LICENSE"
+    }
+  ],
+  "ports": [
+    {
+      "upstream": "skills/engineering/wayfinder/SKILL.md",
+      "local": "skills/s-waydriver/SKILL.md",
+      "adaptations": [
+        "Autonomous discovery with consequential human handoffs",
+        "Separate delivery map and resumable Markdown execution",
+        "Multiple safe units per context"
+      ]
+    },
+    {
+      "upstream": "skills/engineering/domain-modeling",
+      "local": "skills/s-waydriver/references/domain-modeling.md",
+      "adaptations": [
+        "Domain-neutral operational evidence alongside code",
+        "Project-first document convention with CONTEXT-MAP and docs/adr compatibility",
+        "Task-bound records and explicit requirement replacement",
+        "Evidence-first clarification rather than unconditional human questioning"
+      ]
+    },
+    {
+      "upstream": "skills/engineering/research/SKILL.md",
+      "local": "skills/s-waydriver/references/discovery.md",
+      "adaptations": [
+        "Evidence outcome instead of mandatory background agent"
+      ]
+    },
+    {
+      "upstream": "skills/engineering/prototype/SKILL.md",
+      "local": "skills/s-waydriver/references/prototype.md",
+      "adaptations": [
+        "Medium selected by decision and falsifier rather than fixed software recipe"
+      ]
+    },
+    {
+      "upstream": "skills/productivity/grilling/SKILL.md",
+      "local": "skills/s-waydriver/references/discovery.md",
+      "adaptations": [
+        "Ask after consequential evidence gaps remain"
+      ]
+    }
+  ],
+  "updatePolicy": "Maintainer-only: compare pinned upstream files and these adaptation boundaries; test affected behavior before adopting an update. Runtime skill use does not fetch or compare upstream."
+}

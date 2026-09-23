@@ -41,8 +41,8 @@ export async function validateRelease(root: string) {
     const definition = await readFile(resolve(root, entry.path, 'SKILL.md'), 'utf8');
     if (!definition.match(/^---\n([\s\S]*?)\n---/)?.[1].split('\n').includes(`name: ${entry.name}`))
       throw Error('Catalog/name mismatch: ' + entry.name);
-    if (plugin.skills.includes('./' + entry.path) !== (entry.maturity === 'stable'))
-      throw Error('Stable plugin selection mismatch: ' + entry.name);
+    if (plugin.skills.includes('./' + entry.path) !== (entry.maturity !== 'deprecated'))
+      throw Error('Plugin selection mismatch: ' + entry.name);
     for (const file of new Bun.Glob('**/*.md').scanSync({ cwd: resolve(root, entry.path), absolute: true })) {
       const markdown = (await readFile(file, 'utf8')).replace(/```[\s\S]*?```|~~~[\s\S]*?~~~/g, '');
       for (const match of markdown.matchAll(/\]\(([^)]+)\)/g)) {

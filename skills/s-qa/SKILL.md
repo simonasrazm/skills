@@ -25,7 +25,7 @@ Before issuing a defect, locate the exact failing evidence and recheck that loca
 
 A probe's exit status must match its stated expectation: required rejection is a passing outcome, not a failed test. For a new defect probe, demonstrate that the same assertion passes a contract-conforming control and fails the suspected behavior, using isolated fixtures when necessary. If a control cannot be established, report that limitation and keep the probe's verdict provisional.
 
-Report supported observations as defects, observed boundaries or undecided policy, coverage gaps, user/operator friction, or actionable opportunities. Include UI/design issues when observed, but use a rendered-interface verifier for an interface verdict. Avoid quotas and tracker pollution; connect related symptoms to the smallest evidenced cause.
+Report supported observations as defects, observed boundaries or undecided policy, coverage gaps, user/operator friction, or actionable opportunities. For a created or changed user-facing interface, read and apply [S UI Check](../s-ui-check/SKILL.md) for its rendered-interface verdict, including when the surface is configured in another product. Read and apply [Slop Sweep](../slop-sweep/SKILL.md) to created or changed human-facing presentation or content. Report these coverage outcomes distinctly; missing rendered evidence leaves interface acceptance open. Avoid quotas and tracker pollution; connect related symptoms to the smallest evidenced cause.
 
 After repair, independently recheck the finding and relevant regressions against the new candidate. A checker that does not return identifiable, retrievable evidence is unavailable, not passed and not pending forever.
 

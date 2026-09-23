@@ -5,11 +5,13 @@ description: Independently verify a rendered web, mobile, or desktop interface a
 
 # S UI Check
 
+Review the experience people use, including interfaces configured within a host product. Judge information hierarchy, labels, units, comparisons, filtering and decision usefulness alongside appearance and interaction. Apply the host product’s design system and available controls to configured surfaces.
+
 Inspect the running interface in the modality where users experience it. Source alone cannot prove appearance, interaction, responsiveness, accessibility, or platform fit. Use the project's real browser, simulator, device, or native harness and retain rendered evidence.
 
 Independent verification starts in a fresh context with the accepted contract, candidate identity, and relevant project constraints, without inherited builder conversation or rationale. A review performed in the builder's context remains self-verification.
 
-Treat the project's design system as the source of truth. When none exists, verify that the surface establishes a proportional, coherent token/component system rather than isolated styling decisions.
+Treat the project's design system as the source of truth. When none exists, verify coherent reusable visual conventions appropriate to the surface.
 
 Exercise the relevant combinations of:
 
