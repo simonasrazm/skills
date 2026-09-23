@@ -7,7 +7,7 @@ description: Implement or repair one coherent product change with behavior-first
 
 Own maintained-product mutation. Work from the accepted behavior, boundaries, current candidate, and relevant reviewer findings; hold the accepted destination.
 
-Load [data-quality guidance](../sflo-waydriver/references/data-quality.md) when data quality is an objective or acceptance criterion. Carry the relevant quality rules and evidence into implementation and builder checks.
+Load [data-quality guidance](../sflo-waydriver/references/data-quality.md) for work on the quality or fitness of data itself. When data supplies evidence for another outcome, select expertise for that outcome. Carry the relevant quality rules and evidence into implementation and builder checks.
 
 When implementation changes domain concepts, language, relationships or rules, apply [domain modeling](../s-domain-modeling/SKILL.md) and carry resolved meanings into behavior checks.
 

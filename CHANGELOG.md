@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.0-rc.10
+
+- Distinguish work on data quality itself from decisions that use data as evidence. Apply the same selective DAMA loading rule in SFLO Waydriver and S Dev.
+- Remove SFLO Quick and its installer/catalog entries. Use SFLO Waydriver for bounded work; remove any older local SFLO Quick installation when updating. Earlier releases remain in Git history.
+
 ## 0.5.0-rc.9
 
 - Route presentation checks by the accepted candidate and intended medium, covering human-facing visual artifacts beyond application interfaces. Keep UI and slop invocation explicitly conditional on the delivered output.

@@ -23,7 +23,7 @@ Acceptance checks the beneficiary’s intended result, not only properties of th
 
 ## Supply missing competence
 
-Load [data-quality guidance](references/data-quality.md) when data quality is an objective or acceptance criterion.
+Load [data-quality guidance](references/data-quality.md) for work on the quality or fitness of data itself. When data supplies evidence for another outcome, select expertise for that outcome.
 
 Use project evidence and available capabilities before asking a person. Use `smart-shot` to resolve consequential intent or quality ambiguity and for substantial discovery or specialist judgment. Use `dig-deeper` for unexplained failures, and `dig-deeper-probe` for justified active reproduction. Otherwise obtain the same evidence with available tools: primary sources or bounded experiments for consequential unknowns, and observed reproduction that discriminates causes for failures. Missing optional skills do not block a safe route.
 

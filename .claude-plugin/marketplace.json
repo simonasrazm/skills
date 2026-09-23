@@ -20,7 +20,7 @@
         "decision-making",
         "task-execution"
       ],
-      "version": "0.5.0-rc.9",
+      "version": "0.5.0-rc.10",
       "author": {
         "name": "Simonas Razminas",
         "url": "https://github.com/simonasrazm"
@@ -39,7 +39,6 @@
         "./skills/s-ui-check",
         "./skills/s-waydriver",
         "./skills/security-check",
-        "./skills/sflo-quick",
         "./skills/sflo-waydriver",
         "./skills/skill-compressor",
         "./skills/slop-sweep",
