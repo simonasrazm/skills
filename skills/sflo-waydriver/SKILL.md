@@ -23,7 +23,7 @@ Acceptance checks the beneficiary’s intended result, not only properties of th
 
 ## Supply missing competence
 
-Load [DAMA data-quality guidance](references/data-quality.md) only when assessing or improving data quality.
+Load [data-quality guidance](references/data-quality.md) when data quality is an objective or acceptance criterion.
 
 Use project evidence and available capabilities before asking a person. Use `smart-shot` to resolve consequential intent or quality ambiguity and for substantial discovery or specialist judgment. Use `dig-deeper` for unexplained failures, and `dig-deeper-probe` for justified active reproduction. Otherwise obtain the same evidence with available tools: primary sources or bounded experiments for consequential unknowns, and observed reproduction that discriminates causes for failures. Missing optional skills do not block a safe route.
 
@@ -60,6 +60,8 @@ Before creating tickets in a shared tracker, read and apply [tracker location bi
 Read [authority and blockers](references/authority-and-blockers.md) before a consequential authenticated or external action. Continue independent frontier work when one route is blocked. Persist and communicate the smallest actionable blocker promptly, without duplicate notifications, and recheck it at a useful boundary.
 
 ## Finish honestly
+
+For repository changes, carry the agreed delivery endpoint into acceptance: local changes, a commit, a pushed branch or a pull request. Resolve it from the request and project policy; ask when the remaining choice changes what may be published. When delivery includes Git publication, apply [Git delivery](references/git-delivery.md) and complete it after candidate acceptance.
 
 Clean up task-created temporary resources when their purpose ends. Before creating or keeping a recovery copy, verify whether its exact content is recoverable from the existing version history for those files; use verified history and remove task-created redundant copies.
 

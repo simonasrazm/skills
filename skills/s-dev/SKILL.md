@@ -7,6 +7,8 @@ description: Implement or repair one coherent product change with behavior-first
 
 Own maintained-product mutation. Work from the accepted behavior, boundaries, current candidate, and relevant reviewer findings; hold the accepted destination.
 
+Load [data-quality guidance](../sflo-waydriver/references/data-quality.md) when data quality is an objective or acceptance criterion. Carry the relevant quality rules and evidence into implementation and builder checks.
+
 Build in vertical slices. For code, repeat this cycle:
 
 1. Add one behavior test at a public seam and run it to establish the failure.

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.0-rc.7
+
+- Route shared data-quality guidance from SFLO Waydriver and standalone S Dev when data quality is an objective or acceptance criterion. Separate DAMA’s nine quality dimensions from its eleven management knowledge areas, with applicable precision checks and explicit evidence boundaries.
+- Carry the agreed Git delivery endpoint into acceptance. Complete authorized publication and verify the remote identity before closure, preserving local-only and decision-only endpoints.
+
 ## 0.5.0-rc.6
 
 - Load DAMA guidance only for data-quality assessment or improvement. Current-state assessments cover all eleven knowledge areas with evidence-backed operating states and explicit unknowns.
