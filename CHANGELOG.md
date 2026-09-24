@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0-rc.13
+
+- Explicitly delegate acceptance of a frozen bounded outcome to a fresh reviewer and obtain its applicable check results before closing the unit. This also covers human-facing prose.
+
 ## 0.5.0-rc.12
 
 - Summarize routine replies around completed changes, findings and remaining work, reconciling delivery status with evidence. Keep detailed explanations available when requested and preserve safety-critical instructions.
