@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0-rc.11
+
+- Load temporal analytical guidance selectively for cumulative snapshots, rolling windows, late data and revised periods. Keep comparisons and their visual presentation faithful to the intervals and revisions they represent. The reference is bundled; no additional skill installation is required.
+
 ## 0.5.0-rc.10
 
 - Distinguish work on data quality itself from decisions that use data as evidence. Apply the same selective DAMA loading rule in SFLO Waydriver and S Dev.

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "0.5.0-rc.10",
+  "version": "0.5.0-rc.11",
   "releaseUnit": "collection",
   "skills": [
     {
@@ -43,49 +43,49 @@
       "path": "skills/s-dev",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "s-domain-modeling",
       "path": "skills/s-domain-modeling",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "s-qa",
       "path": "skills/s-qa",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "s-ui-check",
       "path": "skills/s-ui-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "s-waydriver",
       "path": "skills/s-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "security-check",
       "path": "skills/security-check",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "sflo-waydriver",
       "path": "skills/sflo-waydriver",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "skill-compressor",
@@ -99,7 +99,7 @@
       "path": "skills/slop-sweep",
       "maturity": "arena",
       "releaseUnit": "sflo-waydriver",
-      "version": "0.5.0-rc.10"
+      "version": "0.5.0-rc.11"
     },
     {
       "name": "smart-shot",
@@ -143,7 +143,7 @@
       ]
     },
     "sflo-waydriver": {
-      "version": "0.5.0-rc.10",
+      "version": "0.5.0-rc.11",
       "members": [
         "s-dev",
         "s-domain-modeling",

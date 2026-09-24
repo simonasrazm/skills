@@ -25,6 +25,8 @@ Acceptance checks the beneficiary’s intended result, not only properties of th
 
 Load [data-quality guidance](references/data-quality.md) for work on the quality or fitness of data itself. When data supplies evidence for another outcome, select expertise for that outcome.
 
+For analytical work involving cumulative snapshots, rolling windows, late-arriving data or revised periods, load [temporal evidence guidance](references/temporal-evidence.md). Use it selectively; fixed final equal-window analysis does not need extra temporal machinery.
+
 Use project evidence and available capabilities before asking a person. Use `smart-shot` to resolve consequential intent or quality ambiguity and for substantial discovery or specialist judgment. Use `dig-deeper` for unexplained failures, and `dig-deeper-probe` for justified active reproduction. Otherwise obtain the same evidence with available tools: primary sources or bounded experiments for consequential unknowns, and observed reproduction that discriminates causes for failures. Missing optional skills do not block a safe route.
 
 When several available skills cover an inferred capability, prefer the most project- or user-specific applicable skill. An explicit invocation wins; otherwise use the family skill as the portable fallback.
