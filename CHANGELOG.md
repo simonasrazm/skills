@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0-rc.12
+
+- Summarize routine replies around completed changes, findings and remaining work, reconciling delivery status with evidence. Keep detailed explanations available when requested and preserve safety-critical instructions.
+
 ## 0.5.0-rc.11
 
 - Load temporal analytical guidance selectively for cumulative snapshots, rolling windows, late data and revised periods. Keep comparisons and their visual presentation faithful to the intervals and revisions they represent. The reference is bundled; no additional skill installation is required.

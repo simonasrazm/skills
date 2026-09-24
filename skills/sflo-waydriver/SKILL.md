@@ -69,6 +69,16 @@ Clean up task-created temporary resources when their purpose ends. Before creati
 
 An intermediate artifact can pass while the destination remains open. For each remaining material gap, either take the next useful discovery/action step, request the specific human input that now controls progress, or explain the evidenced blocker. A confidence label or a proposed future test alone is not a completion state.
 
-Finish only when every material acceptance condition has current evidence in the right modality, required specialist outcomes and coverage are visible, and the original request remains aligned. Report the result, use path, evidence, boundaries, and any exact human action still required.
+Finish only when every material acceptance condition has current evidence in the right modality, required specialist outcomes and coverage are visible, and the original request remains aligned.
 
 Continue across planning sessions, issues, context units, and repair cycles. Leave Waydriver state resumable whenever the destination is not terminal.
+
+## User-facing reply
+
+Reconcile the reply with the completed changes and remaining work in the evidence. For routine status and completion replies, use this short handover:
+
+- Delivered: each completed change and where it is available; combine related changes.
+- Found: decision-relevant findings and their limits.
+- Next: unfinished in-scope work and any required human action.
+
+Omit empty items; use one short sentence per item. End with one working link to the main result or evidence record; use an absolute path for a local file. Give requested detailed explanations separately; preserve safety-critical instructions in full. Use a compact diagram when it replaces longer prose.
