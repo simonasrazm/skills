@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0-rc.14
+
+- Save the current work, review evidence and next action before handing off an execution run, so continuation starts from the right candidate.
+
 ## 0.5.0-rc.13
 
 - Explicitly delegate acceptance of a frozen bounded outcome to a fresh reviewer and obtain its applicable check results before closing the unit. This also covers human-facing prose.
