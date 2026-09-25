@@ -12,15 +12,16 @@ Use sflo-waydriver to fix the duplicate submission bug.
 | --- | --- |
 | `sflo-waydriver` | Delivering an outcome with discovery and independent acceptance |
 | `s-waydriver` | Mapping decisions, coordinating dependencies and resuming work; supply execution and verification capabilities |
+| `s-domain-modeling` | Clarifying domain language, rules and boundary scenarios |
 | `s-dev` | Implementing or repairing a scoped change |
 | `s-qa` | Independently checking an increment or accumulated behavior |
 | `security-check` | Assessing security risks and review coverage |
 | `slop-sweep` | Removing unjustified filler and complexity |
-| `s-ui-check` | Verifying a rendered interface |
+| `s-ui-check` | Verifying rendered presentation and interaction |
 
 The conductor selects applicable skills. Smart Shot and Dig Deeper provide optional discovery and diagnosis; available evidence and tools provide the fallback. A small change normally needs one builder and one fresh reviewer.
 
-Components return results in-channel unless an artifact is requested. Independent checks are read-only; implementation and authorized slop repairs may modify artifacts. `s-waydriver` maintains durable work records. The code-based `sflo` runner is a separate execution option, selected explicitly.
+Components return results in-channel. For work with an execution run, workers also save their reports and the conductor records the current candidate and next action before each handoff. Independent checks are read-only; implementation and authorized slop repairs may modify artifacts.
 
 ## Credits
 
