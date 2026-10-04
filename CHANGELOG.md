@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.0
+
+- Promote the existing SFLO Waydriver stack and its eight release-unit members to stable 1.0.0, based on the owner’s use and reports from multiple users without reported issues. This is a release-readiness decision, not new exhaustive proof of reliability.
+- Keep the pstack verification ports outside this release and the default skill bundle while their integration remains experimental.
+
 ## 0.5.0-rc.14
 
 - Save the current work, review evidence and next action before handing off an execution run, so continuation starts from the right candidate.
