@@ -77,6 +77,6 @@ Only offer to create an ADR when all three are true:
 
 If any of the three is missing, skip the ADR. Use the format in [ADR-FORMAT.md](./ADR-FORMAT.md).
 
-Link each lasting decision to its originating unit or task slug and link the changed records from that task. For an accepted replacement, update current requirements and glossary, mark the earlier decision superseded and link its replacement. Preserve the reason, decision owner and supporting evidence; distinguish agent assumptions from human decisions.
+Link each lasting decision to its originating unit or task slug and link the changed records from that task. For an accepted change, update the existing decision record at its stable path and align affected documentation, current requirements and glossary. Record current accepted direction separately from implementation still pending; verify that the prior accepted state is recoverable in version history before replacing it, recording any history gap before proceeding. Preserve the reason, decision owner and supporting evidence; distinguish agent assumptions from human decisions.
 
 Adapted from Matt Pocock’s domain-modeling skill. The bundled MIT license and repository maintenance metadata preserve attribution and pinned upstream provenance.
