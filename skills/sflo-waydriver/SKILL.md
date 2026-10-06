@@ -79,10 +79,8 @@ Continue across planning sessions, issues, context units, and repair cycles. Lea
 
 ## User-facing reply
 
-Reconcile the reply with the completed changes and remaining work in the evidence. Summarize conflicts involving the request, requirements or recorded decisions: what conflicted, how it was resolved or what remains pending, and which records changed. For routine status and completion replies, use this short handover:
+Reconcile the reply with completed changes, recorded decisions and remaining work. For material change handovers, use [Explain Change](../explain-change/SKILL.md): select effort by the meaning the person must absorb, using compact context and logical diff when sufficient and deeper catch-up when reconstruction or interacting changes require it. Include consequential decisions, material conflicts and supersessions, with what was resolved or remains pending. Respect the person's requested format.
 
-- Delivered: each completed change and where it is available; combine related changes.
-- Found: decision-relevant findings and their limits.
-- Next: unfinished in-scope work and any required human action.
+Keep surgical replies direct; do not load a presentation workflow when a sentence suffices. For status or work without a material change, answer directly with the outcome, relevant limit or next action. Do not imply completion while in-scope work remains.
 
-Omit empty items; use one short sentence per item. End with one working link to the main result or evidence record; use an absolute path for a local file. Give requested detailed explanations separately; preserve safety-critical instructions in full. Use a compact diagram when it replaces longer prose.
+Show unresolved human actions and the information needed to act; keep routine verification evidence in the work record unless requested. Preserve material limitations and safety-critical instructions. Link the main deliverable when needed to locate or use it; do not append a routine evidence link merely to fill the handover.

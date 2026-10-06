@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "1.0.1-rc.1",
+  "version": "1.0.1-rc.2",
   "releaseUnit": "collection",
   "skills": [
     {
@@ -25,6 +25,13 @@
       "version": "2.0.1"
     },
     {
+      "name": "explain-change",
+      "path": "skills/explain-change",
+      "maturity": "stable",
+      "releaseUnit": "sflo-waydriver",
+      "version": "1.0.1-rc.2"
+    },
+    {
       "name": "fast-shot",
       "path": "skills/fast-shot",
       "maturity": "stable",
@@ -43,49 +50,49 @@
       "path": "skills/s-dev",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "s-domain-modeling",
       "path": "skills/s-domain-modeling",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "s-qa",
       "path": "skills/s-qa",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "s-ui-check",
       "path": "skills/s-ui-check",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "s-waydriver",
       "path": "skills/s-waydriver",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "security-check",
       "path": "skills/security-check",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "sflo-waydriver",
       "path": "skills/sflo-waydriver",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "skill-compressor",
@@ -99,7 +106,7 @@
       "path": "skills/slop-sweep",
       "maturity": "stable",
       "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.1"
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "smart-shot",
@@ -143,8 +150,9 @@
       ]
     },
     "sflo-waydriver": {
-      "version": "1.0.1-rc.1",
+      "version": "1.0.1-rc.2",
       "members": [
+        "explain-change",
         "s-dev",
         "s-domain-modeling",
         "s-qa",

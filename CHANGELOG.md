@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1-rc.2
+
+- Add Explain Change and integrate material handovers into SFLO Waydriver.
+- Select explanation effort by meaning, relationships and baseline distance; keep compact output when sufficient.
+- Keep the core domain-neutral, with research, presentation, process and engineering examples in references.
+
 ## 1.0.1-rc.1
 
 - Refresh relevant requirements and decisions for broader and resumed work, keeping the surgical route unchanged.

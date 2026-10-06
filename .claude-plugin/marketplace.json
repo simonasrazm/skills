@@ -20,7 +20,7 @@
         "decision-making",
         "task-execution"
       ],
-      "version": "1.0.1-rc.1",
+      "version": "1.0.1-rc.2",
       "author": {
         "name": "Simonas Razminas",
         "url": "https://github.com/simonasrazm"
@@ -31,6 +31,7 @@
         "./skills/dig-deeper",
         "./skills/dig-deeper-core",
         "./skills/dig-deeper-probe",
+        "./skills/explain-change",
         "./skills/fast-shot",
         "./skills/point-the-way",
         "./skills/s-dev",
