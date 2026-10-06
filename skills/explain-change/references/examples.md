@@ -1,5 +1,13 @@
 # Examples, not templates
 
+## Representation follows the change
+
+A visual revision can use aligned before/after crops with enough surrounding context to locate it. A sound or motion revision can use matched excerpts around the changed moment. Neither requires a textual diff merely because delivery happens in chat. A transcript can expose wording changes but cannot demonstrate improved sound; still frames cannot demonstrate timing.
+
+A browser action can change appearance, content, operational state, or several of these. Show the affected view when appearance matters; distinguish edited, saved, scheduled and sent states using observed evidence. An unchanged screenshot cannot demonstrate changed recipients or scheduling. Mixed work may need a view plus a compact state comparison. These are selection examples, not mandatory panels or permission to perform an external action.
+
+A research update may change the conclusion or its support without changing any image. Compare the relevant claim, evidence and scope; a chart helps only when it exposes the material relationship. Do not invent a prior conclusion for a new investigation.
+
 ## Bounded verification repair
 
 **Fixed the verifier: one failed check no longer hides later results.**
