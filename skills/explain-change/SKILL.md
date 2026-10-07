@@ -13,7 +13,7 @@ Reuse the current requirements, baseline, result, decisions and assessment recor
 
 Select what matters to the reader’s understanding or next decision, not one item per source or an inventory of activity. Give enough context to locate the change: the affected participant, purpose, responsibility or flow. Mention particular artifacts, structures or tools only when their identity helps understanding. Missing material context requires discovery or an explicit unresolved boundary, not an invented baseline.
 
-Select representation from that meaning. Every alternative must communicate the same essential change before comparing style. Choose complementary views for different questions; a map, behavioral comparison and decision lineage are options, not required panels. Motion or effects must clarify a relationship and follow the reading path; essential meaning remains visible without interaction or animation. Use the available rendering skill when a richer visual materially helps.
+Select representation from that meaning. Presentation alternatives preserve the same consequential information from the source and draft, including qualifications, uncertainty and required actions; less text must not mean less information. Compare readability only after this equivalence holds. Choose complementary views for different questions; a map, behavioral comparison and decision lineage are options, not required panels. Motion or effects must clarify a relationship and follow the reading path; essential meaning remains visible without interaction or animation. Use the available rendering skill when a richer visual materially helps.
 
 ## Compact handover: default
 
