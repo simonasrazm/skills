@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Bind explanation acceptance to the actual delivered wording and structure; recheck affected qualities after consequential edits, while preserving acceptance for cosmetic edits that leave them unchanged.
+
 - Apply existing explanation principles to every SFLO final result and check substantive explanations for fidelity and presentation in the existing acceptance pass. Preserve explicit formats and proportional effort.
 - Retain the Explain Change methodology after comparison did not justify broader guidance; clarify that presentation alternatives preserve equivalent consequential information, including qualifications, uncertainty and actions. No universal-quality or workflow-efficiency improvement is claimed.
 
