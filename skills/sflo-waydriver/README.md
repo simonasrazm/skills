@@ -17,7 +17,7 @@ Use sflo-waydriver to fix the duplicate submission bug.
 | `s-qa` | Independently checking an increment or accumulated behavior |
 | `security-check` | Assessing security risks and review coverage |
 | `slop-sweep` | Removing unjustified filler and complexity |
-| `explain-change` | Applying explanation principles to every final result; compact or deeper change catch-up |
+| `present-clearly` | Presenting substantive explanations, decisions and comparisons; compact or deeper catch-up |
 | `s-ui-check` | Verifying rendered presentation and interaction |
 
 The conductor selects applicable skills. Smart Shot and Dig Deeper provide optional discovery and diagnosis; available evidence and tools provide the fallback. A small change normally needs one builder and one fresh reviewer.
