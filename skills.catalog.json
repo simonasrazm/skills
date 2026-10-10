@@ -25,13 +25,6 @@
       "version": "2.0.1"
     },
     {
-      "name": "explain-change",
-      "path": "skills/explain-change",
-      "maturity": "stable",
-      "releaseUnit": "sflo-waydriver",
-      "version": "1.0.1-rc.2"
-    },
-    {
       "name": "fast-shot",
       "path": "skills/fast-shot",
       "maturity": "stable",
@@ -44,6 +37,13 @@
       "maturity": "arena",
       "releaseUnit": "point-the-way",
       "version": "0.1.0"
+    },
+    {
+      "name": "present-clearly",
+      "path": "skills/present-clearly",
+      "maturity": "stable",
+      "releaseUnit": "sflo-waydriver",
+      "version": "1.0.1-rc.2"
     },
     {
       "name": "s-dev",
@@ -152,7 +152,7 @@
     "sflo-waydriver": {
       "version": "1.0.1-rc.2",
       "members": [
-        "explain-change",
+        "present-clearly",
         "s-dev",
         "s-domain-modeling",
         "s-qa",

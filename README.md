@@ -32,7 +32,7 @@ These also work independently, but are meant for the factory
 | [S Dev](skills/s-dev/) | Implement or repair a scoped change and return builder checks. Independent acceptance follows through S QA. | `1.0.1-rc.2` |
 | [S QA](skills/s-qa/) | Verify an increment candidate against acceptance criteria with fast, slice or final coverage. | `1.0.1-rc.2` |
 | [S UI Check](skills/s-ui-check/) | Verify visual presentation and interaction in the delivered medium. | `1.0.1-rc.2` |
-| [Explain Change](skills/explain-change/) | Explain material changes, decisions and required actions; compact by default, deeper for catch-up. | `1.0.1-rc.2` |
+| [Present Clearly](skills/present-clearly/) | Select useful content and clear views for explanations, decisions and handovers. | `1.0.1-rc.2` |
 
 ### Dependencies
 

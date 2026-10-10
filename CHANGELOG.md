@@ -2,6 +2,9 @@
 
 ## Unreleased
 
+- Rename Explain Change to Present Clearly; select content by purpose, show relationships and remove repeated prose. Update direct invocations to `present-clearly`.
+- Check whole explanations and embedded label readability in the existing acceptance pass.
+
 - Bind explanation acceptance to the actual delivered wording and structure; recheck affected qualities after consequential edits, while preserving acceptance for cosmetic edits that leave them unchanged.
 
 - Apply existing explanation principles to every SFLO final result and check substantive explanations for fidelity and presentation in the existing acceptance pass. Preserve explicit formats and proportional effort.
