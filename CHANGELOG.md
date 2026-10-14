@@ -10,6 +10,11 @@
 - Apply existing explanation principles to every SFLO final result and check substantive explanations for fidelity and presentation in the existing acceptance pass. Preserve explicit formats and proportional effort.
 - Retain the Explain Change methodology after comparison did not justify broader guidance; clarify that presentation alternatives preserve equivalent consequential information, including qualifications, uncertainty and actions. No universal-quality or workflow-efficiency improvement is claimed.
 
+## 1.0.1-rc.3
+
+- Add the Retrospective skill for evidence-backed findings and improvement options. Diagnose missed instructions, preserve required quality and use Present Clearly for the output.
+- Retire Point the Way; use SFLO Waydriver for outcome-driven work.
+
 ## 1.0.1-rc.2
 
 - Add Explain Change and integrate material handovers into SFLO Waydriver.

@@ -20,7 +20,7 @@
         "decision-making",
         "task-execution"
       ],
-      "version": "1.0.1-rc.2",
+      "version": "1.0.1-rc.3",
       "author": {
         "name": "Simonas Razminas",
         "url": "https://github.com/simonasrazm"
@@ -32,7 +32,6 @@
         "./skills/dig-deeper-core",
         "./skills/dig-deeper-probe",
         "./skills/fast-shot",
-        "./skills/point-the-way",
         "./skills/present-clearly",
         "./skills/s-dev",
         "./skills/s-domain-modeling",
@@ -43,7 +42,8 @@
         "./skills/sflo-waydriver",
         "./skills/skill-compressor",
         "./skills/slop-sweep",
-        "./skills/smart-shot"
+        "./skills/smart-shot",
+        "./skills/retrospective"
       ],
       "strict": false
     }

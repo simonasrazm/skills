@@ -1,0 +1,5 @@
+interface:
+  display_name: "Retrospective"
+  short_description: "Learn from work and diagnose missed instructions"
+policy:
+  allow_implicit_invocation: false

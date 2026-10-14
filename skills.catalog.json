@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "version": "1.0.1-rc.2",
+  "version": "1.0.1-rc.3",
   "releaseUnit": "collection",
   "skills": [
     {
@@ -29,13 +29,6 @@
       "path": "skills/fast-shot",
       "maturity": "stable",
       "releaseUnit": "fast-shot",
-      "version": "0.1.0"
-    },
-    {
-      "name": "point-the-way",
-      "path": "skills/point-the-way",
-      "maturity": "arena",
-      "releaseUnit": "point-the-way",
       "version": "0.1.0"
     },
     {
@@ -114,6 +107,13 @@
       "maturity": "stable",
       "releaseUnit": "smart-shot",
       "version": "2.0.0"
+    },
+    {
+      "name": "retrospective",
+      "path": "skills/retrospective",
+      "maturity": "stable",
+      "releaseUnit": "retrospective",
+      "version": "0.1.0"
     }
   ],
   "releaseUnits": {
@@ -143,12 +143,6 @@
         "skill-compressor"
       ]
     },
-    "point-the-way": {
-      "version": "0.1.0",
-      "members": [
-        "point-the-way"
-      ]
-    },
     "sflo-waydriver": {
       "version": "1.0.1-rc.2",
       "members": [
@@ -161,6 +155,12 @@
         "security-check",
         "sflo-waydriver",
         "slop-sweep"
+      ]
+    },
+    "retrospective": {
+      "version": "0.1.0",
+      "members": [
+        "retrospective"
       ]
     }
   }

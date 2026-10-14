@@ -13,7 +13,7 @@ Skills for Software (or any work) Factory, deep diagnosis, hard decisions and ve
 | [Dig Deeper](skills/dig-deeper/) | Diagnose nasty, deep bugs using logs, system state and other read-only evidence. Do not allow AI to present assumptions as facts or conclusions | `2.0.1` |
 | [Dig Deeper Probe](skills/dig-deeper-probe/) | Reproduce failures and run controlled experiments when observation is not enough. Install tools with consent or within your established execution boundary | `2.0.1` |
 | [Fast Shot](skills/fast-shot/) | Get a moderately better result from a weak prompt through a lighter, much faster Smart Shot | `0.1.0` |
-| [Point the Way](skills/point-the-way/) | When you want AI to consider more options and probe which one is unblocked. When you just need a problem to go away rather than a perfect solution | `0.1.0` |
+| [Retrospective](skills/retrospective/) | Find why skills and workflows fell short. Suggest evidence-backed improvements for future work. | `0.1.0` |
 | [Slop Sweep](skills/slop-sweep/) | Remove unjustified filler and complexity from prose, plans, interfaces or code; repair presentation when authorized. | `1.0.1-rc.2` |
 | [Security Check](skills/security-check/) | First line for the security risks. Use linters, scanners and other means for any professional delivery. | `1.0.1-rc.2` |
 
@@ -36,6 +36,8 @@ These also work independently, but are meant for the factory
 
 ### Dependencies
 
+Retrospective uses Present Clearly for its findings and recommendations. Both are included in the bundle.
+
 The complete bundle includes SFLO Waydriver and its execution, review and discovery skills; no separate Matt Pocock installation is required.
 
 ## Install
@@ -54,6 +56,10 @@ claude plugin install simon-skills@simonasrazm
 ```
 
 ## Try them
+
+```text
+Use retrospective: what should we improve from this session?
+```
 
 ```text
 Use sflo-waydriver: develop a convincing offer for this product.
@@ -90,3 +96,29 @@ My approach combines software development, product, privacy, security and work m
 ## Project
 
 MIT licensed. [Report an issue](https://github.com/simonasrazm/skills/issues) or read [contribution guidance](CONTRIBUTING.md). Browse the [public catalogue](https://finallydone.ai/skills/) for HTML descriptions.
+
+## Upstream license
+
+Retrospective includes adaptations from [Matt Pocock’s skills](https://github.com/mattpocock/skills). His MIT notice is reproduced below. The repository’s own license remains in [LICENSE](LICENSE).
+
+MIT License
+
+Copyright (c) 2026 Matt Pocock
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
