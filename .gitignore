@@ -6,3 +6,6 @@ __pycache__/
 
 
 .DS_Store
+
+# Maintainer documentation belongs in the private project-records home.
+docs

@@ -26,4 +26,4 @@ Derive relevant sizes, pages, states and standards from the artifact, medium and
 
 Bind findings and screenshots to the frozen candidate. Report defects, evidence boundaries, and coverage separately. Leave maintained product unchanged, return repairs to the implementation owner, and recheck affected states against the new candidate. When an issue is unjustified residue, coordinate with the applicable artifact-quality capability; report the concrete presentation effect without making an aesthetic resemblance the verdict.
 
-Document-level fit does not prove component text is visible. Inspect pixels and local bounds for clipping or stale layouts. Return evidence in-channel; create no report or run-state artifact unless requested.
+Document-level fit does not prove component text is readable. Inspect all changed visuals at their delivered scale beside surrounding text, including embedded views. Check essential labels in the intended initial view, as well as clipping and stale layouts; source font sizes and container bounds do not establish rendered legibility. Return evidence in-channel; create no report or run-state artifact unless requested.

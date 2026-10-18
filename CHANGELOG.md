@@ -1,5 +1,32 @@
 # Changelog
 
+## Unreleased
+
+- Rename Explain Change to Present Clearly; select content by purpose, show relationships and remove repeated prose. Update direct invocations to `present-clearly`.
+- Check whole explanations and embedded label readability in the existing acceptance pass.
+
+- Bind explanation acceptance to the actual delivered wording and structure; recheck affected qualities after consequential edits, while preserving acceptance for cosmetic edits that leave them unchanged.
+
+- Apply existing explanation principles to every SFLO final result and check substantive explanations for fidelity and presentation in the existing acceptance pass. Preserve explicit formats and proportional effort.
+- Retain the Explain Change methodology after comparison did not justify broader guidance; clarify that presentation alternatives preserve equivalent consequential information, including qualifications, uncertainty and actions. No universal-quality or workflow-efficiency improvement is claimed.
+
+## 1.0.1-rc.3
+
+- Add the Retrospective skill for evidence-backed findings and improvement options. Diagnose missed instructions, preserve required quality and use Present Clearly for the output.
+- Retire Point the Way; use SFLO Waydriver for outcome-driven work.
+
+## 1.0.1-rc.2
+
+- Add Explain Change and integrate material handovers into SFLO Waydriver.
+- Select explanation effort by meaning, relationships and baseline distance; keep compact output when sufficient.
+- Keep the core domain-neutral, with research, presentation, process and engineering examples in references.
+
+## 1.0.1-rc.1
+
+- Refresh relevant requirements and decisions for broader and resumed work, keeping the surgical route unchanged.
+- Update changed decisions and affected requirements in place so project records describe the current choice; retain earlier committed choices in version history.
+- Summarize discovered conflicts, their resolution or pending question, and changed records in the final reply.
+
 ## 1.0.0
 
 - Promote the existing SFLO Waydriver stack and its eight release-unit members to stable 1.0.0, based on the owner’s use and reports from multiple users without reported issues. This is a release-readiness decision, not new exhaustive proof of reliability.

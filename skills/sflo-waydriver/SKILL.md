@@ -7,6 +7,8 @@ description: Drive a requested outcome through disciplined flow. Can solve compl
 
 Own the destination. Set acceptance from the intended effect, the person's context, and demonstrated leading practice in the relevant field; identify the observable qualities that make those examples strong and test the result against them. Investigate emerging approaches when they offer a credible improvement. Keep each increment small enough to execute and evaluate with professional depth.
 
+Before drafting a substantive user-facing explanation, apply [Present Clearly](../present-clearly/SKILL.md). Infer the need from existing context; no separate audience interview or planning artifact is required. Choose and build the main view before supporting prose.
+
 Drive autonomously through evidence, available capabilities and bounded experiments. When a verified constraint would reduce the intended effect or agreed quality target, explain the concrete alternatives and their consequences, recommend a route, and obtain the person's choice before committing to that reduction. Record the question and blocked commitment in the current work record, request the person's answer, and continue independent work while that choice remains pending. Use the same handoff when progress requires their authorization or a consequential preference that evidence and reversible demonstrations cannot settle.
 
 ## Shape work proportionally
@@ -14,6 +16,8 @@ Drive autonomously through evidence, available capabilities and bounded experime
 Acceptance preserves the requested outcome and consequential meaning, including implied beneficiary needs and qualitative expectations. Resolve material ambiguity through `smart-shot` before freezing acceptance or choosing a surgical route; familiar execution does not establish that the destination is understood. Reuse existing intent evidence when it covers the current request. Define acceptance for the requested destination, relevant boundaries, and what must not happen. A decision, research result, physical outcome, and software change require different evidence; producing a document or plan does not establish an unobserved real-world outcome.
 
 A clear surgical change is an implicit one-unit graph. Surgical classification follows work topology, not diff size: the cause, target, authority, and proof are sufficiently clear, and the outcome forms one coherent acceptance-bearing unit. Choose execution and verification capabilities for that unit; software changes use `s-dev` → `s-qa`. Add only applicable specialist checks and loop repairs through the responsible capability.
+
+For work beyond the surgical route, before answering each new prompt or making an affected change, retrieve and read the current requirements and decision records relevant to the requested outcome and its acceptance boundaries. Apply this on resumed work as well as initial work. Reconcile the prompt with those records.
 
 For multiple dependent units, unresolved fog, durable decisions, or context-spanning work, invoke `s-waydriver`. It owns decision discovery, the work graph, frontier, decision records, tracker state, and resumption. If investigation or review reveals this topology after surgical work begins, promote the implicit unit into `s-waydriver` state before continuing.
 
@@ -36,6 +40,8 @@ Choose discovery from the unresolved decisions, not the size or label of the del
 ## Deliver and close the loop
 
 Skills are capabilities, not a required agent roster. Execute a bounded outcome in one context, then delegate acceptance of the frozen candidate to a fresh reviewer with the applicable verification lenses and require its report before closing the unit. One competent reviewer may apply the applicable verification lenses to the same frozen candidate, with distinct coverage outcomes; use a separate specialist when expertise or design-changing evidence requires it. Final acceptance is proportional to the actual destination and may use the same focused probes that fully cover a small change. Avoid repeated handoffs, report files, and repeated checks that add no evidence.
+
+Include the proposed user-facing reply itself, or the main artifact carrying its explanation, in the existing acceptance pass, whether the outcome is a change, finding, decision or another deliverable. Acceptance covers the actual wording and structure delivered to the person. Review the whole affected artifact after additions or corrections, not only the changed passage. Apply Present Clearly's fidelity, necessity, representation and readability checks separately, including consequential relationships, decisions and unresolved actions. Apply medium-specific inspection when presentation is material. Deliver the reviewed explanation. Recheck only the affected qualities when later edits change meaning, emphasis, relationships or required actions. Cosmetic edits and verified status or location additions retain acceptance when those qualities remain unchanged. Use the existing review and repair loop; an unchanged accepted explanation needs no extra polishing pass. Routine acknowledgements and status replies need no separate acceptance artifact or reviewer.
 
 Before handing off work bound to an execution run, persist its current candidate, linked evidence, next owner and next action in the run record. Apply [execution runs](../s-waydriver/references/execution-runs.md) when preparing or continuing that run.
 
@@ -77,10 +83,8 @@ Continue across planning sessions, issues, context units, and repair cycles. Lea
 
 ## User-facing reply
 
-Reconcile the reply with the completed changes and remaining work in the evidence. For routine status and completion replies, use this short handover:
+Apply [Present Clearly](../present-clearly/SKILL.md)'s explanation principles to every final result, including findings and decisions without a change baseline. Reconcile the reply with completed work, recorded decisions and remaining obligations. Select the form and effort from the meaning the person must absorb; make consequential relationships directly inspectable rather than defaulting to a prose account. Preserve relevant decisions, conflicts and supersessions, with what was resolved or remains pending. Respect the person's requested artifact and format; it may carry the explanation itself.
 
-- Delivered: each completed change and where it is available; combine related changes.
-- Found: decision-relevant findings and their limits.
-- Next: unfinished in-scope work and any required human action.
+Keep surgical replies direct: a factual inline before → after can be enough. A progress/status request without a requested change explanation can be answered directly with the outcome, relevant limit or next action. Do not imply completion while in-scope work remains.
 
-Omit empty items; use one short sentence per item. End with one working link to the main result or evidence record; use an absolute path for a local file. Give requested detailed explanations separately; preserve safety-critical instructions in full. Use a compact diagram when it replaces longer prose.
+When the main artifact already explains the change, locate it in the final reply without repeating its explanation. Show unresolved human actions and the information needed to act; keep routine verification evidence in the work record unless requested. Preserve material limitations and safety-critical instructions. Link the main deliverable when needed to locate or use it; do not append a routine evidence link merely to fill the handover.

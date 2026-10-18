@@ -13,9 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: oven-sh/setup-bun@v2
         with:
           bun-version: 1.3.11
+      - run: bun utilities/validation/private-docs.ts
       - run: bun utilities/validation/skill-definitions.ts
       - run: bun utilities/validation/release-catalog.ts
       - run: bun test ./utilities/validation/release-catalog.test.ts
