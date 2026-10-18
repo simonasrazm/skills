@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1-rc.1
+
+- Refresh relevant requirements and decisions for broader and resumed work, keeping the surgical route unchanged.
+- Update changed decisions and affected requirements in place so project records describe the current choice; retain earlier committed choices in version history.
+- Summarize discovered conflicts, their resolution or pending question, and changed records in the final reply.
+
 ## 1.0.0
 
 - Promote the existing SFLO Waydriver stack and its eight release-unit members to stable 1.0.0, based on the owner’s use and reports from multiple users without reported issues. This is a release-readiness decision, not new exhaustive proof of reliability.
