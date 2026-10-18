@@ -15,6 +15,8 @@ Acceptance preserves the requested outcome and consequential meaning, including 
 
 A clear surgical change is an implicit one-unit graph. Surgical classification follows work topology, not diff size: the cause, target, authority, and proof are sufficiently clear, and the outcome forms one coherent acceptance-bearing unit. Choose execution and verification capabilities for that unit; software changes use `s-dev` → `s-qa`. Add only applicable specialist checks and loop repairs through the responsible capability.
 
+For work beyond the surgical route, before answering each new prompt or making an affected change, retrieve and read the current requirements and decision records relevant to the requested outcome and its acceptance boundaries. Apply this on resumed work as well as initial work. Reconcile the prompt with those records.
+
 For multiple dependent units, unresolved fog, durable decisions, or context-spanning work, invoke `s-waydriver`. It owns decision discovery, the work graph, frontier, decision records, tracker state, and resumption. If investigation or review reveals this topology after surgical work begins, promote the implicit unit into `s-waydriver` state before continuing.
 
 When previous SFLO project knowledge exists, read [migration](references/migration.md) before creating new durable documentation.
@@ -77,7 +79,7 @@ Continue across planning sessions, issues, context units, and repair cycles. Lea
 
 ## User-facing reply
 
-Reconcile the reply with the completed changes and remaining work in the evidence. For routine status and completion replies, use this short handover:
+Reconcile the reply with the completed changes and remaining work in the evidence. Summarize conflicts involving the request, requirements or recorded decisions: what conflicted, how it was resolved or what remains pending, and which records changed. For routine status and completion replies, use this short handover:
 
 - Delivered: each completed change and where it is available; combine related changes.
 - Found: decision-relevant findings and their limits.
