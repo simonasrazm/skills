@@ -1,3 +1,7 @@
+# Third-party notice
+
+Material in this skill adapts [domain-modeling](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling) by Matt Pocock. The following notice applies to that material.
+
 MIT License
 
 Copyright (c) 2026 Matt Pocock

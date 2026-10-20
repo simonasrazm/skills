@@ -1,6 +1,6 @@
 ---
 name: s-ui-check
-description: Independently verify visual presentation and interaction in the form people experience them. Use when creating, changing or reviewing human-facing visual output, including configured surfaces and static artifacts.
+description: Independently verify visual presentation and interaction in the form people experience them. Use when visual presentation or interaction is material to the requested outcome, established quality target or a concrete presentation risk.
 ---
 
 # S UI Check

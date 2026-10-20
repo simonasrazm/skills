@@ -23,7 +23,3 @@ Use sflo-waydriver to fix the duplicate submission bug.
 The conductor selects applicable skills. Smart Shot and Dig Deeper provide optional discovery and diagnosis; available evidence and tools provide the fallback. A small change normally needs one builder and one fresh reviewer.
 
 Components return results in-channel. For work with an execution run, workers also save their reports and the conductor records the current candidate and next action before each handoff. Independent checks are read-only; implementation and authorized slop repairs may modify artifacts.
-
-## Credits
-
-S Waydriver adapts Matt Pocock's [Wayfinder](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder) and [domain-modeling](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling). It preserves decision maps and adds a separate delivery map. The [upstream MIT notice](../s-waydriver/LICENSE.wayfinder) is retained.

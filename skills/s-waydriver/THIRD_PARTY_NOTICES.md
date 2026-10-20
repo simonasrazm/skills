@@ -1,3 +1,7 @@
+# Third-party notice
+
+Material in this skill adapts [Wayfinder](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder) by Matt Pocock. The following notice applies to that material.
+
 MIT License
 
 Copyright (c) 2026 Matt Pocock

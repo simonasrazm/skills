@@ -27,8 +27,8 @@ These also work independently, but are meant for the factory
 
 | Skill | Use independently for | Version |
 |---|---|---|
-| [S Waydriver](skills/s-waydriver/) | Map decisions, coordinate dependencies and resume work. Supply the project's execution and acceptance policy. | `1.0.1-rc.2` |
-| [S Domain Modeling](skills/s-domain-modeling/) | Sharpen domain language and rules; reconcile glossaries, behavior and decisions. | `1.0.1-rc.2` |
+| [S Waydriver](skills/s-waydriver/) · [adapted](#credits) | Map decisions, coordinate dependencies and resume work. Supply the project's execution and acceptance policy. | `1.0.1-rc.2` |
+| [S Domain Modeling](skills/s-domain-modeling/) · [adapted](#credits) | Sharpen domain language and rules; reconcile glossaries, behavior and decisions. | `1.0.1-rc.2` |
 | [S Dev](skills/s-dev/) | Implement or repair a scoped change and return builder checks. Independent acceptance follows through S QA. | `1.0.1-rc.2` |
 | [S QA](skills/s-qa/) | Verify an increment candidate against acceptance criteria with fast, slice or final coverage. | `1.0.1-rc.2` |
 | [S UI Check](skills/s-ui-check/) | Verify visual presentation and interaction in the delivered medium. | `1.0.1-rc.2` |
@@ -38,7 +38,7 @@ These also work independently, but are meant for the factory
 
 Retrospective uses Present Clearly for its findings and recommendations. Both are included in the bundle.
 
-The complete bundle includes SFLO Waydriver and its execution, review and discovery skills; no separate Matt Pocock installation is required.
+The complete bundle includes SFLO Waydriver and its execution, review and discovery skills.
 
 ## Install
 
@@ -97,28 +97,6 @@ My approach combines software development, product, privacy, security and work m
 
 MIT licensed. [Report an issue](https://github.com/simonasrazm/skills/issues) or read [contribution guidance](CONTRIBUTING.md). Browse the [public catalogue](https://finallydone.ai/skills/) for HTML descriptions.
 
-## Upstream license
+## Credits
 
-Retrospective includes adaptations from [Matt Pocock’s skills](https://github.com/mattpocock/skills). His MIT notice is reproduced below. The repository’s own license remains in [LICENSE](LICENSE).
-
-MIT License
-
-Copyright (c) 2026 Matt Pocock
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+S Waydriver adapts [Wayfinder](https://github.com/mattpocock/skills/tree/main/skills/engineering/wayfinder); S Domain Modeling adapts [domain-modeling](https://github.com/mattpocock/skills/tree/main/skills/engineering/domain-modeling), by [Matt Pocock](https://github.com/mattpocock/skills). The upstream notices accompany [S Waydriver](skills/s-waydriver/THIRD_PARTY_NOTICES.md) and [S Domain Modeling](skills/s-domain-modeling/THIRD_PARTY_NOTICES.md).
